@@ -24,6 +24,7 @@ $jsBundle = @"
     showThemeControl: true,
     decorateOpportunityTags: true,
     colorfulSections: true,
+    fullWorkspaceTheme: false,
     showLoadConfirmation: true,
     tagAliases: {
       hot: ["hot", "hot lead"],
@@ -55,12 +56,12 @@ $cssSource
     <style>
       html, body { margin: 0; min-height: 100%; }
       body { display: grid; grid-template-columns: 220px minmax(0, 1fr); }
-      .hl_sidebar { min-height: 100vh; padding: 28px 18px; position: relative; }
+      .hl_sidebar { background: #172533; min-height: 100vh; padding: 28px 18px; position: relative; }
       .hl_sidebar strong { color: #fff; display: block; font-size: 1.2rem; margin: 0 10px 32px; }
       .hl_navItem { display: block; margin-bottom: 8px; padding: 12px 14px; text-decoration: none; }
       .hl_navItem.active { background: rgba(99, 198, 195, .18); box-shadow: inset 3px 0 0 #63c6c3; }
       .tt-inline-workspace { min-width: 0; }
-      .hl_topHeader { align-items: center; display: flex; height: 70px; padding: 0 32px; }
+      .hl_topHeader { align-items: center; background: #e8edf1; display: flex; height: 70px; padding: 0 32px; }
       .tt-section-workspace { min-height: calc(100vh - 70px); padding: 34px; }
       .tt-inline-heading { align-items: center; display: flex; justify-content: space-between; margin-bottom: 24px; }
       .tt-inline-heading h1 { font-size: 2.6rem; margin: 0 0 6px; }
@@ -127,6 +128,7 @@ $cssSource
         persistTheme: false,
         showThemeControl: true,
         colorfulSections: true,
+        fullWorkspaceTheme: false,
         showLoadConfirmation: true
       };
 $jsSource

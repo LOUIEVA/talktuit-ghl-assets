@@ -1,7 +1,7 @@
 /*
  * TalkTuit GHL Customizer
  * Brand system: TalkTuit Brand Guidelines v1.0 (July 2026)
- * Version: 1.1.1
+ * Version: 1.1.2
  *
  * This file intentionally favors stable HighLevel classes/data attributes.
  * HighLevel can change its interface, so test after major platform updates.
@@ -39,11 +39,14 @@ html.tt-brand-root {
 }
 
 html.tt-brand-root body.tt-brand-ready {
-  background: var(--tt-mist);
-  color: var(--tt-ink);
   font-family: var(--tt-font);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+html.tt-brand-root body.tt-brand-ready.tt-full-workspace {
+  background: var(--tt-mist);
+  color: var(--tt-ink);
 }
 
 body.tt-brand-ready *,
@@ -89,7 +92,7 @@ body.tt-brand-ready :focus-visible {
 
 /* Sidebar --------------------------------------------------------------- */
 
-body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) {
+body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2) {
   background:
     linear-gradient(180deg, rgba(18, 70, 99, 0.22), transparent 30%),
     var(--tt-navy-deep) !important;
@@ -97,7 +100,7 @@ body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) {
   box-shadow: 8px 0 24px rgba(11, 50, 75, 0.12);
 }
 
-body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2)::before {
+body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2)::before {
   background:
     linear-gradient(
       90deg,
@@ -115,7 +118,9 @@ body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2)::before {
   z-index: 3;
 }
 
-body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) :is(.hl_navItem, a) {
+body.tt-brand-ready.tt-full-workspace
+  :is(.hl_sidebar, #sidebar-v2)
+  :is(.hl_navItem, a) {
   border-radius: 10px !important;
   color: rgba(255, 255, 255, 0.76) !important;
   font-family: var(--tt-font);
@@ -126,7 +131,7 @@ body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) :is(.hl_navItem, a) {
     transform var(--tt-motion);
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(.hl_sidebar, #sidebar-v2)
   :is(.hl_navItem, a):hover {
   background: rgba(99, 198, 195, 0.12) !important;
@@ -134,7 +139,7 @@ body.tt-brand-ready
   transform: translateX(2px);
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(.hl_sidebar, #sidebar-v2)
   :is(
     .hl_navItem.active,
@@ -148,18 +153,18 @@ body.tt-brand-ready
   color: var(--tt-white) !important;
 }
 
-body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) svg {
+body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2) svg {
   color: var(--tt-teal) !important;
   stroke-width: 2;
 }
 
-body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) hr {
+body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2) hr {
   border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Header ---------------------------------------------------------------- */
 
-body.tt-brand-ready .hl_topHeader {
+body.tt-brand-ready.tt-full-workspace .hl_topHeader {
   background: rgba(255, 255, 255, 0.94) !important;
   border-bottom: 1px solid var(--tt-border) !important;
   box-shadow: 0 4px 18px rgba(11, 50, 75, 0.05);
@@ -167,7 +172,7 @@ body.tt-brand-ready .hl_topHeader {
   backdrop-filter: blur(14px);
 }
 
-body.tt-brand-ready .hl_topHeader :is(button, a) {
+body.tt-brand-ready.tt-full-workspace .hl_topHeader :is(button, a) {
   border-radius: 10px;
 }
 
@@ -181,7 +186,7 @@ body.tt-brand-ready
 
 /* Surfaces and data ----------------------------------------------------- */
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(
     .hl_card,
     .hl-card,
@@ -194,7 +199,7 @@ body.tt-brand-ready
   box-shadow: var(--tt-shadow-sm);
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(
     .hl_card,
     .hl-card,
@@ -205,7 +210,7 @@ body.tt-brand-ready
   box-shadow: var(--tt-shadow-card);
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(
     .hl_card,
     .hl-card,
@@ -219,7 +224,7 @@ body.tt-brand-ready
   letter-spacing: -0.03em;
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(.hl-table, [data-tt-table], .tt-demo-table) {
   background: var(--tt-white);
   border: 1px solid var(--tt-border);
@@ -231,7 +236,7 @@ body.tt-brand-ready
   overflow: hidden;
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(.hl-table, [data-tt-table], .tt-demo-table)
   :is(th, [role="columnheader"]) {
   background: var(--tt-mist);
@@ -243,13 +248,13 @@ body.tt-brand-ready
   text-transform: uppercase;
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(.hl-table, [data-tt-table], .tt-demo-table)
   :is(td, [role="cell"]) {
   border-bottom-color: var(--tt-border);
 }
 
-body.tt-brand-ready
+body.tt-brand-ready.tt-full-workspace
   :is(.hl-table, [data-tt-table], .tt-demo-table)
   tr:hover
   td {
@@ -422,7 +427,8 @@ body.tt-brand-ready
 
 /* Opportunities and pipeline tags -------------------------------------- */
 
-body.tt-brand-ready
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready
   :is(
     .opportunity-card,
     .pipeline-card,
@@ -439,7 +445,8 @@ body.tt-brand-ready
     transform var(--tt-motion);
 }
 
-body.tt-brand-ready
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready
   :is(
     .opportunity-card,
     .pipeline-card,
@@ -490,12 +497,29 @@ html[data-tt-section]
     .tt-section-workspace,
     main
   ):not([role="dialog"] *) {
-  background-color: transparent !important;
+  background:
+    radial-gradient(
+      circle at 90% 4%,
+      color-mix(in srgb, var(--tt-section-accent) 17%, transparent),
+      transparent 28rem
+    ),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--tt-section-soft) 72%, var(--tt-mist)),
+      var(--tt-mist) 64%
+    ) !important;
+  box-shadow: inset 0 4px 0 var(--tt-section-accent);
 }
 
 html[data-tt-section]
   body.tt-brand-ready.tt-colorful-sections
   .hl_topHeader {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--tt-section-soft) 82%, #ffffff),
+      rgba(255, 255, 255, 0.96)
+    ) !important;
   border-bottom-color: color-mix(
     in srgb,
     var(--tt-section-accent) 22%,
@@ -718,7 +742,12 @@ html[data-tt-section="opportunities"]
     .tt-demo-opportunity,
     [data-testid*="opportunity-card"]
   ) {
-  background-color: rgba(255, 255, 255, 0.88);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(255, 240, 235, 0.74)
+    ) !important;
   border-color: rgba(18, 70, 99, 0.15) !important;
   backdrop-filter: blur(8px);
 }

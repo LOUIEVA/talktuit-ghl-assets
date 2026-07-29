@@ -29,8 +29,8 @@ The production assets are hosted from the public
 [`LOUIEVA/talktuit-ghl-assets`](https://github.com/LOUIEVA/talktuit-ghl-assets)
 repository through jsDelivr:
 
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.css`
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.js`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.css`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.js`
 
 1. In HighLevel, switch to Agency View and open `Settings > Company > Whitelabel`.
 2. Paste the contents of `ghl-custom-css.html` into Custom CSS.
@@ -55,6 +55,13 @@ If the confirmation does not appear, the JavaScript field is not executing in
 that account/view. If it appears but the colors do not, capture the current page
 URL and a screenshot so the affected HighLevel selectors can be updated.
 
+## If a previous build makes the CRM look all white
+
+Clear both HighLevel Custom CSS and Custom JavaScript fields and save once. Then
+install v1.1.2 from the inline files. This release keeps
+`fullWorkspaceTheme: false`, so GHL retains its native global layout while
+TalkTuit colors are added only to Contacts, Opportunities, and Conversations.
+
 ## Important rollout note
 
 Do not test this at the same time as ThemeBuilder, HL Pro Tools, Everypages, or another full-dashboard customizer. Those tools can style the same elements and produce unpredictable results.
@@ -75,6 +82,7 @@ Set options before the external script:
     showThemeControl: true,
     decorateOpportunityTags: true,
     colorfulSections: true,
+    fullWorkspaceTheme: false,
     showLoadConfirmation: true
   };
 </script>
@@ -87,6 +95,7 @@ Options:
 - `showThemeControl`: shows the four-bar display control in the lower-right corner
 - `decorateOpportunityTags`: styles recognized pipeline tags and their cards
 - `colorfulSections`: adds route-scoped color to Contacts, Opportunities, and Conversations; set to `false` for the neutral white workspace
+- `fullWorkspaceTheme`: opt-in repainting of global GHL surfaces; keep `false` for the safer route-scoped theme
 - `showLoadConfirmation`: briefly confirms that the JavaScript executed; turn it off after installation is verified
 - `tagAliases`: adds or replaces the text recognized for `hot`, `urgent`, `new`, `won`, `follow-up`, and `cold`
 - `debug`: prints diagnostic messages to the browser console

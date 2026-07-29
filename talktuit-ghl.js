@@ -1,6 +1,6 @@
 /*
  * TalkTuit GHL Customizer
- * Version: 1.1.1
+ * Version: 1.1.2
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -14,7 +14,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.1.1";
+  var VERSION = "1.1.2";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||
@@ -37,6 +37,7 @@
     showThemeControl: true,
     decorateOpportunityTags: true,
     colorfulSections: true,
+    fullWorkspaceTheme: false,
     showLoadConfirmation: false,
     tagAliases: DEFAULT_TAG_ALIASES,
     debug: false
@@ -68,6 +69,11 @@
       scriptData.colorfulSections,
       globalConfig.colorfulSections,
       DEFAULTS.colorfulSections
+    ),
+    fullWorkspaceTheme: readBoolean(
+      scriptData.fullWorkspaceTheme,
+      globalConfig.fullWorkspaceTheme,
+      DEFAULTS.fullWorkspaceTheme
     ),
     showLoadConfirmation: readBoolean(
       scriptData.showLoadConfirmation,
@@ -479,7 +485,13 @@
 
   function markRoute() {
     var route = toSlug(
-      decodeURIComponent(window.location.pathname || "home")
+      decodeURIComponent(
+        [
+          window.location.pathname || "",
+          window.location.hash || "",
+          window.location.search || ""
+        ].join(" ")
+      ) || "home"
     );
     var section = detectSection(route);
     var root = document.documentElement;
@@ -499,11 +511,19 @@
     }
 
     document.documentElement.classList.add("tt-brand-root");
+    document.documentElement.classList.toggle(
+      "tt-full-workspace",
+      config.fullWorkspaceTheme
+    );
     document.documentElement.dataset.ttBrandVersion = VERSION;
     document.body.classList.add("tt-brand-ready");
     document.body.classList.toggle(
       "tt-colorful-sections",
       config.colorfulSections
+    );
+    document.body.classList.toggle(
+      "tt-full-workspace",
+      config.fullWorkspaceTheme
     );
     markRoute();
     decorateOpportunityTags(root || document);
@@ -600,6 +620,7 @@
       }
 
       document.documentElement.classList.remove("tt-brand-root");
+      document.documentElement.classList.remove("tt-full-workspace");
       document.documentElement.removeAttribute("data-tt-theme");
       document.documentElement.removeAttribute("data-tt-route");
       document.documentElement.removeAttribute("data-tt-section");
@@ -607,7 +628,8 @@
       if (document.body) {
         document.body.classList.remove(
           "tt-brand-ready",
-          "tt-colorful-sections"
+          "tt-colorful-sections",
+          "tt-full-workspace"
         );
       }
     }

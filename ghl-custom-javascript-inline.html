@@ -25,7 +25,7 @@
 
 /*
  * TalkTuit GHL Customizer
- * Version: 1.2.0
+ * Version: 1.3.0
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -39,7 +39,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.2.0";
+  var VERSION = "1.3.0";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||
@@ -294,8 +294,9 @@
       '<button class="tt-theme-option" type="button" data-tt-theme-choice="focus" aria-pressed="false">Navy focus</button>' +
       "</div>" +
       "</div>" +
-      '<button class="tt-theme-trigger" type="button" aria-expanded="false" aria-controls="tt-theme-panel" aria-label="Open TalkTuit display settings">' +
+      '<button class="tt-theme-trigger" type="button" aria-expanded="false" aria-controls="tt-theme-panel" aria-label="Open TalkTuit display settings. Current theme: Light">' +
       waveformMarkup() +
+      '<span class="tt-theme-trigger__label">Light</span>' +
       "</button>";
 
     document.body.appendChild(control);
@@ -334,6 +335,11 @@
 
   function syncThemeControl(theme) {
     var choices = document.querySelectorAll("[data-tt-theme-choice]");
+    var trigger = document.querySelector("#tt-theme-control .tt-theme-trigger");
+    var triggerLabel = document.querySelector(
+      "#tt-theme-control .tt-theme-trigger__label"
+    );
+    var themeLabel = theme === "focus" ? "Navy Focus" : "Light";
 
     Array.prototype.forEach.call(choices, function updateThemeChoice(button) {
       button.setAttribute(
@@ -341,6 +347,19 @@
         String(button.dataset.ttThemeChoice === theme)
       );
     });
+
+    if (triggerLabel) {
+      triggerLabel.textContent = themeLabel;
+    }
+
+    if (trigger) {
+      trigger.dataset.ttActiveTheme = theme;
+      trigger.setAttribute(
+        "aria-label",
+        "Open TalkTuit display settings. Current theme: " + themeLabel
+      );
+      trigger.setAttribute("title", "TalkTuit theme: " + themeLabel);
+    }
   }
 
   function createLoadConfirmation() {
@@ -578,11 +597,15 @@
       ".sidebar-v2-location #sidebar-v2 [aria-current=\"page\"]",
       ".sidebar-v2-agency #sidebar-v2 a.active",
       ".sidebar-v2-agency #sidebar-v2 [aria-current=\"page\"]",
+      ".sidebar-v2-agency #sidebar-v2 .active span",
       "#sidebar-v2 a.active",
       "#sidebar-v2 [aria-current=\"page\"]",
+      "#sidebar-v2 .active span",
       "main h1",
       '[role="main"] h1',
-      '[role="heading"][aria-level="1"]'
+      '[role="heading"][aria-level="1"]',
+      "main h2",
+      '[role="main"] h2'
     ];
 
     for (var index = 0; index < activeSelectors.length; index += 1) {
@@ -670,10 +693,11 @@
 
     Array.prototype.forEach.call(
       document.querySelectorAll(
-        ".tt-live-contact-table, .tt-live-contact-panel, .tt-live-pipeline-stage, .tt-live-opportunity-card, .tt-live-conversation-panel"
+        ".tt-live-surface, .tt-live-contact-table, .tt-live-contact-panel, .tt-live-pipeline-stage, .tt-live-opportunity-card, .tt-live-conversation-panel"
       ),
       function clearLiveMarker(element) {
         element.classList.remove(
+          "tt-live-surface",
           "tt-live-contact-table",
           "tt-live-contact-panel",
           "tt-live-pipeline-stage",
@@ -696,6 +720,14 @@
     workspace.classList.add("tt-live-workspace");
     workspace.dataset.ttLiveSection = section;
 
+    markVisibleMatches(
+      workspace,
+      'table, [role="table"], [role="grid"], [role="list"], [class*="card" i], [class*="panel" i], [class*="pane" i], [class*="widget" i], [class*="drawer" i]',
+      "tt-live-surface",
+      140,
+      48
+    );
+
     if (section === "contacts") {
       markVisibleMatches(
         workspace,
@@ -706,7 +738,7 @@
       );
       markVisibleMatches(
         workspace,
-        '[class*="contact" i][class*="detail" i], [class*="contact" i][class*="panel" i], [data-testid*="contact-detail" i]',
+        '[class*="contact" i][class*="detail" i], [class*="contact" i][class*="panel" i], [class*="contact" i][class*="card" i], [class*="detail" i][class*="panel" i], [class*="drawer" i], [data-testid*="contact-detail" i]',
         "tt-live-contact-panel",
         220,
         140
@@ -716,14 +748,14 @@
     if (section === "opportunities") {
       markVisibleMatches(
         workspace,
-        '[class*="pipeline" i][class*="column" i], [class*="pipeline" i][class*="stage" i], [class*="kanban" i][class*="column" i], [data-testid*="pipeline-stage" i]',
+        '[class*="pipeline" i][class*="column" i], [class*="pipeline" i][class*="stage" i], [class*="kanban" i][class*="column" i], [class*="stage" i], [role="list"], [data-testid*="pipeline-stage" i]',
         "tt-live-pipeline-stage",
         160,
         180
       );
       markVisibleMatches(
         workspace,
-        '[draggable="true"], [class*="opportunity" i][class*="card" i], [class*="pipeline" i][class*="card" i], [class*="kanban" i][class*="card" i], [data-testid*="opportunity-card" i]',
+        '[draggable="true"], [role="listitem"], [class*="card" i], [class*="opportunity" i], [class*="pipeline" i][class*="card" i], [class*="kanban" i][class*="card" i], [data-testid*="opportunity-card" i]',
         "tt-live-opportunity-card",
         140,
         50
@@ -733,7 +765,7 @@
     if (section === "conversations") {
       markVisibleMatches(
         workspace,
-        '[class*="conversation" i], [class*="inbox" i], [class*="message-list" i], [class*="chat-body" i], [data-testid*="conversation" i]',
+        '[class*="conversation" i], [class*="inbox" i], [class*="message-list" i], [class*="chat-body" i], [class*="thread" i], [class*="pane" i], [class*="panel" i], [class*="card" i], [role="list"], [data-testid*="conversation" i]',
         "tt-live-conversation-panel",
         160,
         100

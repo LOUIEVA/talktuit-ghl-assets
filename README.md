@@ -11,6 +11,8 @@ The package uses:
 - JetBrains Mono for values, prices, phone data, and timestamps
 - Rounded cards, 2px-style icons, restrained motion, and the four-bar waveform motif
 - Route-aware color treatments for Contacts, Opportunities, and Conversations
+- A visible Light/Navy Focus identifier on the display switch
+- Branded live-surface detection for current GHL cards, panels, tables, lists, and panes
 
 ## Files
 
@@ -29,8 +31,8 @@ The production assets are hosted from the public
 [`LOUIEVA/talktuit-ghl-assets`](https://github.com/LOUIEVA/talktuit-ghl-assets)
 repository through jsDelivr:
 
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.css`
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.js`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.css`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.js`
 
 1. In HighLevel, switch to Agency View and open `Settings > Company > Whitelabel`.
 2. Paste the contents of `ghl-custom-css.html` into Custom CSS.
@@ -58,11 +60,12 @@ URL and a screenshot so the affected HighLevel selectors can be updated.
 ## If a previous build makes the CRM look all white
 
 Clear both HighLevel Custom CSS and Custom JavaScript fields and save once. Then
-install v1.2.0 from the inline files. This release keeps
+install v1.3.0 from the inline files. This release keeps
 `fullWorkspaceTheme: false`, so GHL retains its native global layout while
 TalkTuit colors are added only to Contacts, Opportunities, and Conversations.
 It also adds a persistent TalkTuit brand strip and detects current GHL sidebar
-and CRM surfaces at runtime.
+and CRM surfaces at runtime. The Light theme enforces dark readable text on
+light cards, while Navy Focus enforces light text on navy cards.
 
 ## Important rollout note
 
@@ -130,8 +133,8 @@ When updating the hosted files, create a new GitHub release tag and update both
 loader URLs. For example:
 
 ```text
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.css
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.js
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.css
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.js
 ```
 
 ## Roll back

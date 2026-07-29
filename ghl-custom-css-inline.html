@@ -3,7 +3,7 @@
 /*
  * TalkTuit GHL Customizer
  * Brand system: TalkTuit Brand Guidelines v1.0 (July 2026)
- * Version: 1.2.0
+ * Version: 1.3.0
  *
  * This file intentionally favors stable HighLevel classes/data attributes.
  * HighLevel can change its interface, so test after major platform updates.
@@ -33,6 +33,244 @@
   --tt-font: "Manrope", sans-serif;
   --tt-mono: "JetBrains Mono", monospace;
   --tt-motion: 0.2s ease;
+}
+
+/* CSS-only fail-safe ----------------------------------------------------
+ *
+ * HighLevel can suppress Custom JavaScript in some views. These rules keep
+ * the core TalkTuit identity visible without waiting for JavaScript to add
+ * .tt-brand-ready. JavaScript still enhances the live CRM surfaces when it
+ * is available.
+ */
+
+:is(
+    body.sidebar-v2-agency,
+    body.sidebar-v2-location,
+    .sidebar-v2-agency,
+    .sidebar-v2-location
+  )
+  #sidebar-v2,
+:is(
+    body.sidebar-v2-agency,
+    body.sidebar-v2-location,
+    .sidebar-v2-agency,
+    .sidebar-v2-location
+  )
+  #sidebar-v2
+  .default-bg-color {
+  background:
+    linear-gradient(180deg, rgba(18, 70, 99, 0.28), transparent 32%),
+    var(--tt-navy-deep) !important;
+  border-right: 0 !important;
+  box-shadow: 8px 0 24px rgba(11, 50, 75, 0.14);
+}
+
+:is(
+    body.sidebar-v2-agency,
+    body.sidebar-v2-location,
+    .sidebar-v2-agency,
+    .sidebar-v2-location
+  )
+  #sidebar-v2::before {
+  background: linear-gradient(
+    90deg,
+    var(--tt-coral) 0 25%,
+    var(--tt-amber) 25% 50%,
+    var(--tt-teal) 50% 75%,
+    var(--tt-teal-deep) 75% 100%
+  );
+  content: "";
+  display: block;
+  height: 4px;
+  inset: 0 0 auto;
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+}
+
+:is(
+    body.sidebar-v2-agency,
+    body.sidebar-v2-location,
+    .sidebar-v2-agency,
+    .sidebar-v2-location
+  )
+  #sidebar-v2
+  :is(.hl_navItem, nav a) {
+  border-radius: 10px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: var(--tt-font);
+  font-weight: 700;
+}
+
+:is(
+    body.sidebar-v2-agency,
+    body.sidebar-v2-location,
+    .sidebar-v2-agency,
+    .sidebar-v2-location
+  )
+  #sidebar-v2
+  :is(.hl_navItem, nav a):hover {
+  background: rgba(99, 198, 195, 0.14) !important;
+  color: var(--tt-white) !important;
+}
+
+:is(
+    body.sidebar-v2-agency,
+    body.sidebar-v2-location,
+    .sidebar-v2-agency,
+    .sidebar-v2-location
+  )
+  #sidebar-v2
+  :is(
+    .hl_navItem.active,
+    .hl_navItem.router-link-active,
+    a.active,
+    a.router-link-active,
+    [aria-current="page"]
+  ) {
+  background: linear-gradient(
+    90deg,
+    rgba(99, 198, 195, 0.24),
+    rgba(18, 70, 99, 0.58)
+  ) !important;
+  box-shadow: inset 4px 0 0 var(--tt-coral);
+  color: var(--tt-white) !important;
+}
+
+:is(
+    body.sidebar-v2-agency,
+    body.sidebar-v2-location,
+    .sidebar-v2-agency,
+    .sidebar-v2-location
+  )
+  #sidebar-v2
+  svg {
+  color: var(--tt-teal) !important;
+}
+
+body:is(.sidebar-v2-agency, .sidebar-v2-location):not(.tt-brand-ready)::after,
+body:not(.tt-brand-ready):has(.sidebar-v2-agency #sidebar-v2)::after,
+body:not(.tt-brand-ready):has(.sidebar-v2-location #sidebar-v2)::after {
+  background:
+    linear-gradient(135deg, rgba(18, 70, 99, 0.98), rgba(11, 50, 75, 0.98));
+  border: 1px solid rgba(99, 198, 195, 0.42);
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(11, 50, 75, 0.22);
+  color: var(--tt-white);
+  content: "TalkTuit  â€¢  CRM";
+  font-family: var(--tt-font);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 9px 14px;
+  pointer-events: none;
+  position: fixed;
+  right: 18px;
+  top: 14px;
+  z-index: 2147482000;
+}
+
+body:not(.tt-brand-ready):has(
+    #sidebar-v2
+      :is(a.active, a.router-link-active, [aria-current="page"]):is(
+        [href*="contact" i],
+        [data-id*="contact" i]
+      )
+  )
+  :is(#app main, [role="main"], .hl_wrapper--inner, .hl_main-content) {
+  background:
+    radial-gradient(circle at 88% 8%, rgba(99, 198, 195, 0.2), transparent 28rem),
+    linear-gradient(135deg, #f2fbfb, #eef8f7) !important;
+  box-shadow: inset 0 4px 0 var(--tt-teal-deep);
+}
+
+body:not(.tt-brand-ready):has(
+    #sidebar-v2
+      :is(a.active, a.router-link-active, [aria-current="page"]):is(
+        [href*="contact" i],
+        [data-id*="contact" i]
+      )
+  )
+  :is(
+    table,
+    [role="table"],
+    [role="grid"],
+    .n-data-table,
+    [class*="contact" i][class*="table" i]
+  ) {
+  background: linear-gradient(180deg, #e7f8f7, #ffffff 10rem) !important;
+  border-color: rgba(41, 126, 123, 0.28) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--tt-shadow-sm);
+}
+
+body:not(.tt-brand-ready):has(
+    #sidebar-v2
+      :is(a.active, a.router-link-active, [aria-current="page"]):is(
+        [href*="opportunit" i],
+        [data-id*="opportunit" i],
+        [href*="pipeline" i],
+        [data-id*="pipeline" i]
+      )
+  )
+  :is(#app main, [role="main"], .hl_wrapper--inner, .hl_main-content) {
+  background:
+    radial-gradient(circle at 86% 8%, rgba(244, 121, 90, 0.17), transparent 28rem),
+    linear-gradient(135deg, #fff9f5, #f8f5f1) !important;
+  box-shadow: inset 0 4px 0 var(--tt-coral);
+}
+
+body:not(.tt-brand-ready):has(
+    #sidebar-v2
+      :is(a.active, a.router-link-active, [aria-current="page"]):is(
+        [href*="opportunit" i],
+        [data-id*="opportunit" i],
+        [href*="pipeline" i],
+        [data-id*="pipeline" i]
+      )
+  )
+  :is(
+    [class*="pipeline" i][class*="stage" i],
+    [class*="pipeline" i][class*="column" i],
+    [class*="kanban" i][class*="column" i]
+  ) {
+  background: linear-gradient(180deg, #fff0eb, #fffaf7) !important;
+  border: 1px solid rgba(244, 121, 90, 0.28) !important;
+  border-radius: 18px !important;
+}
+
+body:not(.tt-brand-ready):has(
+    #sidebar-v2
+      :is(a.active, a.router-link-active, [aria-current="page"]):is(
+        [href*="conversation" i],
+        [data-id*="conversation" i],
+        [href*="message" i],
+        [data-id*="message" i]
+      )
+  )
+  :is(#app main, [role="main"], .hl_wrapper--inner, .hl_main-content) {
+  background:
+    radial-gradient(circle at 86% 8%, rgba(18, 70, 99, 0.15), transparent 28rem),
+    linear-gradient(135deg, #f2f9fa, #edf4f8) !important;
+  box-shadow: inset 0 4px 0 var(--tt-navy);
+}
+
+body:not(.tt-brand-ready):has(
+    #sidebar-v2
+      :is(a.active, a.router-link-active, [aria-current="page"]):is(
+        [href*="conversation" i],
+        [data-id*="conversation" i],
+        [href*="message" i],
+        [data-id*="message" i]
+      )
+  )
+  :is(
+    [class*="conversation" i],
+    [class*="inbox" i],
+    [class*="message-list" i]
+  ) {
+  border-color: rgba(41, 126, 123, 0.24) !important;
+  box-shadow: inset 3px 0 0 rgba(99, 198, 195, 0.72);
 }
 
 html.tt-brand-root {
@@ -1284,19 +1522,36 @@ body.tt-brand-ready :is(.hl_login--body, .login-card) {
   color: var(--tt-white);
   cursor: pointer;
   display: flex;
+  gap: 9px;
   height: 48px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: auto;
-  padding: 0;
+  min-width: 124px;
+  padding: 0 15px 0 12px;
   transition:
     box-shadow var(--tt-motion),
     transform var(--tt-motion);
-  width: 48px;
+  width: auto;
 }
 
 #tt-theme-control .tt-theme-trigger:hover {
   box-shadow: 0 16px 38px rgba(11, 50, 75, 0.34);
   transform: translateY(-2px);
+}
+
+#tt-theme-control .tt-theme-trigger__label {
+  color: var(--tt-white);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#tt-theme-control
+  .tt-theme-trigger[data-tt-active-theme="focus"]
+  .tt-theme-trigger__label {
+  color: #a8e0de;
 }
 
 #tt-theme-control .tt-theme-panel {
@@ -1402,6 +1657,183 @@ body.tt-brand-ready :is(.hl_login--body, .login-card) {
 .tt-waveform > span:nth-child(4) {
   background: var(--tt-teal-deep);
   height: 9px;
+}
+
+/* Branded live CRM surfaces -------------------------------------------- */
+
+html[data-tt-theme="light"][data-tt-section="contacts"]
+  body.tt-brand-ready
+  .tt-live-workspace {
+  --tt-live-accent: var(--tt-teal-deep);
+  --tt-live-card-start: #e8f8f7;
+  --tt-live-card-end: #ffffff;
+  --tt-live-border: rgba(41, 126, 123, 0.3);
+}
+
+html[data-tt-theme="light"][data-tt-section="opportunities"]
+  body.tt-brand-ready
+  .tt-live-workspace {
+  --tt-live-accent: var(--tt-coral);
+  --tt-live-card-start: #fff0eb;
+  --tt-live-card-end: #fffaf7;
+  --tt-live-border: rgba(244, 121, 90, 0.3);
+}
+
+html[data-tt-theme="light"][data-tt-section="conversations"]
+  body.tt-brand-ready
+  .tt-live-workspace {
+  --tt-live-accent: var(--tt-navy);
+  --tt-live-card-start: #e9f5f6;
+  --tt-live-card-end: #f8fbfd;
+  --tt-live-border: rgba(41, 126, 123, 0.28);
+}
+
+html[data-tt-theme="light"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace {
+  background:
+    radial-gradient(
+      circle at 88% 7%,
+      color-mix(in srgb, var(--tt-live-accent) 18%, transparent),
+      transparent 28rem
+    ),
+    linear-gradient(135deg, #f3fafb, var(--tt-mist)) !important;
+  box-shadow: inset 0 4px 0 var(--tt-live-accent);
+  color: var(--tt-ink) !important;
+  min-height: calc(100vh - 64px);
+}
+
+html[data-tt-theme="light"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-surface,
+    .tt-live-contact-table,
+    .tt-live-contact-panel,
+    .tt-live-pipeline-stage,
+    .tt-live-opportunity-card,
+    .tt-live-conversation-panel,
+    table,
+    [role="table"],
+    [role="grid"],
+    [class*="card" i],
+    [class*="panel" i],
+    [class*="pane" i]
+  ):not([role="dialog"] *) {
+  background:
+    linear-gradient(
+      145deg,
+      var(--tt-live-card-start, #eef8f7),
+      var(--tt-live-card-end, #ffffff) 74%
+    ) !important;
+  border-color: var(--tt-live-border, var(--tt-border)) !important;
+  color: var(--tt-ink) !important;
+}
+
+html[data-tt-theme="light"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-surface,
+    .tt-live-contact-table,
+    .tt-live-contact-panel,
+    .tt-live-pipeline-stage,
+    .tt-live-opportunity-card,
+    .tt-live-conversation-panel,
+    table,
+    [role="table"],
+    [role="grid"],
+    [class*="card" i],
+    [class*="panel" i],
+    [class*="pane" i]
+  )
+  :is(h1, h2, h3, h4, h5, h6, p, span, div, td, th, label, small, strong):not(
+    button,
+    button *,
+    [role="button"],
+    [role="button"] *,
+    [class*="tag" i],
+    [class*="tag" i] *,
+    [class*="badge" i],
+    [class*="badge" i] *
+  ) {
+  color: var(--tt-ink) !important;
+}
+
+html[data-tt-theme="light"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-surface,
+    .tt-live-contact-table,
+    .tt-live-contact-panel,
+    .tt-live-pipeline-stage,
+    .tt-live-opportunity-card,
+    .tt-live-conversation-panel
+  )
+  a:not([role="button"], [class*="btn" i], [class*="button" i]) {
+  color: var(--tt-navy-deep) !important;
+}
+
+html[data-tt-theme="light"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(input, textarea, select, [contenteditable="true"]) {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-color: var(--tt-live-border, var(--tt-border)) !important;
+  color: var(--tt-ink) !important;
+}
+
+html[data-tt-theme="light"][data-tt-section="contacts"]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(table, [role="table"], [role="grid"], .tt-live-contact-table)
+  :is(th, [role="columnheader"]) {
+  background: linear-gradient(135deg, #d8f1f0, #eef9f8) !important;
+  color: var(--tt-navy-deep) !important;
+}
+
+html[data-tt-theme="light"][data-tt-section="contacts"]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(table, [role="table"], [role="grid"], .tt-live-contact-table)
+  :is(tbody tr:nth-child(even) td, [role="row"]:nth-child(even)) {
+  background: rgba(224, 244, 243, 0.48) !important;
+}
+
+html[data-tt-theme="light"][data-tt-section="opportunities"]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-opportunity-card,
+    [draggable="true"],
+    [role="listitem"],
+    [class*="opportunity" i],
+    [class*="card" i]
+  ):not([role="dialog"] *) {
+  background: linear-gradient(145deg, #ffffff, #ffe9e1) !important;
+  border: 1px solid rgba(244, 121, 90, 0.32) !important;
+  border-left: 4px solid var(--tt-coral) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 22px rgba(11, 50, 75, 0.1);
+  color: var(--tt-ink) !important;
+}
+
+html[data-tt-theme="light"][data-tt-section="conversations"]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-conversation-panel,
+    [class*="conversation" i],
+    [class*="inbox" i],
+    [class*="thread" i],
+    [class*="message-list" i],
+    [class*="pane" i],
+    [class*="panel" i]
+  ):not([role="dialog"] *) {
+  background: linear-gradient(145deg, #e4f4f3, #f8fbfd) !important;
+  border-color: rgba(41, 126, 123, 0.3) !important;
+  color: var(--tt-ink) !important;
 }
 
 /* Optional navy focus mode --------------------------------------------- */
@@ -1692,6 +2124,91 @@ html[data-tt-theme="focus"][data-tt-section="conversations"]
   color: #dce9ef;
 }
 
+html[data-tt-theme="focus"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace {
+  background:
+    radial-gradient(circle at 88% 7%, rgba(99, 198, 195, 0.14), transparent 28rem),
+    linear-gradient(135deg, #071f30, #0b324b) !important;
+  color: #dce9ef !important;
+}
+
+html[data-tt-theme="focus"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-surface,
+    .tt-live-contact-table,
+    .tt-live-contact-panel,
+    .tt-live-pipeline-stage,
+    .tt-live-opportunity-card,
+    .tt-live-conversation-panel,
+    table,
+    [role="table"],
+    [role="grid"],
+    [class*="card" i],
+    [class*="panel" i],
+    [class*="pane" i]
+  ):not([role="dialog"] *) {
+  background: linear-gradient(145deg, #124663, #0b324b) !important;
+  border-color: rgba(99, 198, 195, 0.3) !important;
+  color: #dce9ef !important;
+}
+
+html[data-tt-theme="focus"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-surface,
+    .tt-live-contact-table,
+    .tt-live-contact-panel,
+    .tt-live-pipeline-stage,
+    .tt-live-opportunity-card,
+    .tt-live-conversation-panel,
+    table,
+    [role="table"],
+    [role="grid"],
+    [class*="card" i],
+    [class*="panel" i],
+    [class*="pane" i]
+  )
+  :is(h1, h2, h3, h4, h5, h6, p, span, div, td, th, label, small, strong):not(
+    button,
+    button *,
+    [role="button"],
+    [role="button"] *,
+    [class*="tag" i],
+    [class*="tag" i] *,
+    [class*="badge" i],
+    [class*="badge" i] *
+  ) {
+  color: #dce9ef !important;
+}
+
+html[data-tt-theme="focus"][data-tt-section="opportunities"]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(
+    .tt-live-opportunity-card,
+    [draggable="true"],
+    [role="listitem"],
+    [class*="opportunity" i],
+    [class*="card" i]
+  ):not([role="dialog"] *) {
+  background: linear-gradient(145deg, #154f6d, #0b324b) !important;
+  border-color: rgba(244, 121, 90, 0.42) !important;
+  border-left: 4px solid var(--tt-coral) !important;
+}
+
+html[data-tt-theme="focus"][data-tt-section]
+  body.tt-brand-ready
+  .tt-live-workspace
+  :is(input, textarea, select, [contenteditable="true"]) {
+  background: #071f30 !important;
+  border-color: rgba(99, 198, 195, 0.35) !important;
+  color: var(--tt-white) !important;
+}
+
 /* Responsive and motion ------------------------------------------------ */
 
 @media (max-width: 720px) {
@@ -1713,7 +2230,9 @@ html[data-tt-theme="focus"][data-tt-section="conversations"]
 
   #tt-theme-control .tt-theme-trigger {
     height: 44px;
-    width: 44px;
+    min-width: 112px;
+    padding-inline: 11px 13px;
+    width: auto;
   }
 
   #tt-theme-control .tt-theme-panel {

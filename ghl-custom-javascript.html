@@ -1,0 +1,23 @@
+<!-- Paste this into Agency View > Settings > Company > Whitelabel > Custom JavaScript. -->
+<script>
+  window.TalkTuitGHLConfig = {
+    theme: "light",
+    persistTheme: true,
+    showThemeControl: true,
+    decorateOpportunityTags: true,
+    tagAliases: {
+      hot: ["hot", "hot lead"],
+      urgent: ["urgent", "emergency", "priority"],
+      new: ["new", "new lead"],
+      won: ["won", "closed won", "booked"],
+      "follow-up": ["follow up", "follow-up", "callback", "call back"],
+      cold: ["cold", "unqualified", "closed lost"]
+    }
+  };
+</script>
+<script
+  src="https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.0.0/talktuit-ghl.js"
+  data-user-id="{{user.id}}"
+  data-user-role="{{user.role}}"
+  data-user-type="{{user.type}}"
+></script>

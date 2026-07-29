@@ -3,7 +3,7 @@
 /*
  * TalkTuit GHL Customizer
  * Brand system: TalkTuit Brand Guidelines v1.0 (July 2026)
- * Version: 1.1.2
+ * Version: 1.2.0
  *
  * This file intentionally favors stable HighLevel classes/data attributes.
  * HighLevel can change its interface, so test after major platform updates.
@@ -94,7 +94,13 @@ body.tt-brand-ready :focus-visible {
 
 /* Sidebar --------------------------------------------------------------- */
 
-body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2) {
+body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2),
+body.tt-brand-ready.sidebar-v2-agency #sidebar-v2.default-bg-color,
+body.tt-brand-ready.sidebar-v2-location #sidebar-v2.default-bg-color,
+body.tt-brand-ready
+  :is(.sidebar-v2-agency, .sidebar-v2-location)
+  #sidebar-v2
+  .default-bg-color {
   background:
     linear-gradient(180deg, rgba(18, 70, 99, 0.22), transparent 30%),
     var(--tt-navy-deep) !important;
@@ -102,7 +108,7 @@ body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2) {
   box-shadow: 8px 0 24px rgba(11, 50, 75, 0.12);
 }
 
-body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2)::before {
+body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2)::before {
   background:
     linear-gradient(
       90deg,
@@ -120,7 +126,7 @@ body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2)::before {
   z-index: 3;
 }
 
-body.tt-brand-ready.tt-full-workspace
+body.tt-brand-ready
   :is(.hl_sidebar, #sidebar-v2)
   :is(.hl_navItem, a) {
   border-radius: 10px !important;
@@ -133,7 +139,7 @@ body.tt-brand-ready.tt-full-workspace
     transform var(--tt-motion);
 }
 
-body.tt-brand-ready.tt-full-workspace
+body.tt-brand-ready
   :is(.hl_sidebar, #sidebar-v2)
   :is(.hl_navItem, a):hover {
   background: rgba(99, 198, 195, 0.12) !important;
@@ -141,7 +147,7 @@ body.tt-brand-ready.tt-full-workspace
   transform: translateX(2px);
 }
 
-body.tt-brand-ready.tt-full-workspace
+body.tt-brand-ready
   :is(.hl_sidebar, #sidebar-v2)
   :is(
     .hl_navItem.active,
@@ -155,13 +161,62 @@ body.tt-brand-ready.tt-full-workspace
   color: var(--tt-white) !important;
 }
 
-body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2) svg {
+body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) svg {
   color: var(--tt-teal) !important;
   stroke-width: 2;
 }
 
-body.tt-brand-ready.tt-full-workspace :is(.hl_sidebar, #sidebar-v2) hr {
+body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) hr {
   border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+  :is(
+    body.tt-brand-ready.sidebar-v2-agency,
+    body.tt-brand-ready.sidebar-v2-location,
+    body.tt-brand-ready .sidebar-v2-agency,
+    body.tt-brand-ready .sidebar-v2-location
+  )
+  #sidebar-v2
+  :is(.hl_nav-header, .hl_nav-header-without-footer, .hl_nav-settings)
+  nav
+  a {
+  border-radius: 10px !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-family: var(--tt-font);
+  font-weight: 700;
+}
+
+  :is(
+    body.tt-brand-ready.sidebar-v2-agency,
+    body.tt-brand-ready.sidebar-v2-location,
+    body.tt-brand-ready .sidebar-v2-agency,
+    body.tt-brand-ready .sidebar-v2-location
+  )
+  #sidebar-v2
+  :is(.hl_nav-header, .hl_nav-header-without-footer, .hl_nav-settings)
+  nav
+  a:hover:not(.active) {
+  background: rgba(99, 198, 195, 0.14) !important;
+  color: var(--tt-white) !important;
+}
+
+  :is(
+    body.tt-brand-ready.sidebar-v2-agency,
+    body.tt-brand-ready.sidebar-v2-location,
+    body.tt-brand-ready .sidebar-v2-agency,
+    body.tt-brand-ready .sidebar-v2-location
+  )
+  #sidebar-v2
+  :is(.hl_nav-header, .hl_nav-header-without-footer, .hl_nav-settings)
+  nav
+  :is(a.active, a[aria-current="page"]) {
+  background: linear-gradient(
+    90deg,
+    rgba(99, 198, 195, 0.24),
+    rgba(18, 70, 99, 0.56)
+  ) !important;
+  box-shadow: inset 4px 0 0 var(--tt-coral);
+  color: var(--tt-white) !important;
 }
 
 /* Header ---------------------------------------------------------------- */
@@ -497,6 +552,7 @@ html[data-tt-section]
     .hl_wrapper--inner,
     .hl_main-content,
     .tt-section-workspace,
+    .tt-live-workspace,
     main
   ):not([role="dialog"] *) {
   background:
@@ -511,6 +567,63 @@ html[data-tt-section]
       var(--tt-mist) 64%
     ) !important;
   box-shadow: inset 0 4px 0 var(--tt-section-accent);
+}
+
+html[data-tt-section]
+  body.tt-brand-ready.tt-colorful-sections
+  .tt-live-workspace {
+  border-top: 4px solid var(--tt-section-accent) !important;
+  min-height: calc(100vh - 64px);
+  position: relative;
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  .tt-live-contact-table {
+  background:
+    linear-gradient(180deg, rgba(99, 198, 195, 0.18), transparent 9rem),
+    rgba(255, 255, 255, 0.94) !important;
+  border: 1px solid rgba(41, 126, 123, 0.28) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 30px rgba(11, 50, 75, 0.09);
+  overflow: hidden;
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  .tt-live-contact-panel {
+  background: linear-gradient(145deg, #dff4f3, #ffffff) !important;
+  border: 1px solid rgba(41, 126, 123, 0.25) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 12px 30px rgba(11, 50, 75, 0.1);
+}
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  .tt-live-pipeline-stage {
+  background: linear-gradient(180deg, #fff0eb, #fffaf7) !important;
+  border: 1px solid rgba(244, 121, 90, 0.28) !important;
+  border-radius: 18px !important;
+  box-shadow:
+    inset 0 4px 0 var(--tt-coral),
+    0 10px 24px rgba(11, 50, 75, 0.07);
+}
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  .tt-live-opportunity-card {
+  background: linear-gradient(145deg, #ffffff, #fff3ee) !important;
+  border: 1px solid rgba(244, 121, 90, 0.25) !important;
+  border-left: 4px solid var(--tt-coral) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 7px 18px rgba(11, 50, 75, 0.08);
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  .tt-live-conversation-panel {
+  border-color: rgba(41, 126, 123, 0.24) !important;
+  box-shadow: inset 3px 0 0 rgba(99, 198, 195, 0.72);
 }
 
 html[data-tt-section]
@@ -1078,6 +1191,79 @@ body.tt-brand-ready :is(.hl_login--body, .login-card) {
   box-shadow: var(--tt-shadow-card);
 }
 
+/* Persistent TalkTuit brand shell -------------------------------------- */
+
+#tt-brand-shell {
+  align-items: center;
+  background: linear-gradient(135deg, var(--tt-navy-deep), var(--tt-navy));
+  border: 1px solid rgba(99, 198, 195, 0.38);
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(11, 50, 75, 0.24);
+  color: var(--tt-white);
+  display: flex;
+  font-family: var(--tt-font);
+  gap: 9px;
+  height: 42px;
+  padding: 0 15px 0 11px;
+  pointer-events: none;
+  position: fixed;
+  right: 18px;
+  top: 11px;
+  z-index: 2147482998;
+}
+
+#tt-brand-shell::before {
+  background: linear-gradient(
+    90deg,
+    var(--tt-coral) 0 25%,
+    var(--tt-amber) 25% 50%,
+    var(--tt-teal) 50% 75%,
+    var(--tt-teal-deep) 75% 100%
+  );
+  content: "";
+  height: 4px;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#tt-brand-shell .tt-brand-shell__mark {
+  align-items: center;
+  display: inline-flex;
+}
+
+#tt-brand-shell .tt-brand-shell__name {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+#tt-brand-shell .tt-brand-shell__divider {
+  background: rgba(255, 255, 255, 0.24);
+  height: 18px;
+  width: 1px;
+}
+
+#tt-brand-shell .tt-brand-shell__section {
+  color: var(--tt-teal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+#tt-brand-shell[data-tt-shell-section="opportunities"]
+  .tt-brand-shell__section {
+  color: var(--tt-coral);
+}
+
+#tt-brand-shell[data-tt-shell-section="conversations"]
+  .tt-brand-shell__section {
+  color: #a8e0de;
+}
+
 /* TalkTuit theme control ------------------------------------------------ */
 
 #tt-theme-control {
@@ -1509,6 +1695,17 @@ html[data-tt-theme="focus"][data-tt-section="conversations"]
 /* Responsive and motion ------------------------------------------------ */
 
 @media (max-width: 720px) {
+  #tt-brand-shell {
+    height: 38px;
+    right: 8px;
+    top: 7px;
+  }
+
+  #tt-brand-shell .tt-brand-shell__name,
+  #tt-brand-shell .tt-brand-shell__divider {
+    display: none;
+  }
+
   #tt-theme-control {
     bottom: 12px;
     right: 12px;

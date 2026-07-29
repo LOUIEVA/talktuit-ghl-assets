@@ -29,8 +29,8 @@ The production assets are hosted from the public
 [`LOUIEVA/talktuit-ghl-assets`](https://github.com/LOUIEVA/talktuit-ghl-assets)
 repository through jsDelivr:
 
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.css`
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.js`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.css`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.js`
 
 1. In HighLevel, switch to Agency View and open `Settings > Company > Whitelabel`.
 2. Paste the contents of `ghl-custom-css.html` into Custom CSS.
@@ -58,9 +58,11 @@ URL and a screenshot so the affected HighLevel selectors can be updated.
 ## If a previous build makes the CRM look all white
 
 Clear both HighLevel Custom CSS and Custom JavaScript fields and save once. Then
-install v1.1.2 from the inline files. This release keeps
+install v1.2.0 from the inline files. This release keeps
 `fullWorkspaceTheme: false`, so GHL retains its native global layout while
 TalkTuit colors are added only to Contacts, Opportunities, and Conversations.
+It also adds a persistent TalkTuit brand strip and detects current GHL sidebar
+and CRM surfaces at runtime.
 
 ## Important rollout note
 
@@ -83,6 +85,7 @@ Set options before the external script:
     decorateOpportunityTags: true,
     colorfulSections: true,
     fullWorkspaceTheme: false,
+    brandShell: true,
     showLoadConfirmation: true
   };
 </script>
@@ -96,6 +99,7 @@ Options:
 - `decorateOpportunityTags`: styles recognized pipeline tags and their cards
 - `colorfulSections`: adds route-scoped color to Contacts, Opportunities, and Conversations; set to `false` for the neutral white workspace
 - `fullWorkspaceTheme`: opt-in repainting of global GHL surfaces; keep `false` for the safer route-scoped theme
+- `brandShell`: keeps the TalkTuit waveform, four-color strip, and current CRM section visible even when GHL changes internal component classes
 - `showLoadConfirmation`: briefly confirms that the JavaScript executed; turn it off after installation is verified
 - `tagAliases`: adds or replaces the text recognized for `hot`, `urgent`, `new`, `won`, `follow-up`, and `cold`
 - `debug`: prints diagnostic messages to the browser console
@@ -126,8 +130,8 @@ When updating the hosted files, create a new GitHub release tag and update both
 loader URLs. For example:
 
 ```text
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.css
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.js
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.css
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.2.0/talktuit-ghl.js
 ```
 
 ## Roll back

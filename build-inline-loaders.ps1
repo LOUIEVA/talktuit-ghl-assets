@@ -25,6 +25,7 @@ $jsBundle = @"
     decorateOpportunityTags: true,
     colorfulSections: true,
     fullWorkspaceTheme: false,
+    brandShell: true,
     showLoadConfirmation: true,
     tagAliases: {
       hot: ["hot", "hot lead"],
@@ -84,8 +85,8 @@ $cssSource
       }
     </style>
   </head>
-  <body>
-    <aside class="hl_sidebar">
+  <body class="sidebar-v2-location">
+    <aside class="hl_sidebar default-bg-color" id="sidebar-v2">
       <strong>TalkTuit</strong>
       <a class="hl_navItem active" href="#">Contacts</a>
       <a class="hl_navItem" href="#">Opportunities</a>
@@ -93,7 +94,7 @@ $cssSource
     </aside>
     <div class="tt-inline-workspace">
       <header class="hl_topHeader"><strong>North Shore Plumbing</strong></header>
-      <main class="tt-section-workspace">
+      <main class="tt-section-workspace" role="main">
         <section class="tt-inline-heading">
           <div><h1>Contacts</h1><p>Self-contained GHL installation test</p></div>
           <button class="tt-primary-action">Add contact</button>
@@ -129,6 +130,7 @@ $cssSource
         showThemeControl: true,
         colorfulSections: true,
         fullWorkspaceTheme: false,
+        brandShell: true,
         showLoadConfirmation: true
       };
 $jsSource

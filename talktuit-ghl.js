@@ -1,6 +1,6 @@
 /*
  * TalkTuit GHL Customizer
- * Version: 1.1.2
+ * Version: 1.2.0
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -14,7 +14,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.1.2";
+  var VERSION = "1.2.0";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||
@@ -38,6 +38,7 @@
     decorateOpportunityTags: true,
     colorfulSections: true,
     fullWorkspaceTheme: false,
+    brandShell: true,
     showLoadConfirmation: false,
     tagAliases: DEFAULT_TAG_ALIASES,
     debug: false
@@ -75,6 +76,11 @@
       globalConfig.fullWorkspaceTheme,
       DEFAULTS.fullWorkspaceTheme
     ),
+    brandShell: readBoolean(
+      scriptData.brandShell,
+      globalConfig.brandShell,
+      DEFAULTS.brandShell
+    ),
     showLoadConfirmation: readBoolean(
       scriptData.showLoadConfirmation,
       globalConfig.showLoadConfirmation,
@@ -94,6 +100,8 @@
 
   var observer = null;
   var refreshTimer = null;
+  var routeTimer = null;
+  var lastLocationHref = "";
   var tagLookup = buildTagLookup(config.tagAliases);
 
   function isPlainObject(value) {
@@ -350,6 +358,56 @@
     }, 6500);
   }
 
+  function sectionLabel(section) {
+    if (section === "contacts") {
+      return "Contacts";
+    }
+
+    if (section === "opportunities") {
+      return "Opportunities";
+    }
+
+    if (section === "conversations") {
+      return "Conversations";
+    }
+
+    return "CRM";
+  }
+
+  function createBrandShell() {
+    if (!config.brandShell || document.getElementById("tt-brand-shell")) {
+      return;
+    }
+
+    var shell = document.createElement("div");
+    shell.id = "tt-brand-shell";
+    shell.setAttribute("aria-label", "TalkTuit branded CRM");
+    shell.innerHTML =
+      '<span class="tt-brand-shell__mark">' +
+      waveformMarkup() +
+      "</span>" +
+      '<span class="tt-brand-shell__name">TalkTuit</span>' +
+      '<span class="tt-brand-shell__divider" aria-hidden="true"></span>' +
+      '<span class="tt-brand-shell__section">CRM</span>';
+
+    document.body.appendChild(shell);
+  }
+
+  function syncBrandShell(section) {
+    var shell = document.getElementById("tt-brand-shell");
+
+    if (!shell) {
+      return;
+    }
+
+    shell.dataset.ttShellSection = section || "crm";
+
+    var label = shell.querySelector(".tt-brand-shell__section");
+    if (label) {
+      label.textContent = sectionLabel(section);
+    }
+  }
+
   function normalizeTag(value) {
     return String(value || "")
       .trim()
@@ -483,6 +541,181 @@
     return "";
   }
 
+  function getRouteSignal() {
+    var signals = [
+      window.location.pathname || "",
+      window.location.hash || "",
+      window.location.search || "",
+      document.title || ""
+    ];
+    var activeSelectors = [
+      ".sidebar-v2-location #sidebar-v2 a.active",
+      ".sidebar-v2-location #sidebar-v2 [aria-current=\"page\"]",
+      ".sidebar-v2-agency #sidebar-v2 a.active",
+      ".sidebar-v2-agency #sidebar-v2 [aria-current=\"page\"]",
+      "#sidebar-v2 a.active",
+      "#sidebar-v2 [aria-current=\"page\"]",
+      "main h1",
+      '[role="main"] h1',
+      '[role="heading"][aria-level="1"]'
+    ];
+
+    for (var index = 0; index < activeSelectors.length; index += 1) {
+      var element = document.querySelector(activeSelectors[index]);
+
+      if (element && element.textContent) {
+        signals.push(element.textContent.trim());
+      }
+    }
+
+    return toSlug(signals.join(" "));
+  }
+
+  function isUsableSurface(element, minimumWidth, minimumHeight) {
+    if (!element || element.closest('[role="dialog"]')) {
+      return false;
+    }
+
+    var bounds = element.getBoundingClientRect();
+    var style = window.getComputedStyle(element);
+
+    return Boolean(
+      style.display !== "none" &&
+        style.visibility !== "hidden" &&
+        bounds.width >= (minimumWidth || 120) &&
+        bounds.height >= (minimumHeight || 40)
+    );
+  }
+
+  function findWorkspaceRoot() {
+    var selectors = [
+      "#app main",
+      '[role="main"]',
+      ".hl_wrapper--inner",
+      ".hl_main-content",
+      ".hl-wrapper-container",
+      "main"
+    ];
+    var bestMatch = null;
+    var bestArea = 0;
+
+    for (var index = 0; index < selectors.length; index += 1) {
+      var candidates = document.querySelectorAll(selectors[index]);
+
+      for (var candidateIndex = 0; candidateIndex < candidates.length; candidateIndex += 1) {
+        var candidate = candidates[candidateIndex];
+
+        if (
+          candidate.closest("#sidebar-v2, .hl_sidebar, [role=\"dialog\"]") ||
+          !isUsableSurface(candidate, 360, 220)
+        ) {
+          continue;
+        }
+
+        var bounds = candidate.getBoundingClientRect();
+        var area = bounds.width * bounds.height;
+
+        if (area > bestArea) {
+          bestMatch = candidate;
+          bestArea = area;
+        }
+      }
+    }
+
+    return bestMatch;
+  }
+
+  function markVisibleMatches(root, selector, className, width, height) {
+    var matches = root.querySelectorAll(selector);
+
+    Array.prototype.forEach.call(matches, function markMatch(element) {
+      if (isUsableSurface(element, width, height)) {
+        element.classList.add(className);
+      }
+    });
+  }
+
+  function markLiveSurfaces(section) {
+    var oldWorkspace = document.querySelector(".tt-live-workspace");
+
+    if (oldWorkspace) {
+      oldWorkspace.classList.remove("tt-live-workspace");
+      oldWorkspace.removeAttribute("data-tt-live-section");
+    }
+
+    Array.prototype.forEach.call(
+      document.querySelectorAll(
+        ".tt-live-contact-table, .tt-live-contact-panel, .tt-live-pipeline-stage, .tt-live-opportunity-card, .tt-live-conversation-panel"
+      ),
+      function clearLiveMarker(element) {
+        element.classList.remove(
+          "tt-live-contact-table",
+          "tt-live-contact-panel",
+          "tt-live-pipeline-stage",
+          "tt-live-opportunity-card",
+          "tt-live-conversation-panel"
+        );
+      }
+    );
+
+    if (!section) {
+      return;
+    }
+
+    var workspace = findWorkspaceRoot();
+
+    if (!workspace) {
+      return;
+    }
+
+    workspace.classList.add("tt-live-workspace");
+    workspace.dataset.ttLiveSection = section;
+
+    if (section === "contacts") {
+      markVisibleMatches(
+        workspace,
+        'table, [role="table"], [role="grid"], .n-data-table, [class*="contact" i][class*="table" i], [data-testid*="contact-list" i]',
+        "tt-live-contact-table",
+        300,
+        100
+      );
+      markVisibleMatches(
+        workspace,
+        '[class*="contact" i][class*="detail" i], [class*="contact" i][class*="panel" i], [data-testid*="contact-detail" i]',
+        "tt-live-contact-panel",
+        220,
+        140
+      );
+    }
+
+    if (section === "opportunities") {
+      markVisibleMatches(
+        workspace,
+        '[class*="pipeline" i][class*="column" i], [class*="pipeline" i][class*="stage" i], [class*="kanban" i][class*="column" i], [data-testid*="pipeline-stage" i]',
+        "tt-live-pipeline-stage",
+        160,
+        180
+      );
+      markVisibleMatches(
+        workspace,
+        '[draggable="true"], [class*="opportunity" i][class*="card" i], [class*="pipeline" i][class*="card" i], [class*="kanban" i][class*="card" i], [data-testid*="opportunity-card" i]',
+        "tt-live-opportunity-card",
+        140,
+        50
+      );
+    }
+
+    if (section === "conversations") {
+      markVisibleMatches(
+        workspace,
+        '[class*="conversation" i], [class*="inbox" i], [class*="message-list" i], [class*="chat-body" i], [data-testid*="conversation" i]',
+        "tt-live-conversation-panel",
+        160,
+        100
+      );
+    }
+  }
+
   function markRoute() {
     var route = toSlug(
       decodeURIComponent(
@@ -493,7 +726,7 @@
         ].join(" ")
       ) || "home"
     );
-    var section = detectSection(route);
+    var section = detectSection(getRouteSignal() || route);
     var root = document.documentElement;
 
     root.dataset.ttRoute = route || "home";
@@ -503,6 +736,9 @@
     } else {
       root.removeAttribute("data-tt-section");
     }
+
+    syncBrandShell(section);
+    markLiveSurfaces(section);
   }
 
   function refresh(root) {
@@ -525,6 +761,7 @@
       "tt-full-workspace",
       config.fullWorkspaceTheme
     );
+    createBrandShell();
     markRoute();
     decorateOpportunityTags(root || document);
   }
@@ -571,6 +808,14 @@
     window.addEventListener("hashchange", function onHashNavigation() {
       scheduleRefresh(document);
     });
+
+    lastLocationHref = window.location.href;
+    routeTimer = window.setInterval(function checkApplicationRoute() {
+      if (window.location.href !== lastLocationHref) {
+        lastLocationHref = window.location.href;
+        scheduleRefresh(document);
+      }
+    }, 900);
   }
 
   function init() {
@@ -608,6 +853,7 @@
       }
 
       window.clearTimeout(refreshTimer);
+      window.clearInterval(routeTimer);
 
       var control = document.getElementById("tt-theme-control");
       if (control) {
@@ -617,6 +863,11 @@
       var loadConfirmation = document.getElementById("tt-load-confirmation");
       if (loadConfirmation) {
         loadConfirmation.remove();
+      }
+
+      var brandShell = document.getElementById("tt-brand-shell");
+      if (brandShell) {
+        brandShell.remove();
       }
 
       document.documentElement.classList.remove("tt-brand-root");

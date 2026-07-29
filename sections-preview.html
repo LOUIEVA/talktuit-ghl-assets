@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en" data-tt-preview-section="contacts">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TalkTuit GHL Sections Preview</title>
+    <script>
+      (function setPreviewSection() {
+        var requested = new URLSearchParams(window.location.search).get("section");
+        var allowed = ["contacts", "opportunities", "conversations"];
+
+        if (allowed.indexOf(requested) !== -1) {
+          document.documentElement.dataset.ttPreviewSection = requested;
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="./talktuit-ghl.css" />
+    <link rel="stylesheet" href="./sections-preview.css" />
+  </head>
+  <body>
+    <div class="tt-sections-shell">
+      <aside class="hl_sidebar tt-sections-sidebar">
+        <a class="tt-sections-brand" href="./sections-preview.html">
+          <span class="tt-sections-wave" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </span>
+          <strong>TalkTuit</strong>
+        </a>
+        <nav aria-label="Preview sections">
+          <a class="hl_navItem tt-nav-contacts" href="?section=contacts">Contacts</a>
+          <a
+            class="hl_navItem tt-nav-opportunities"
+            href="?section=opportunities"
+          >
+            Opportunities
+          </a>
+          <a
+            class="hl_navItem tt-nav-conversations"
+            href="?section=conversations"
+          >
+            Conversations
+          </a>
+        </nav>
+      </aside>
+
+      <div class="tt-sections-workspace">
+        <header class="hl_topHeader tt-sections-header">
+          <div>
+            <small>TalkTuit Voice CRM</small>
+            <strong>North Shore Plumbing</strong>
+          </div>
+          <span class="tt-sections-user">SP</span>
+        </header>
+
+        <main class="tt-section-workspace">
+          <section class="tt-section-demo tt-contacts-demo">
+            <div class="tt-section-heading">
+              <div>
+                <p>People and callers</p>
+                <h1>Contacts</h1>
+                <span>Warm color cues make lists easier to scan.</span>
+              </div>
+              <button class="tt-primary-action">Add contact</button>
+            </div>
+
+            <div class="tt-contact-toolbar" aria-label="Contact filters">
+              <button class="tt-contact-filter">All contacts</button>
+              <button class="tt-contact-filter">New callers</button>
+              <button class="tt-contact-filter">Needs follow-up</button>
+            </div>
+
+            <div class="tt-contacts-layout">
+              <table class="hl-table tt-contact-table">
+                <thead>
+                  <tr>
+                    <th>Contact</th>
+                    <th>Last call</th>
+                    <th>Status</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="selected">
+                    <td>
+                      <span class="tt-contact-name">
+                        <span class="tt-contact-avatar">ME</span>
+                        <span><strong>Maya Evans</strong><small>Boiler repair</small></span>
+                      </span>
+                    </td>
+                    <td>8 minutes ago</td>
+                    <td><span class="tt-tag tt-tag--hot">Hot lead</span></td>
+                    <td class="amount">$1,250</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="tt-contact-name">
+                        <span class="tt-contact-avatar">PS</span>
+                        <span><strong>Peter Shaw</strong><small>Water heater</small></span>
+                      </span>
+                    </td>
+                    <td>42 minutes ago</td>
+                    <td><span class="tt-tag tt-tag--new">New</span></td>
+                    <td class="amount">$680</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="tt-contact-name">
+                        <span class="tt-contact-avatar">AC</span>
+                        <span><strong>Ava Chen</strong><small>Leak inspection</small></span>
+                      </span>
+                    </td>
+                    <td>Yesterday</td>
+                    <td><span class="tt-tag tt-tag--won">Booked</span></td>
+                    <td class="amount">$320</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <aside class="tt-contact-detail">
+                <div class="tt-contact-detail-head">
+                  <span class="tt-contact-avatar">ME</span>
+                  <div><h2>Maya Evans</h2><p>High-intent caller</p></div>
+                </div>
+                <dl>
+                  <div><dt>Phone</dt><dd>(310) 555-0184</dd></div>
+                  <div><dt>Last intent</dt><dd>No hot water</dd></div>
+                  <div><dt>AI outcome</dt><dd>Estimate requested</dd></div>
+                </dl>
+                <button class="tt-secondary-action">Open contact</button>
+              </aside>
+            </div>
+          </section>
+
+          <section class="tt-section-demo tt-opportunities-demo">
+            <div class="tt-section-heading">
+              <div>
+                <p>Sales pipeline</p>
+                <h1>Opportunities</h1>
+                <span>Every stage has a subtle color signal.</span>
+              </div>
+              <button class="tt-primary-action">New opportunity</button>
+            </div>
+
+            <div class="tt-pipeline-board">
+              <section class="tt-pipeline-column">
+                <header class="tt-pipeline-header">
+                  <span>New leads</span><b>3</b>
+                </header>
+                <article class="opportunity-card tt-demo-opportunity">
+                  <div><strong>Maya Evans</strong><span class="tt-tag tt-demo-tag">Hot</span></div>
+                  <p>Boiler replacement</p><small>$1,250 · 8 min ago</small>
+                </article>
+                <article class="opportunity-card tt-demo-opportunity">
+                  <div><strong>Peter Shaw</strong><span class="tt-tag tt-demo-tag">New</span></div>
+                  <p>Water heater repair</p><small>$680 · 42 min ago</small>
+                </article>
+              </section>
+              <section class="tt-pipeline-column">
+                <header class="tt-pipeline-header">
+                  <span>Follow up</span><b>5</b>
+                </header>
+                <article class="opportunity-card tt-demo-opportunity">
+                  <div><strong>Noah Williams</strong><span class="tt-tag tt-demo-tag">Follow up</span></div>
+                  <p>Kitchen re-pipe</p><small>$2,400 · Today</small>
+                </article>
+                <article class="opportunity-card tt-demo-opportunity">
+                  <div><strong>Grace Liu</strong><span class="tt-tag tt-demo-tag">Urgent</span></div>
+                  <p>Burst pipe</p><small>$980 · 4 min ago</small>
+                </article>
+              </section>
+              <section class="tt-pipeline-column">
+                <header class="tt-pipeline-header">
+                  <span>Booked</span><b>8</b>
+                </header>
+                <article class="opportunity-card tt-demo-opportunity">
+                  <div><strong>Ava Chen</strong><span class="tt-tag tt-demo-tag">Won</span></div>
+                  <p>Leak inspection</p><small>$320 · Tomorrow</small>
+                </article>
+                <article class="opportunity-card tt-demo-opportunity">
+                  <div><strong>Leo Walker</strong><span class="tt-tag tt-demo-tag">Won</span></div>
+                  <p>Drain clearing</p><small>$260 · Friday</small>
+                </article>
+              </section>
+            </div>
+          </section>
+
+          <section class="tt-section-demo tt-conversations-demo">
+            <div class="tt-section-heading">
+              <div>
+                <p>Customer inbox</p>
+                <h1>Conversations</h1>
+                <span>Selected threads and message direction are instantly clear.</span>
+              </div>
+              <button class="tt-primary-action">Start conversation</button>
+            </div>
+
+            <div class="tt-conversation-shell">
+              <aside class="tt-conversation-list">
+                <div class="tt-conversation-search">Search conversations</div>
+                <article class="tt-conversation-item active">
+                  <span class="tt-contact-avatar">ME</span>
+                  <div><strong>Maya Evans</strong><p>Yes, tomorrow morning works.</p></div>
+                  <small>2m</small>
+                </article>
+                <article class="tt-conversation-item">
+                  <span class="tt-contact-avatar">PS</span>
+                  <div><strong>Peter Shaw</strong><p>Can you send the estimate?</p></div>
+                  <small>18m</small>
+                </article>
+                <article class="tt-conversation-item">
+                  <span class="tt-contact-avatar">AC</span>
+                  <div><strong>Ava Chen</strong><p>Thank you for the update.</p></div>
+                  <small>1h</small>
+                </article>
+              </aside>
+
+              <section class="tt-chat-panel">
+                <header class="tt-chat-header">
+                  <span class="tt-contact-avatar">ME</span>
+                  <div><strong>Maya Evans</strong><small>SMS · Active now</small></div>
+                </header>
+                <div class="tt-message-thread">
+                  <div class="tt-message-bubble tt-message-incoming">
+                    The boiler stopped heating overnight. Can someone come tomorrow?
+                    <small>8:31 AM</small>
+                  </div>
+                  <div class="tt-message-bubble tt-message-outgoing">
+                    Absolutely. We have an 8:30 AM appointment available.
+                    <small>8:32 AM · TalkTuit AI</small>
+                  </div>
+                  <div class="tt-message-bubble tt-message-incoming">
+                    Yes, tomorrow morning works. Thank you!
+                    <small>8:33 AM</small>
+                  </div>
+                </div>
+                <div class="tt-message-composer">
+                  <span>Write a message…</span>
+                  <button class="tt-primary-action">Send</button>
+                </div>
+              </section>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      window.TalkTuitGHLConfig = {
+        showThemeControl: true,
+        persistTheme: false,
+        colorfulSections: true
+      };
+    </script>
+    <script src="./talktuit-ghl.js"></script>
+  </body>
+</html>

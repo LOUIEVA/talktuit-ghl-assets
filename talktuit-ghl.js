@@ -1,6 +1,6 @@
 /*
  * TalkTuit GHL Customizer
- * Version: 1.0.0
+ * Version: 1.1.0
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -14,7 +14,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.0.0";
+  var VERSION = "1.1.0";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||
@@ -36,6 +36,7 @@
     persistTheme: true,
     showThemeControl: true,
     decorateOpportunityTags: true,
+    colorfulSections: true,
     tagAliases: DEFAULT_TAG_ALIASES,
     debug: false
   };
@@ -61,6 +62,11 @@
       scriptData.decorateOpportunityTags,
       globalConfig.decorateOpportunityTags,
       DEFAULTS.decorateOpportunityTags
+    ),
+    colorfulSections: readBoolean(
+      scriptData.colorfulSections,
+      globalConfig.colorfulSections,
+      DEFAULTS.colorfulSections
     ),
     debug: readBoolean(
       scriptData.debug,
@@ -388,14 +394,57 @@
     });
   }
 
-  function markRoute() {
-    var route = window.location.pathname
-      .split("/")
-      .filter(Boolean)
-      .slice(-2)
-      .join("-");
+  function detectSection(route) {
+    var previewSection = toSlug(
+      document.documentElement.dataset.ttPreviewSection || ""
+    );
 
-    document.documentElement.dataset.ttRoute = toSlug(route || "home");
+    if (
+      previewSection === "contacts" ||
+      previewSection === "opportunities" ||
+      previewSection === "conversations"
+    ) {
+      return previewSection;
+    }
+
+    var sectionMatchers = [
+      {
+        name: "conversations",
+        pattern: /(^|-)(conversations?|messages?|inbox)($|-)/
+      },
+      {
+        name: "opportunities",
+        pattern: /(^|-)(opportunities|opportunity|pipelines?|kanban)($|-)/
+      },
+      {
+        name: "contacts",
+        pattern: /(^|-)(contacts?|smart-list|smartlist)($|-)/
+      }
+    ];
+
+    for (var index = 0; index < sectionMatchers.length; index += 1) {
+      if (sectionMatchers[index].pattern.test(route)) {
+        return sectionMatchers[index].name;
+      }
+    }
+
+    return "";
+  }
+
+  function markRoute() {
+    var route = toSlug(
+      decodeURIComponent(window.location.pathname || "home")
+    );
+    var section = detectSection(route);
+    var root = document.documentElement;
+
+    root.dataset.ttRoute = route || "home";
+
+    if (section) {
+      root.dataset.ttSection = section;
+    } else {
+      root.removeAttribute("data-tt-section");
+    }
   }
 
   function refresh(root) {
@@ -406,6 +455,10 @@
     document.documentElement.classList.add("tt-brand-root");
     document.documentElement.dataset.ttBrandVersion = VERSION;
     document.body.classList.add("tt-brand-ready");
+    document.body.classList.toggle(
+      "tt-colorful-sections",
+      config.colorfulSections
+    );
     markRoute();
     decorateOpportunityTags(root || document);
   }
@@ -446,6 +499,10 @@
     });
 
     window.addEventListener("popstate", function onHistoryNavigation() {
+      scheduleRefresh(document);
+    });
+
+    window.addEventListener("hashchange", function onHashNavigation() {
       scheduleRefresh(document);
     });
   }
@@ -492,9 +549,14 @@
 
       document.documentElement.classList.remove("tt-brand-root");
       document.documentElement.removeAttribute("data-tt-theme");
+      document.documentElement.removeAttribute("data-tt-route");
+      document.documentElement.removeAttribute("data-tt-section");
 
       if (document.body) {
-        document.body.classList.remove("tt-brand-ready");
+        document.body.classList.remove(
+          "tt-brand-ready",
+          "tt-colorful-sections"
+        );
       }
     }
   };

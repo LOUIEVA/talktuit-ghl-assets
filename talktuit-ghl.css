@@ -1,7 +1,7 @@
 /*
  * TalkTuit GHL Customizer
  * Brand system: TalkTuit Brand Guidelines v1.0 (July 2026)
- * Version: 1.0.0
+ * Version: 1.1.0
  *
  * This file intentionally favors stable HighLevel classes/data attributes.
  * HighLevel can change its interface, so test after major platform updates.
@@ -451,6 +451,468 @@ body.tt-brand-ready
   transform: translateY(-2px);
 }
 
+/* Colorful CRM sections ------------------------------------------------ */
+
+html[data-tt-section="contacts"] body.tt-brand-ready.tt-colorful-sections {
+  --tt-section-accent: var(--tt-teal-deep);
+  --tt-section-soft: var(--tt-teal-soft);
+  --tt-section-wash: #f0fafa;
+  background:
+    radial-gradient(circle at 88% 8%, rgba(99, 198, 195, 0.18), transparent 28rem),
+    linear-gradient(135deg, #f5fbfc 0%, var(--tt-mist) 55%, #eef8f7 100%);
+}
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections {
+  --tt-section-accent: var(--tt-coral);
+  --tt-section-soft: var(--tt-coral-soft);
+  --tt-section-wash: #fff7f2;
+  background:
+    radial-gradient(circle at 84% 7%, rgba(244, 121, 90, 0.14), transparent 26rem),
+    linear-gradient(135deg, #f7fbfc 0%, #f9f6f2 100%);
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections {
+  --tt-section-accent: var(--tt-navy);
+  --tt-section-soft: var(--tt-teal-soft);
+  --tt-section-wash: #edf7f8;
+  background:
+    radial-gradient(circle at 86% 9%, rgba(18, 70, 99, 0.13), transparent 28rem),
+    linear-gradient(135deg, #f2f9fa 0%, #edf4f8 100%);
+}
+
+html[data-tt-section]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl_wrapper--inner,
+    .hl_main-content,
+    .tt-section-workspace,
+    main
+  ):not([role="dialog"] *) {
+  background-color: transparent !important;
+}
+
+html[data-tt-section]
+  body.tt-brand-ready.tt-colorful-sections
+  .hl_topHeader {
+  border-bottom-color: color-mix(
+    in srgb,
+    var(--tt-section-accent) 22%,
+    var(--tt-border)
+  ) !important;
+  box-shadow: 0 5px 22px rgba(11, 50, 75, 0.08);
+}
+
+/* Contacts */
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  ):not([role="dialog"] *) {
+  background:
+    linear-gradient(180deg, rgba(99, 198, 195, 0.09), transparent 9rem),
+    var(--tt-white);
+  border-color: rgba(41, 126, 123, 0.22);
+  box-shadow: 0 10px 30px rgba(11, 50, 75, 0.08);
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  :is(th, [role="columnheader"]) {
+  background: linear-gradient(135deg, #dff4f3, #eff9f9) !important;
+  border-bottom-color: rgba(41, 126, 123, 0.2);
+  color: var(--tt-navy-deep);
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  tbody
+  tr:nth-child(odd)
+  td {
+  background: rgba(245, 249, 252, 0.58);
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  tbody
+  tr:nth-child(even)
+  td {
+  background: rgba(233, 248, 247, 0.58);
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  tbody
+  tr
+  td:first-child {
+  border-left: 3px solid transparent;
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  tbody
+  :is(tr:hover, tr.active, tr.selected, tr[aria-selected="true"])
+  td {
+  background: #dff4f3 !important;
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  tbody
+  :is(tr:hover, tr.active, tr.selected, tr[aria-selected="true"])
+  td:first-child {
+  border-left-color: var(--tt-teal-deep);
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl_contact--details,
+    .hl_contact-details,
+    .contact-details,
+    .contact-detail,
+    .contact-card,
+    .tt-contact-detail,
+    [data-testid*="contact-detail"],
+    [data-testid*="contact-card"]
+  ):not([role="dialog"] *) {
+  background:
+    linear-gradient(145deg, rgba(233, 248, 247, 0.92), rgba(255, 255, 255, 0.94)),
+    var(--tt-white) !important;
+  border: 1px solid rgba(41, 126, 123, 0.2) !important;
+  border-radius: var(--tt-radius-card) !important;
+  box-shadow: var(--tt-shadow-card);
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .contact-avatar,
+    .hl_avatar,
+    .tt-contact-avatar,
+    [data-testid*="contact-avatar"]
+  ) {
+  align-items: center;
+  background: linear-gradient(135deg, var(--tt-navy), var(--tt-teal-deep));
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  border-radius: 999px;
+  box-shadow: 0 5px 14px rgba(11, 50, 75, 0.18);
+  color: var(--tt-white);
+  display: inline-flex;
+  font-weight: 800;
+  justify-content: center;
+}
+
+html[data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .contact-filter,
+    .filter-chip,
+    .tt-contact-filter,
+    [data-testid*="contact-filter"]
+  ) {
+  background: var(--tt-teal-soft) !important;
+  border: 1px solid rgba(41, 126, 123, 0.22) !important;
+  border-radius: 999px !important;
+  color: var(--tt-teal-deep) !important;
+  font-weight: 800;
+}
+
+/* Opportunities */
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .pipeline-column,
+    .opportunity-column,
+    .pipeline-stage,
+    .tt-pipeline-column,
+    [data-testid*="pipeline-stage"]
+  ):not([role="dialog"] *) {
+  background: linear-gradient(180deg, #fff6f2, #fffaf7) !important;
+  border: 1px solid rgba(244, 121, 90, 0.18) !important;
+  border-radius: 18px !important;
+  box-shadow:
+    inset 0 4px 0 var(--tt-coral),
+    0 8px 24px rgba(11, 50, 75, 0.06);
+}
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .pipeline-column,
+    .opportunity-column,
+    .pipeline-stage,
+    .tt-pipeline-column,
+    [data-testid*="pipeline-stage"]
+  ):nth-child(3n + 2) {
+  background: linear-gradient(180deg, #fff8e9, #fffcf5) !important;
+  border-color: rgba(236, 168, 59, 0.22) !important;
+  box-shadow:
+    inset 0 4px 0 var(--tt-amber),
+    0 8px 24px rgba(11, 50, 75, 0.06);
+}
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .pipeline-column,
+    .opportunity-column,
+    .pipeline-stage,
+    .tt-pipeline-column,
+    [data-testid*="pipeline-stage"]
+  ):nth-child(3n) {
+  background: linear-gradient(180deg, #eaf8f7, #f7fcfc) !important;
+  border-color: rgba(41, 126, 123, 0.2) !important;
+  box-shadow:
+    inset 0 4px 0 var(--tt-teal-deep),
+    0 8px 24px rgba(11, 50, 75, 0.06);
+}
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .opportunity-card,
+    .pipeline-card,
+    .tt-demo-opportunity,
+    [data-testid*="opportunity-card"]
+  ) {
+  background-color: rgba(255, 255, 255, 0.88);
+  border-color: rgba(18, 70, 99, 0.15) !important;
+  backdrop-filter: blur(8px);
+}
+
+html[data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .pipeline-column,
+    .opportunity-column,
+    .pipeline-stage,
+    .tt-pipeline-column,
+    [data-testid*="pipeline-stage"]
+  )
+  :is(
+    .pipeline-header,
+    .stage-header,
+    .tt-pipeline-header,
+    [data-testid*="stage-header"]
+  ) {
+  color: var(--tt-navy-deep);
+  font-weight: 800;
+}
+
+/* Conversations */
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl_conversations,
+    .conversation-container,
+    .conversations-container,
+    .tt-conversation-shell,
+    [data-testid*="conversation-container"]
+  ):not([role="dialog"] *) {
+  background:
+    linear-gradient(135deg, rgba(233, 248, 247, 0.96), rgba(245, 249, 252, 0.94)),
+    var(--tt-mist) !important;
+  border: 1px solid rgba(41, 126, 123, 0.18) !important;
+  border-radius: var(--tt-radius-card) !important;
+  box-shadow: var(--tt-shadow-card);
+  overflow: hidden;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-list,
+    .conversations-list,
+    .tt-conversation-list,
+    [data-testid*="conversation-list"]
+  ) {
+  background: linear-gradient(180deg, #eff9f9, #f7fbfc) !important;
+  border-right: 1px solid rgba(41, 126, 123, 0.18) !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-item,
+    .conversation-list-item,
+    .tt-conversation-item,
+    [data-testid*="conversation-item"]
+  ) {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border-bottom: 1px solid rgba(41, 126, 123, 0.12) !important;
+  border-left: 4px solid transparent !important;
+  transition:
+    background-color var(--tt-motion),
+    border-color var(--tt-motion),
+    transform var(--tt-motion);
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-item,
+    .conversation-list-item,
+    .tt-conversation-item,
+    [data-testid*="conversation-item"]
+  ):hover {
+  background: #dff4f3 !important;
+  border-left-color: var(--tt-teal) !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-item.active,
+    .conversation-item.selected,
+    .conversation-list-item.active,
+    .tt-conversation-item.active,
+    [data-testid*="conversation-item"][aria-selected="true"]
+  ) {
+  background: linear-gradient(135deg, var(--tt-navy-deep), var(--tt-navy)) !important;
+  border-left-color: var(--tt-coral) !important;
+  box-shadow: 0 8px 22px rgba(11, 50, 75, 0.2);
+  color: var(--tt-white) !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-item.active,
+    .conversation-item.selected,
+    .conversation-list-item.active,
+    .tt-conversation-item.active,
+    [data-testid*="conversation-item"][aria-selected="true"]
+  )
+  * {
+  color: inherit !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-messages,
+    .message-thread,
+    .chat-body,
+    .tt-message-thread,
+    [data-testid*="message-thread"]
+  ) {
+  background:
+    radial-gradient(circle at 90% 5%, rgba(99, 198, 195, 0.2), transparent 20rem),
+    linear-gradient(180deg, #f8fcfc, #edf6f8) !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .message-bubble,
+    .conversation-message,
+    .tt-message-bubble,
+    [data-testid*="chat-message"]
+  ) {
+  border: 1px solid rgba(41, 126, 123, 0.14);
+  border-radius: 16px 16px 16px 5px !important;
+  box-shadow: 0 5px 15px rgba(11, 50, 75, 0.07);
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .message-bubble.incoming,
+    .conversation-message.incoming,
+    .tt-message-incoming,
+    [data-message-direction="incoming"],
+    [data-message-direction="inbound"]
+  ) {
+  background: linear-gradient(135deg, #dff4f3, #eff9f9) !important;
+  color: var(--tt-ink) !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .message-bubble.outgoing,
+    .conversation-message.outgoing,
+    .tt-message-outgoing,
+    [data-message-direction="outgoing"],
+    [data-message-direction="outbound"]
+  ) {
+  background: linear-gradient(135deg, var(--tt-navy), var(--tt-teal-deep)) !important;
+  border-color: transparent !important;
+  border-radius: 16px 16px 5px 16px !important;
+  color: var(--tt-white) !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .message-bubble.outgoing,
+    .conversation-message.outgoing,
+    .tt-message-outgoing,
+    [data-message-direction="outgoing"],
+    [data-message-direction="outbound"]
+  )
+  * {
+  color: inherit !important;
+}
+
+html[data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .message-composer,
+    .conversation-composer,
+    .tt-message-composer,
+    [data-testid*="message-composer"]
+  ) {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border: 1px solid rgba(41, 126, 123, 0.24) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 24px rgba(11, 50, 75, 0.08);
+}
+
 body.tt-brand-ready
   :is(
     .tt-tag,
@@ -856,6 +1318,161 @@ html[data-tt-theme="focus"]
   .tt-theme-option[aria-pressed="true"] {
   background: var(--tt-navy);
   color: var(--tt-white);
+}
+
+html[data-tt-theme="focus"][data-tt-section]
+  body.tt-brand-ready.tt-colorful-sections {
+  background:
+    radial-gradient(circle at 88% 8%, rgba(99, 198, 195, 0.14), transparent 28rem),
+    linear-gradient(135deg, #071f30, #0b324b);
+}
+
+html[data-tt-theme="focus"][data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  tbody
+  tr
+  td {
+  background: rgba(11, 50, 75, 0.92);
+  color: #dce9ef;
+}
+
+html[data-tt-theme="focus"][data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl-table,
+    [data-tt-table],
+    .tt-contact-table,
+    [data-testid*="contact-list"]
+  )
+  tbody
+  :is(tr:hover, tr.active, tr.selected, tr[aria-selected="true"])
+  td {
+  background: #0e4b60 !important;
+}
+
+html[data-tt-theme="focus"][data-tt-section="contacts"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl_contact--details,
+    .hl_contact-details,
+    .contact-details,
+    .contact-detail,
+    .contact-card,
+    .tt-contact-detail,
+    [data-testid*="contact-detail"],
+    [data-testid*="contact-card"]
+  ):not([role="dialog"] *) {
+  background: linear-gradient(145deg, #0e3d5a, #0b324b) !important;
+  border-color: rgba(99, 198, 195, 0.22) !important;
+  color: #dce9ef;
+}
+
+html[data-tt-theme="focus"][data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .pipeline-column,
+    .opportunity-column,
+    .pipeline-stage,
+    .tt-pipeline-column,
+    [data-testid*="pipeline-stage"]
+  ):not([role="dialog"] *) {
+  background: linear-gradient(180deg, #12384e, #0a2b40) !important;
+  border-color: rgba(99, 198, 195, 0.2) !important;
+  color: #dce9ef;
+}
+
+html[data-tt-theme="focus"][data-tt-section="opportunities"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .pipeline-column,
+    .opportunity-column,
+    .pipeline-stage,
+    .tt-pipeline-column,
+    [data-testid*="pipeline-stage"]
+  )
+  :is(
+    .pipeline-header,
+    .stage-header,
+    .tt-pipeline-header,
+    [data-testid*="stage-header"]
+  ) {
+  color: var(--tt-white);
+}
+
+html[data-tt-theme="focus"][data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .hl_conversations,
+    .conversation-container,
+    .conversations-container,
+    .tt-conversation-shell,
+    [data-testid*="conversation-container"]
+  ):not([role="dialog"] *),
+html[data-tt-theme="focus"][data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-list,
+    .conversations-list,
+    .tt-conversation-list,
+    [data-testid*="conversation-list"]
+  ),
+html[data-tt-theme="focus"][data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-messages,
+    .message-thread,
+    .chat-body,
+    .tt-message-thread,
+    [data-testid*="message-thread"]
+  ) {
+  background: linear-gradient(145deg, #0e3d5a, #071f30) !important;
+  border-color: rgba(99, 198, 195, 0.2) !important;
+  color: #dce9ef;
+}
+
+html[data-tt-theme="focus"][data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .conversation-item,
+    .conversation-list-item,
+    .tt-conversation-item,
+    [data-testid*="conversation-item"]
+  ):not(.active, .selected, [aria-selected="true"]) {
+  background: rgba(11, 50, 75, 0.84) !important;
+  color: #dce9ef;
+}
+
+html[data-tt-theme="focus"][data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .message-bubble.incoming,
+    .conversation-message.incoming,
+    .tt-message-incoming,
+    [data-message-direction="incoming"],
+    [data-message-direction="inbound"]
+  ) {
+  background: #124663 !important;
+  border-color: rgba(99, 198, 195, 0.24);
+  color: var(--tt-white) !important;
+}
+
+html[data-tt-theme="focus"][data-tt-section="conversations"]
+  body.tt-brand-ready.tt-colorful-sections
+  :is(
+    .message-composer,
+    .conversation-composer,
+    .tt-message-composer,
+    [data-testid*="message-composer"]
+  ) {
+  background: rgba(11, 50, 75, 0.96) !important;
+  border-color: rgba(99, 198, 195, 0.26) !important;
+  color: #dce9ef;
 }
 
 /* Responsive and motion ------------------------------------------------ */

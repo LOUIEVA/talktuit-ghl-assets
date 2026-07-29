@@ -10,6 +10,7 @@ The package uses:
 - Manrope for interface text
 - JetBrains Mono for values, prices, phone data, and timestamps
 - Rounded cards, 2px-style icons, restrained motion, and the four-bar waveform motif
+- Route-aware color treatments for Contacts, Opportunities, and Conversations
 
 ## Files
 
@@ -18,6 +19,7 @@ The package uses:
 - `ghl-custom-css.html` - copy/paste loader for HighLevel's Custom CSS field
 - `ghl-custom-javascript.html` - copy/paste loader for HighLevel's Custom JavaScript field
 - `preview.html` and `preview.css` - local mock CRM for reviewing the design
+- `sections-preview.html` and `sections-preview.css` - responsive previews of the three colorful CRM sections
 
 ## Install
 
@@ -25,8 +27,8 @@ The production assets are hosted from the public
 [`LOUIEVA/talktuit-ghl-assets`](https://github.com/LOUIEVA/talktuit-ghl-assets)
 repository through jsDelivr:
 
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.0.0/talktuit-ghl.css`
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.0.0/talktuit-ghl.js`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.0/talktuit-ghl.css`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.0/talktuit-ghl.js`
 
 1. In HighLevel, switch to Agency View and open `Settings > Company > Whitelabel`.
 2. Paste the contents of `ghl-custom-css.html` into Custom CSS.
@@ -54,7 +56,8 @@ Set options before the external script:
     theme: "light",
     persistTheme: true,
     showThemeControl: true,
-    decorateOpportunityTags: true
+    decorateOpportunityTags: true,
+    colorfulSections: true
   };
 </script>
 ```
@@ -65,6 +68,7 @@ Options:
 - `persistTheme`: saves each user's choice in their browser
 - `showThemeControl`: shows the four-bar display control in the lower-right corner
 - `decorateOpportunityTags`: styles recognized pipeline tags and their cards
+- `colorfulSections`: adds route-scoped color to Contacts, Opportunities, and Conversations; set to `false` for the neutral white workspace
 - `tagAliases`: adds or replaces the text recognized for `hot`, `urgent`, `new`, `won`, `follow-up`, and `cold`
 - `debug`: prints diagnostic messages to the browser console
 
@@ -94,8 +98,8 @@ When updating the hosted files, create a new GitHub release tag and update both
 loader URLs. For example:
 
 ```text
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.0.1/talktuit-ghl.css
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.0.1/talktuit-ghl.js
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.css
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.js
 ```
 
 ## Roll back

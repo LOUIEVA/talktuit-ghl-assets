@@ -1,6 +1,6 @@
 /*
  * TalkTuit GHL Customizer
- * Version: 1.1.0
+ * Version: 1.1.1
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -14,7 +14,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.1.0";
+  var VERSION = "1.1.1";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||
@@ -37,6 +37,7 @@
     showThemeControl: true,
     decorateOpportunityTags: true,
     colorfulSections: true,
+    showLoadConfirmation: false,
     tagAliases: DEFAULT_TAG_ALIASES,
     debug: false
   };
@@ -67,6 +68,11 @@
       scriptData.colorfulSections,
       globalConfig.colorfulSections,
       DEFAULTS.colorfulSections
+    ),
+    showLoadConfirmation: readBoolean(
+      scriptData.showLoadConfirmation,
+      globalConfig.showLoadConfirmation,
+      DEFAULTS.showLoadConfirmation
     ),
     debug: readBoolean(
       scriptData.debug,
@@ -298,6 +304,46 @@
     });
   }
 
+  function createLoadConfirmation() {
+    if (
+      !config.showLoadConfirmation ||
+      document.getElementById("tt-load-confirmation")
+    ) {
+      return;
+    }
+
+    var notice = document.createElement("div");
+    notice.id = "tt-load-confirmation";
+    notice.setAttribute("role", "status");
+    notice.setAttribute("aria-live", "polite");
+    notice.innerHTML =
+      '<strong style="display:block;font-size:13px;line-height:1.25;">TalkTuit theme loaded</strong>' +
+      '<span style="display:block;font-size:11px;line-height:1.35;margin-top:2px;opacity:.78;">Contacts, Opportunities, and Conversations are ready.</span>';
+
+    Object.assign(notice.style, {
+      background: "linear-gradient(135deg, #0b324b, #124663)",
+      border: "1px solid rgba(99, 198, 195, .45)",
+      borderRadius: "14px",
+      bottom: "20px",
+      boxShadow: "0 14px 36px rgba(11, 50, 75, .28)",
+      color: "#ffffff",
+      fontFamily: "Manrope, Arial, sans-serif",
+      maxWidth: "310px",
+      padding: "12px 15px",
+      position: "fixed",
+      right: "78px",
+      zIndex: "2147482999"
+    });
+
+    document.body.appendChild(notice);
+
+    window.setTimeout(function removeLoadConfirmation() {
+      if (notice.parentNode) {
+        notice.remove();
+      }
+    }, 6500);
+  }
+
   function normalizeTag(value) {
     return String(value || "")
       .trim()
@@ -515,6 +561,7 @@
     setTheme(initialTheme, false);
     refresh(document);
     createThemeControl();
+    createLoadConfirmation();
     observeApplication();
 
     document.dispatchEvent(
@@ -545,6 +592,11 @@
       var control = document.getElementById("tt-theme-control");
       if (control) {
         control.remove();
+      }
+
+      var loadConfirmation = document.getElementById("tt-load-confirmation");
+      if (loadConfirmation) {
+        loadConfirmation.remove();
       }
 
       document.documentElement.classList.remove("tt-brand-root");

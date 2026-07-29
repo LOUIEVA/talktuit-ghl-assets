@@ -18,6 +18,8 @@ The package uses:
 - `talktuit-ghl.js` - theme initialization, optional display switcher, and pipeline tag decoration
 - `ghl-custom-css.html` - copy/paste loader for HighLevel's Custom CSS field
 - `ghl-custom-javascript.html` - copy/paste loader for HighLevel's Custom JavaScript field
+- `ghl-custom-css-inline.html` - self-contained CSS fallback when an external import is blocked
+- `ghl-custom-javascript-inline.html` - self-contained JavaScript fallback with a visible load confirmation
 - `preview.html` and `preview.css` - local mock CRM for reviewing the design
 - `sections-preview.html` and `sections-preview.css` - responsive previews of the three colorful CRM sections
 
@@ -27,8 +29,8 @@ The production assets are hosted from the public
 [`LOUIEVA/talktuit-ghl-assets`](https://github.com/LOUIEVA/talktuit-ghl-assets)
 repository through jsDelivr:
 
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.0/talktuit-ghl.css`
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.0/talktuit-ghl.js`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.css`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.js`
 
 1. In HighLevel, switch to Agency View and open `Settings > Company > Whitelabel`.
 2. Paste the contents of `ghl-custom-css.html` into Custom CSS.
@@ -37,6 +39,21 @@ repository through jsDelivr:
 5. Upload the official transparent TalkTuit horizontal logo in HighLevel's Whitelabel branding area. Do not recreate or recolor the logo.
 
 HighLevel recommends a logo up to 350 x 180 px and no larger than 2.5 MB.
+
+## If the hosted loader does not change the CRM
+
+Some HighLevel accounts or browser policies can block or cache external dashboard
+assets. Use the self-contained fallback:
+
+1. Remove the old TalkTuit code from both Custom CSS and Custom JavaScript, then save.
+2. Paste the entire contents of `ghl-custom-css-inline.html` into Custom CSS.
+3. Paste the entire contents of `ghl-custom-javascript-inline.html` into Custom JavaScript.
+4. Save again, then use `Ctrl+Shift+R` on Windows or `Cmd+Shift+R` on macOS.
+5. Look for the temporary **TalkTuit theme loaded** confirmation in the lower-right corner.
+
+If the confirmation does not appear, the JavaScript field is not executing in
+that account/view. If it appears but the colors do not, capture the current page
+URL and a screenshot so the affected HighLevel selectors can be updated.
 
 ## Important rollout note
 
@@ -57,7 +74,8 @@ Set options before the external script:
     persistTheme: true,
     showThemeControl: true,
     decorateOpportunityTags: true,
-    colorfulSections: true
+    colorfulSections: true,
+    showLoadConfirmation: true
   };
 </script>
 ```
@@ -69,6 +87,7 @@ Options:
 - `showThemeControl`: shows the four-bar display control in the lower-right corner
 - `decorateOpportunityTags`: styles recognized pipeline tags and their cards
 - `colorfulSections`: adds route-scoped color to Contacts, Opportunities, and Conversations; set to `false` for the neutral white workspace
+- `showLoadConfirmation`: briefly confirms that the JavaScript executed; turn it off after installation is verified
 - `tagAliases`: adds or replaces the text recognized for `hot`, `urgent`, `new`, `won`, `follow-up`, and `cold`
 - `debug`: prints diagnostic messages to the browser console
 
@@ -98,8 +117,8 @@ When updating the hosted files, create a new GitHub release tag and update both
 loader URLs. For example:
 
 ```text
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.css
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.1/talktuit-ghl.js
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.css
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.1.2/talktuit-ghl.js
 ```
 
 ## Roll back

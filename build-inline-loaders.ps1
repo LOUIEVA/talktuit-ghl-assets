@@ -5,10 +5,10 @@ $cssSource = Get-Content -LiteralPath (Join-Path $packageRoot "talktuit-ghl.css"
 $jsSource = Get-Content -LiteralPath (Join-Path $packageRoot "talktuit-ghl.js") -Raw
 
 $cssBundle = @"
-<!-- Paste this entire file into Agency View > Settings > Company > Whitelabel > Custom CSS. -->
-<style id="talktuit-ghl-theme">
+/* Paste this entire file directly into Agency View > Settings > Company > Whitelabel > Custom CSS.
+ * Do not wrap it in a <style> tag; HighLevel adds that wrapper automatically.
+ */
 $cssSource
-</style>
 "@
 
 $jsBundle = @"

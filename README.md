@@ -13,6 +13,7 @@ The package uses:
 - Route-aware color treatments for Contacts, Opportunities, and Conversations
 - A visible Light/Navy Focus identifier on the display switch
 - Branded live-surface detection for current GHL cards, panels, tables, lists, and panes
+- A responsive CSS-only TalkTuit login design for the white-label web portal
 
 ## Files
 
@@ -24,6 +25,7 @@ The package uses:
 - `ghl-custom-javascript-inline.html` - self-contained JavaScript fallback with a visible load confirmation
 - `preview.html` and `preview.css` - local mock CRM for reviewing the design
 - `sections-preview.html` and `sections-preview.css` - responsive previews of the three colorful CRM sections
+- `login-preview.html` - local mirror of the live HighLevel sign-in structure
 
 ## Install
 
@@ -31,8 +33,8 @@ The production assets are hosted from the public
 [`LOUIEVA/talktuit-ghl-assets`](https://github.com/LOUIEVA/talktuit-ghl-assets)
 repository through jsDelivr:
 
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.css`
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.js`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.0/talktuit-ghl.css`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.0/talktuit-ghl.js`
 
 1. In HighLevel, switch to Agency View and open `Settings > Company > Whitelabel`.
 2. Paste the contents of `ghl-custom-css.html` into Custom CSS.
@@ -41,6 +43,27 @@ repository through jsDelivr:
 5. Upload the official transparent TalkTuit horizontal logo in HighLevel's Whitelabel branding area. Do not recreate or recolor the logo.
 
 HighLevel recommends a logo up to 350 x 180 px and no larger than 2.5 MB.
+
+The Custom CSS field must contain raw CSS. Do not wrap the CSS loader or the
+inline stylesheet in `<style>` tags because HighLevel adds its own style
+element. Nested `<style>` tags make the import invalid and prevent the theme
+from loading.
+
+## White-label login design
+
+Version 1.4.0 includes a CSS-only design for `https://app.talktuit.com`.
+It was matched against the live HighLevel sign-in structure on 31 July 2026,
+including:
+
+- `.hl_login`, `.hl_login--header`, and `.hl_login--body`
+- the native `.card` and `.card-body`
+- `#email`, `#password`, and the native sign-in button
+- `#wl_google_login_button`
+- forgot-password, language, and Terms and Conditions controls
+
+The login layer does not depend on Custom JavaScript, does not replace the
+authentication form, and remains scoped to `.hl_login` so it cannot repaint the
+authenticated CRM workspace.
 
 ## If the hosted loader does not change the CRM
 
@@ -60,7 +83,7 @@ URL and a screenshot so the affected HighLevel selectors can be updated.
 ## If a previous build makes the CRM look all white
 
 Clear both HighLevel Custom CSS and Custom JavaScript fields and save once. Then
-install v1.3.0 from the inline files. This release keeps
+install v1.4.0 from the inline files. This release keeps
 `fullWorkspaceTheme: false`, so GHL retains its native global layout while
 TalkTuit colors are added only to Contacts, Opportunities, and Conversations.
 It also adds a persistent TalkTuit brand strip and detects current GHL sidebar
@@ -133,8 +156,8 @@ When updating the hosted files, create a new GitHub release tag and update both
 loader URLs. For example:
 
 ```text
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.css
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.3.0/talktuit-ghl.js
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.0/talktuit-ghl.css
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.0/talktuit-ghl.js
 ```
 
 ## Roll back

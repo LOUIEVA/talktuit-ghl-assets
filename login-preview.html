@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" class="overflow-hidden lead-connector">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TalkTuit White-Label Login Preview</title>
+    <link rel="stylesheet" href="./talktuit-ghl.css" />
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; }
+      .hl_login--header .container-fluid { min-height: 42px; }
+      .hl_login--header .container-fluid > div { align-items: center; display: flex; gap: 10px; }
+      .hl_login--header select { padding: 10px 34px 10px 12px; }
+      .card-body > .mt-6 { margin-top: 24px; text-align: center; }
+      .form-group { margin-bottom: 22px; }
+      .hl-text-input-container { display: grid; gap: 8px; }
+      .relative { position: relative; }
+      .password-toggle { background: transparent; border: 0; bottom: 0; color: #60788a; cursor: pointer; position: absolute; right: 12px; top: 0; }
+      .password-meta { display: flex; justify-content: flex-end; margin-top: 8px; }
+      button { cursor: pointer; width: 100%; }
+      .foot-note { text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div class="flex v2-open sidebar-v2-agency">
+      <section class="hl_login">
+        <div class="hl_login--header">
+          <div class="container-fluid">
+            <a href="./" aria-label="Go to homepage">
+              <img
+                alt="Company logo"
+                src="https://msgsndr-private.storage.googleapis.com/companyPhotos/01KYQCFWSS677P81S71RHVKHQ9_YJ1CT9_a8cc7990-016e-45de-b182-05a7bb9335d1.jpg"
+              />
+            </a>
+            <div>
+              <span>Platform Language:</span>
+              <select aria-label="Platform language">
+                <option selected>English</option>
+                <option>Español</option>
+                <option>Français</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="hl_login--body">
+          <div class="container-fluid">
+            <div class="card">
+              <div class="card-body">
+                <div class="login-card-heading">
+                  <h2 class="heading2">Sign into your account</h2>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <div class="hl-text-input-container">
+                      <label for="email">Email</label>
+                      <div class="relative rounded-md shadow-sm">
+                        <input
+                          class="hl-text-input"
+                          id="email"
+                          name="email"
+                          placeholder="Your email address"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="hl-text-input-container">
+                      <label for="password">Password</label>
+                      <div class="relative rounded-md shadow-sm">
+                        <input
+                          class="hl-text-input"
+                          id="password"
+                          name="password"
+                          placeholder="The password you picked"
+                          type="password"
+                        />
+                        <button class="password-toggle" type="button">Show</button>
+                      </div>
+                      <div class="password-meta">
+                        <a class="forgot-password" id="forgot_passowrd_btn" href="#">
+                          Forgot password?
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group button-holder">
+                    <button type="submit">Sign in</button>
+                  </div>
+                </form>
+                <div class="mt-6">Or Continue with</div>
+                <button id="wl_google_login_button" type="button">
+                  Sign in with Google
+                </button>
+                <p class="foot-note">
+                  By signing in you agree to our
+                  <a href="#">Terms and Conditions</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

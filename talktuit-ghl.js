@@ -1,6 +1,6 @@
 /*
  * TalkTuit GHL Customizer
- * Version: 1.3.0
+ * Version: 1.4.0
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -14,7 +14,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.3.0";
+  var VERSION = "1.4.0";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||

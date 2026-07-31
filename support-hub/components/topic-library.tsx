@@ -2,13 +2,13 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import knowledgeIndex from "../data/tutorial-index.json";
+import type { KnowledgeIndex } from "../internal/knowledge-index";
 import { Icon } from "./icons";
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const initialLimit = 36;
 
-export function TopicLibrary() {
+export function TopicLibrary({ knowledgeIndex }: { knowledgeIndex: KnowledgeIndex }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All topics");
   const [letter, setLetter] = useState("All");
@@ -21,7 +21,7 @@ export function TopicLibrary() {
       .filter((topic) => category === "All topics" || topic.category === category)
       .filter((topic) => letter === "All" || topic.title[0]?.toUpperCase() === letter)
       .sort((a, b) => a.title.localeCompare(b.title));
-  }, [query, category, letter]);
+  }, [query, category, letter, knowledgeIndex.tutorials]);
 
   const reset = () => { setQuery(""); setCategory("All topics"); setLetter("All"); setLimit(initialLimit); };
   const checkedDate = new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(knowledgeIndex.meta.sourceCheckedAt));
@@ -41,4 +41,3 @@ export function TopicLibrary() {
     </>
   );
 }
-

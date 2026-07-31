@@ -28,6 +28,11 @@ test("renders article and update routes without vendor branding", async () => {
     assert.equal(response.status, 200);
     const html = await response.text();
     assert.match(html, /TalkTuit/);
+    if (pathname.startsWith("/articles/")) {
+      assert.match(html, /Where to find it/);
+      assert.match(html, /TalkTuit workspace preview/);
+      assert.match(html, /Select <b>1<\/b> in the left menu/);
+    }
     assert.doesNotMatch(html, blocked);
   }
 });

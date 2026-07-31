@@ -1,0 +1,28 @@
+{
+  "policy": "Sources are retained for editorial verification only and are never rendered in client-facing articles.",
+  "tutorial_index": "https://growthable.io/gohighlevel-tutorials/",
+  "articles": {
+    "appointment-calendars": [
+      "https://help.gohighlevel.com/support/solutions/articles/155000005061-launchpad-setup-a-booking-calendar"
+    ],
+    "contacts-records": [
+      "https://help.gohighlevel.com/support/solutions/articles/155000005055/",
+      "https://help.gohighlevel.com/support/solutions/articles/155000006651-the-all-new-contact-detail-page",
+      "https://growthable.io/gohighlevel-tutorials/contacts/contacts-overview/"
+    ],
+    "handling-conversations": [
+      "https://help.gohighlevel.com/support/solutions/articles/155000006610-getting-started-with-the-conversations-tab",
+      "https://help.gohighlevel.com/support/solutions/articles/48001222121-overview-of-conversation-filters"
+    ],
+    "opportunities-pipelines": [
+      "https://help.gohighlevel.com/support/solutions/articles/155000005062-getting-started-setup-pipelines-and-opportunities",
+      "https://help.gohighlevel.com/support/solutions/articles/155000001999-step-by-step-guide-to-creating-opportunities",
+      "https://growthable.io/gohighlevel-tutorials/opportunities/step-by-step-guide-creating-opportunities-in-gohighlevel/"
+    ],
+    "workflow-builder": [
+      "https://help.gohighlevel.com/support/solutions/articles/155000002288",
+      "https://help.gohighlevel.com/support/solutions/articles/155000001254-workflow-builder-walkthrough"
+    ]
+  }
+}
+

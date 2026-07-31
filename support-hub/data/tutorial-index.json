@@ -1,0 +1,5229 @@
+{
+  "meta": {
+    "total": 853,
+    "sourceCheckedAt": "2026-07-31T13:30:12.606Z",
+    "description": "Source-backed tutorial topics rewritten into TalkTuit language."
+  },
+  "categories": [
+    {
+      "name": "Workflows",
+      "count": 86
+    },
+    {
+      "name": "Calendars",
+      "count": 77
+    },
+    {
+      "name": "Phone",
+      "count": 75
+    },
+    {
+      "name": "Websites",
+      "count": 55
+    },
+    {
+      "name": "Funnels",
+      "count": 52
+    },
+    {
+      "name": "Email",
+      "count": 46
+    },
+    {
+      "name": "Payments",
+      "count": 45
+    },
+    {
+      "name": "Forms",
+      "count": 39
+    },
+    {
+      "name": "Integrations",
+      "count": 35
+    },
+    {
+      "name": "Contacts",
+      "count": 33
+    },
+    {
+      "name": "Campaigns",
+      "count": 30
+    },
+    {
+      "name": "Social media",
+      "count": 30
+    },
+    {
+      "name": "Account",
+      "count": 28
+    },
+    {
+      "name": "Automation triggers",
+      "count": 25
+    },
+    {
+      "name": "Opportunities",
+      "count": 20
+    },
+    {
+      "name": "General",
+      "count": 17
+    },
+    {
+      "name": "Conversations",
+      "count": 17
+    },
+    {
+      "name": "Mobile",
+      "count": 15
+    },
+    {
+      "name": "Getting started",
+      "count": 15
+    },
+    {
+      "name": "Courses",
+      "count": 14
+    },
+    {
+      "name": "Reporting",
+      "count": 6
+    },
+    {
+      "name": "Surveys",
+      "count": 5
+    },
+    {
+      "name": "Troubleshooting",
+      "count": 5
+    },
+    {
+      "name": "Reputation",
+      "count": 2
+    },
+    {
+      "name": "Webhooks",
+      "count": 1
+    }
+  ],
+  "tutorials": [
+    {
+      "id": "1384bd7633ab",
+      "title": "Client Onboarding Checklist: Stop Confusion Before It Starts",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "aa8b32a6e8b8",
+      "title": "Client Dashboard Issues in branded Environments: Fixed",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "45dc28f01a08",
+      "title": "SMS Compliance in TalkTuit: Sender ID & Opt-Out Setup",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "202872b53f4d",
+      "title": "Fix Bad Call Quality in TalkTuit: Full Troubleshooting Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "7e2926dfc9cb",
+      "title": "TalkTuit Phone Messaging Policy in TalkTuit: Full Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "62b3916a7ce2",
+      "title": "TalkTuit Call Scripts: Set Up & Use the Web Dialer Feature",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "92ea8745fdb9",
+      "title": "TalkTuit Regulatory Bundle Setup for Sub-Accounts",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "2dfeda669450",
+      "title": "Custom Unsubscribe Links in TalkTuit: Full Setup Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "676c91f9a60a",
+      "title": "Google Postmaster Tools Setup in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "598671cc7fff",
+      "title": "TalkTuit Email Unsubscribe Links in TalkTuit: Full Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "5a85b726f8f8",
+      "title": "TalkTuit Email Sender Priority: From Name & Address",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "276dd081d87c",
+      "title": "TalkTuit Auto-Complete Address: Setup & Rebilling Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "66c219e4f366",
+      "title": "TalkTuit Hosted Video Player for Funnels: Full Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8f9b2fe2701b",
+      "title": "TalkTuit Funnels & Websites: Fix Common Issues Fast",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "0baaab0aaa06",
+      "title": "Overcoming Client Resistance to TalkTuit Implementation",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "d0aaaa2d8883",
+      "title": "TalkTuit Font Weight in Funnels & Websites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "05274611f1d2",
+      "title": "TalkTuit Video Background for Funnels & Websites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "3e71caf34ba6",
+      "title": "TalkTuit Text Animations: Add Dynamic Entrance Effects",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "362e5f86adbe",
+      "title": "Add & Edit Shadows in TalkTuit Website Builder",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "189f3c8e0178",
+      "title": "TalkTuit Prebuilt Elements for Funnels & Websites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "79c741c3b01b",
+      "title": "TalkTuit Block Editor: Funnels & Websites Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8cc890e42ac1",
+      "title": "TalkTuit Webinar Funnels: Build & Launch in Minutes",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6224f5b5e277",
+      "title": "TalkTuit Image Dimensions: Mobile & Desktop Settings",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "3408dde07aa6",
+      "title": "TalkTuit Photo Gallery Element: Complete Setup Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "4733e908201d",
+      "title": "TalkTuit Dynamic Visual Effects: Animations Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8f25cf6483aa",
+      "title": "TalkTuit Media Storage: Complete Setup & Features Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "eb68c871c71d",
+      "title": "TalkTuit Manual Payments for Forms & Surveys Setup",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "cf76dd84e6c7",
+      "title": "TalkTuit Exit-Intent Pop-Up: Build & Launch Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "ec4c8a544e80",
+      "title": "TalkTuit Mega Navigation Menu: Setup & Customization",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "0545f31b2d97",
+      "title": "Fix Funnel URL Indexing Issues in TalkTuit",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "1877d0a31d81",
+      "title": "TalkTuit Auto-Save & Version History for Funnels and Sites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "27f2b13ddfbc",
+      "title": "TalkTuit Dynamic Timer: Sync Countdowns Across Email & Web",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "cc2dcbfb58f0",
+      "title": "TalkTuit Web Widget Marketplace for Funnels & Websites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "eb41751b524a",
+      "title": "Scale Your Agency with Targeted Coaching Strategies",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "5f60b8f23781",
+      "title": "Fix 'ZIP Code Check Failed for Your Card' in TalkTuit",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "3f67db524769",
+      "title": "TalkTuit Custom Fields: Store & Use Contact Data",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "5dcff83c7759",
+      "title": "TalkTuit Custom Values: Complete Guide for Campaigns",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "f765ab13718c",
+      "title": "TalkTuit Merge Fields & Custom Variables Explained",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "68fa0a7de9bf",
+      "title": "TalkTuit Contact Associations: Custom Labels Guide",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "ce7febecb1bb",
+      "title": "Kartra to TalkTuit Migration: Complete Step-by-Step Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "529e605bcb2b",
+      "title": "Klaviyo to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6f87e20c4d6c",
+      "title": "TalkTuit Forms: Enable the 'Other' Option in Surveys",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "548b17545fa7",
+      "title": "AI Appointment Booking Workflow Setup in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "7761fb409118",
+      "title": "TalkTuit Appointment Booking Conversation AI Workflow",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "5ed0999a4ab7",
+      "title": "Clone WordPress Sites in TalkTuit: Step-by-Step Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "3e21d149654c",
+      "title": "TalkTuit Inline Editing for Forms, Surveys & Quizzes",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "48f99bc49115",
+      "title": "TalkTuit Manual SMS Action: Workflow Setup Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "b2fff664ab36",
+      "title": "WordPress Domain Connect in TalkTuit: Easy Setup",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "389cff51edc5",
+      "title": "TalkTuit Mobile Payment Hub: POS, Invoices & Estimates",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "cba4784cbd81",
+      "title": "Custom Conversation Providers in TalkTuit Mobile App",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "d4809ffd949a",
+      "title": "Multiple Calendar Views in TalkTuit Mobile App",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "a5f2b0766bed",
+      "title": "Share TalkTuit Calendar Links via Mobile App",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "40f9fc640e04",
+      "title": "TalkTuit Mobile Social Planner: Full Feature Guide",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "35ded47dc8a9",
+      "title": "Enable Cross-Site Tracking for TalkTuit (3rd-Party Cookies)",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "c92d810e9a72",
+      "title": "TalkTuit Loading States: Fix Lags & CSS/JS Conflicts",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "a0eb71da0d51",
+      "title": "Stripe Mobile POS Terminal Payments in TalkTuit",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "b1f090aba49f",
+      "title": "TalkTuit Mobile App: Estimates Dashboard & Builder",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "2a5c7d21e0a1",
+      "title": "TalkTuit Mobile App POS for iPad and Tablet Screens",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "99f0cf733bd7",
+      "title": "TalkTuit Mobile App POS: Pay for Service Appointments",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "b8b314de781e",
+      "title": "TalkTuit Conversation AI Tab: CRM Settings Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "e598e1ca443d",
+      "title": "TalkTuit AI Prompting 101: Build Better Chatbot Prompts",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "ac59ee588dfb",
+      "title": "TalkTuit Bot Goals Feature: Complete Setup Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "01219052f74e",
+      "title": "TalkTuit Conversation AI: Add Live Chat to Workflows",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "b8eb9b261650",
+      "title": "TalkTuit Content AI: Create Blog Post Outlines Fast",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "a0d7cd0f1102",
+      "title": "TalkTuit Content AI: Access Your Generated Content Logs",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "5874f0d49a54",
+      "title": "TalkTuit Blog AI Writing Tools: Fix, Expand & Improve",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "698fc375e7df",
+      "title": "TalkTuit Content AI: Fix Grammar & Improve Writing",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "47254a71803b",
+      "title": "TalkTuit Social Post AI Writing Tools: Full Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6b22fa14b7db",
+      "title": "Trigger a Workflow in TalkTuit Conversation AI Bots",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "a13261672381",
+      "title": "Update Conversation AI Bot & Status: TalkTuit Workflow Action",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "e8bc7604b411",
+      "title": "TalkTuit Conversation AI Workflow Action Explained",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6423aacc9488",
+      "title": "AI-Powered Code Generation in TalkTuit Workflows",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "bb95e232d8b8",
+      "title": "TalkTuit AI Tools: Complete Guide to Every Feature",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "d830b9b8e0ae",
+      "title": "TalkTuit AI Voice Agents: Setup & Configuration Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "85e262d5c331",
+      "title": "TalkTuit Conversation AI Advanced Settings Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "38aa39046440",
+      "title": "TalkTuit Voice AI Agents: Complete Setup Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "a1ec156a2485",
+      "title": "TalkTuit Voice AI Inbound Call Flow Setup Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6e483916b5f5",
+      "title": "TalkTuit Primary vs Non-Primary Conversation AI Bots",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "59f6b8900c3e",
+      "title": "Testing Voice AI Agents in TalkTuit: Step-by-Step",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "01b10f95fb74",
+      "title": "TalkTuit Voice AI Agents Dashboard: Key Metrics Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "d59ed594c79b",
+      "title": "Voice AI Custom Variables in Prompts: TalkTuit Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "2250f9637075",
+      "title": "TalkTuit Voice AI Multi-Language Support Setup Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "abf6fe2398a5",
+      "title": "TalkTuit Voice AI Working Hours: Setup Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "5e300d69a731",
+      "title": "Jotform to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "a35419399801",
+      "title": "Pipedrive to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "66c3473817ff",
+      "title": "Salesforce to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "bd38f36a1427",
+      "title": "Shopify to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "a73937d90fb6",
+      "title": "Squarespace to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "96b26b69ef20",
+      "title": "ClickFunnels to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "fdbf6e6a8aae",
+      "title": "ConvertKit to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6dc56e27e92d",
+      "title": "HubSpot to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "c9c6fd747412",
+      "title": "Keap to TalkTuit Migration: Complete Step-by-Step Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "39abf9e8ddda",
+      "title": "Mailchimp to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "d220e789d351",
+      "title": "Skool to TalkTuit Migration: Complete Step-by-Step Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "13da549ae0dc",
+      "title": "Typeform to TalkTuit Migration: Complete Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "51920f81606a",
+      "title": "Wix to TalkTuit Migration: Complete Step-by-Step Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "b6d13da1b633",
+      "title": "ActiveCampaign to TalkTuit Migration Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "1ebce9a83d1f",
+      "title": "Modify Contact Engagement Score in TalkTuit Workflows",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f034ac50ff4f",
+      "title": "TalkTuit Number Validation Trigger: Workflow Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "669c63ceafbe",
+      "title": "TalkTuit Video Tracking Trigger: Workflow Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "45055b4393ee",
+      "title": "TalkTuit Go To Workflow Action: Complete Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "79d5f6c8f59f",
+      "title": "TalkTuit GPT History: Store & Use AI Conversation Context",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "fea10d21d699",
+      "title": "GPT-Powered Workflow Action in TalkTuit: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5e6e7b6042db",
+      "title": "TalkTuit Add Contact Follower Workflow Action",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "cea8bba8d9fb",
+      "title": "Remove Contact Follower Action in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "8a59bff75b90",
+      "title": "Advanced Filters & Smart Lists for TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "753e534dda72",
+      "title": "TalkTuit Workflow Stats: Track SMS & Email Performance",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "2c86ba2fdd62",
+      "title": "TalkTuit Workflow Execution Logs & Enrollment History",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "0d5fb7e92687",
+      "title": "If/Else Appointment Filter Options in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "f941962b25cb",
+      "title": "TalkTuit Workflow Discover Button: Find Apps Fast",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "c9f62c8abdf8",
+      "title": "OAuth2 in TalkTuit Custom Webhook Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "bdbb9deaf428",
+      "title": "TalkTuit Send Invoice Workflow Action: Full Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "fca3aa37d38e",
+      "title": "Contact DND Workflow Trigger in TalkTuit: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "8db27140140e",
+      "title": "TalkTuit Contact Engagement Score Workflow Trigger",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "41ccf96f63e9",
+      "title": "TalkTuit Task Added Workflow Trigger: Full Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "ff157f6c4519",
+      "title": "TalkTuit Task Reminder Workflow Trigger Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "b808ad7cfdf1",
+      "title": "TalkTuit Note Changed Workflow Trigger: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5460882f4a3d",
+      "title": "TalkTuit Workflow Nested Folders: Complete Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "6b0233281ffd",
+      "title": "TikTok Lead Ads Integration with TalkTuit: Full Setup",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "b625f8ec6cfb",
+      "title": "Shopify Variables in TalkTuit: Complete Reference",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "52330a6439f7",
+      "title": "TalkTuit Private Integrations: Complete Setup Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "fa505198f36c",
+      "title": "Workflow Notes & Sticky Notes in TalkTuit Explained",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "84e8c97be70e",
+      "title": "TalkTuit Survey Submitted Workflow Trigger Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "f7b1b54b91a1",
+      "title": "QuickBooks Auto Review Request When Invoice Paid in TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "effb6228b5e3",
+      "title": "ServiceTitan + TalkTuit Integration via Zapier",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "5dc0838b42f9",
+      "title": "Export Facebook Lead Ads & Import Them Into TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "6348e2458320",
+      "title": "Facebook Conversion API Funnel Pixel Setup in TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "d55cdde81c0a",
+      "title": "TalkTuit Appointment Reminder Workflow with Zoom",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "dd516224ad8c",
+      "title": "WebinarKit TalkTuit Integration: Full Setup Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "bfe9ec16370c",
+      "title": "Instagram DMs in TalkTuit: Full Setup Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "3f82c24e7535",
+      "title": "ActiveProspect Consent Tracking Setup in TalkTuit Forms",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "3d663eee9ca1",
+      "title": "Verify Domains for iOS 14 Tracking in TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "922cfdbcaaf0",
+      "title": "Connect Multiple Facebook Pages to TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "1f816f78fc07",
+      "title": "Facebook Conversion Leads Setup in TalkTuit (CAPI)",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "7db093efc662",
+      "title": "Facebook Integration Troubleshooting in TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "b10a10c94408",
+      "title": "Fix Facebook Integration Issues in TalkTuit (TalkTuit)",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "a1780feae1f5",
+      "title": "TalkTuit PayPal Payment Element Setup Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "e79f03b689e8",
+      "title": "Bank-Only Transfers for Invoices (SEPA & ACH) in TalkTuit",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "0cc3a2f7a06b",
+      "title": "TalkTuit Subscriptions & Invoices from Contact Details",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "78ebe0ba2e4b",
+      "title": "Bulk Import Products into TalkTuit via CSV",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "a0bfe5b0433c",
+      "title": "TalkTuit Coupons: Create & Manage Product Discounts",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "d34a5f171550",
+      "title": "Edit Recurring Invoices in TalkTuit: Complete Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "bb0ebd00775d",
+      "title": "TalkTuit Failed Payment Retries: Subscription Settings",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "b121a1bad5fe",
+      "title": "TalkTuit Invoice Templates: Automate Sending in Workflows",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "fcde478bcbd4",
+      "title": "TalkTuit Payment Plans: Add Installments to Invoices",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "d7b683f50c99",
+      "title": "Recurring Products in TalkTuit Documents & Contracts",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "052cd1d71ab9",
+      "title": "Automatic Sales Tax by Location in TalkTuit Payments",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "24d45baddc61",
+      "title": "Direct Checkout Links in TalkTuit Email Campaigns",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "0b21e129135f",
+      "title": "Automatic Tax Calculations for TalkTuit Invoices: Full Setup",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "f3c4a3188a91",
+      "title": "Automatic Taxes on TalkTuit Payment Links: Full Setup",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "6ccb1aa2b6b0",
+      "title": "Automated Invoice Reminders in TalkTuit: Full Setup",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "f36d464627cf",
+      "title": "TalkTuit Invoices: New UI Setup & Features Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "ab5803d2015c",
+      "title": "Pause & Resume Subscriptions in TalkTuit Payments",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "c21b8f587c11",
+      "title": "Show Multiple Calendars on One Page in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "4555d61c9360",
+      "title": "Disable Contact Timezone in TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "31922126fc60",
+      "title": "TalkTuit Calendar Troubleshooting Tool Explained",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "908ddd64f1a5",
+      "title": "Fix {{appointment.start_time}} Not Showing in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "e47d91ae6f75",
+      "title": "TalkTuit Cards on File: Add, View & Delete Payment Methods",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "7fba8b4d0218",
+      "title": "TalkTuit Estimates: Create, Send & Convert to Invoice",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "d6aeb39def20",
+      "title": "Editable Quantities in TalkTuit Payment Links: Setup Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "452c2b4edaff",
+      "title": "BNPL in TalkTuit Order Forms and Payment Links",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "d3178285be32",
+      "title": "TalkTuit Manual Payment Methods for Ecommerce Stores",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "654d91d0e871",
+      "title": "Multiple Recipients on TalkTuit Proposals & Estimates: Full Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "2ae25da3e447",
+      "title": "TalkTuit Subscription Payment Failure: What Happens Next",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "d397ca25fdde",
+      "title": "Tax Inclusive vs Exclusive Pricing in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "bf009960d845",
+      "title": "TalkTuit Appointment List View: Calendar Smart Lists",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "ee21ffdf46f8",
+      "title": "Create Appointment Notes via TalkTuit Workflow Automation",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "f58a3d57c622",
+      "title": "Hide Third-Party Calendar Details in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "58c947844325",
+      "title": "iCloud Calendar Integration with TalkTuit: Full Setup",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "599782db6749",
+      "title": "Calendly Integration with TalkTuit: Complete Setup Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "491643bf1410",
+      "title": "Outlook Calendar Integration with TalkTuit: Full Setup",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "f26feac7ccba",
+      "title": "Zoom & TalkTuit Calendar Integration Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "230a5e9e1f19",
+      "title": "iCloud Calendar Integration with TalkTuit: Full Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "790ad55190f1",
+      "title": "Microsoft Teams Integration for TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "fad150238432",
+      "title": "Reserve with Google & LSA Integration in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "d95fcf35001f",
+      "title": "Book Appointment Action in TalkTuit Workflows",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "999735916b90",
+      "title": "TalkTuit Calendar: Add & Manage Appointment Notes",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "ab69f539ad0d",
+      "title": "TalkTuit Class Booking Calendar: Complete Overview",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "099d172fa891",
+      "title": "Collective Booking Calendar Use Cases in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "a0cd4d2077d9",
+      "title": "Collective Bookings Calendar in TalkTuit: Full Overview",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "adc021cfed68",
+      "title": "Collective Booking Calendars in TalkTuit: Full Setup",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "e4bd61a98982",
+      "title": "TalkTuit Round Robin Calendar Setup & Distribution",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "b0daea9f5600",
+      "title": "TalkTuit Round Robin Calendar: Appointment Distribution",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "de0d97622f63",
+      "title": "Round Robin Calendar: Team Member Assignment in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "e48421340227",
+      "title": "Assign Unassigned Calendars to Groups in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "2f4ee943fe9a",
+      "title": "TalkTuit Cancellation & Reschedule Policy for Booking Widget",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "1e084af6ae8a",
+      "title": "Recurring Appointment Payments in TalkTuit Booking Widget",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "215655e53c8c",
+      "title": "TalkTuit Calendar Colors: Customize Your Booking Page",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "82bddf5cde79",
+      "title": "Deactivate Calendar Groups in TalkTuit: Step-by-Step",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "afc5f6417524",
+      "title": "Embedding a TalkTuit Calendar with HTML Embed Code",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "77c384ef6bc8",
+      "title": "TalkTuit Group Calendar: Setup & User Assignment",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "f3166059b55c",
+      "title": "Service Calendar Appointments in TalkTuit Mobile App",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "6f6f26b3265f",
+      "title": "TalkTuit Calendar Descriptions: Rich Text Editor Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "69742cc689d7",
+      "title": "TalkTuit Look Busy: Hide Calendar Slots to Drive Bookings",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "e57d66d4f83d",
+      "title": "Multiple Meeting Locations in TalkTuit Calendar Setup",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "1fb99e8d0166",
+      "title": "Restore Deleted Calendars in TalkTuit: Step-by-Step",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "187cc8177643",
+      "title": "TalkTuit Calendar User Permissions: Complete Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "8d0b9db5727b",
+      "title": "Facebook Lead Ads Integration with TalkTuit: Full Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "b5771e7b9137",
+      "title": "Fix Missing Facebook Pages in TalkTuit Manage Pages",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "7f1bed754484",
+      "title": "Google Business Profile Chat Sunset: What TalkTuit Users Must Do",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "f8c7b1e25cbb",
+      "title": "Google Drive Integration with TalkTuit Media Storage",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "0f08ecb863c6",
+      "title": "Google Business Profile Integration with TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "54d6ea794a7d",
+      "title": "TalkTuit Survey Payments: Collect & Sell Products",
+      "category": "Surveys",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "cb74217c8767",
+      "title": "TalkTuit Surveys: Create Contacts on Partial Completion",
+      "category": "Surveys",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "003d1c9ef341",
+      "title": "TalkTuit Form & Survey Analytics: Complete Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "e0d531449536",
+      "title": "Custom Fields in TalkTuit Forms & Surveys: Quick Add Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "38d62edb9f32",
+      "title": "Math Calculations in TalkTuit Forms & Surveys",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "4928007ce982",
+      "title": "TalkTuit Form Builder Right Sidebar: Full Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "89278e8c225e",
+      "title": "SMS Verification in TalkTuit Forms & Surveys",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "0481a043e1ef",
+      "title": "Spread to Column in TalkTuit Forms: Multi-Column Layout Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "1215d753c82f",
+      "title": "TalkTuit Stylized Surveys: Full Customization Guide",
+      "category": "Surveys",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "f11018ad7c6e",
+      "title": "TalkTuit Survey Footer: Customize Your Survey Builder",
+      "category": "Surveys",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "c5f416a4d660",
+      "title": "TalkTuit Contact Form: Build & Embed in Minutes",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "46429e81620c",
+      "title": "TalkTuit Form Security: Stop Spam Submissions",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "66da5d434f5d",
+      "title": "TalkTuit Form Embedding: Triggers, Layouts & Deactivation",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "ab508fcafc91",
+      "title": "TalkTuit Forms Submissions Page: New Features Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "12f63a31bf2e",
+      "title": "TalkTuit Pie Chart Analytics for Funnels & Websites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8476ad94a386",
+      "title": "WordPress Single Sign-On in TalkTuit: WP Admin Access",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "3fe83d1b4c59",
+      "title": "TalkTuit Email Attribution Settings: Full Setup Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "452990338503",
+      "title": "TalkTuit Email Campaigns: Add a Product Element",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "c9eaf99269e6",
+      "title": "TalkTuit Email Builder: Advanced Conditions for Smart Lists & Tags",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "ae762b08bffd",
+      "title": "Hide Email Elements on Mobile or Desktop in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "4b7920da9e08",
+      "title": "Google Fonts in TalkTuit Email Templates & Campaigns",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "710d5a15af1a",
+      "title": "TalkTuit Mobile Email Formatting: Edit Your Templates",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "f57fd454a698",
+      "title": "Import ActiveCampaign Email Templates into TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "ad61c883d752",
+      "title": "Save Email Builder Elements in TalkTuit for Reuse",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "09654b0c09e3",
+      "title": "Resend to Unopened Emails in TalkTuit: Best Practices",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "dfe6839470f2",
+      "title": "TalkTuit Email Campaign ROI & Conversion Metrics Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "eedbe1c49e88",
+      "title": "TalkTuit Workflow Campaigns: Analyze Email Stats",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "61ab1ee7f03c",
+      "title": "SMS Opt-In Campaigns in TalkTuit: Complete Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "ecc0d540544d",
+      "title": "Conditional Elements in TalkTuit Campaigns: Full Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "1711f079bb3d",
+      "title": "TalkTuit Email Campaign Flow & Summary Page Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "1c9288d4a225",
+      "title": "Inline Forms & Surveys in TalkTuit Email Campaigns",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "44cbd6baa969",
+      "title": "TalkTuit Email Sending Methods: Send Now, Schedule & Batch",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "0d1da7ac2a86",
+      "title": "TalkTuit Email Statistics: Complete Metrics Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "d301d3e22a6c",
+      "title": "Email Templates vs Email Campaigns in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "4cf09bd81c91",
+      "title": "Edit an Active Email Campaign in TalkTuit Without Deleting It",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "77405515cf59",
+      "title": "Import Mailchimp Email Templates into TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "193803587dba",
+      "title": "Import HTML Email Templates & Campaigns in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "e2a79b301874",
+      "title": "Reschedule an Email Campaign in TalkTuit (TalkTuit)",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "7a166cac145e",
+      "title": "RSS Email Campaigns in TalkTuit: Complete Setup Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "573f0539936b",
+      "title": "Preview & Test Email Campaigns in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "bb79e164d48b",
+      "title": "Custom Fonts in TalkTuit Email Builder: Full Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "e87395a4940a",
+      "title": "TalkTuit Email Builder: Video Element Setup Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "9ba011412127",
+      "title": "Automate Email Campaign Tagging in TalkTuit",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "77d9579e4a4d",
+      "title": "Block Search Engines from Indexing Pages in TalkTuit",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "c3faa5da3628",
+      "title": "TalkTuit Funnel Paths: URLs, Steps & Pages Explained",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "0fabb1e7dba4",
+      "title": "Round Button Corners in TalkTuit Funnel Builder",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "062527e1b57d",
+      "title": "Activity Cards in TalkTuit Conversations: Complete Guide",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "910a6c5b35e3",
+      "title": "TalkTuit Internal Comments: Collaborate in Conversations",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "8f8e56e96901",
+      "title": "TalkTuit Group SMS: Send Messages to Multiple Contacts",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "dc90e74e3db2",
+      "title": "TalkTuit Quick Replies for Facebook & Instagram",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "890aee363513",
+      "title": "Bulk Edit Opportunities in TalkTuit: Save Time",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "d52db1d79387",
+      "title": "Customize Opportunity Cards in TalkTuit Board View",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "ed68e6916d1d",
+      "title": "Importing Opportunities in TalkTuit: Complete Guide",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "8af886ce512a",
+      "title": "TalkTuit List View for Opportunities: Full Guide",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "d71e9d8c2b43",
+      "title": "TalkTuit Multiple Opportunities Toggle in Workflows",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "e6e111bfba92",
+      "title": "Searching for Opportunities in TalkTuit: Full Guide",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "8037d333a690",
+      "title": "TalkTuit Conversation Attachments: Full Guide",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "47c5295fb851",
+      "title": "Contact Engagement Score in TalkTuit: Complete Guide",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "ce37f1807bb6",
+      "title": "TalkTuit Conversations FAQs: Common Issues Solved",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "ef7e2fca8476",
+      "title": "TalkTuit Snippets: Save Time on Repetitive Messages",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "cbaf5d4a71e5",
+      "title": "Instagram DM Workflow Action in TalkTuit Explained",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "35ae30d58dda",
+      "title": "TalkTuit Conversation Filters: Complete Overview",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "057fac738651",
+      "title": "TalkTuit Conversations Right Panel & Expandable Sidebar",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "abc3f27df3ba",
+      "title": "SMS To and From Numbers in TalkTuit: Full Guide",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "e071a4a00d12",
+      "title": "TalkTuit AI Response Info: View & Edit in Conversations",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "e3a590b2b3de",
+      "title": "Log External Calls in TalkTuit CRM via Workflow",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "4328f0992e16",
+      "title": "TalkTuit Contacts & Bulk Actions: FAQs Answered",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "ffeba6042d26",
+      "title": "TalkTuit DND Settings: Channel-Level Do Not Disturb Guide",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "3faf26fe013d",
+      "title": "TalkTuit: Add Multiple Phone Numbers to a Contact",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "23af0178c512",
+      "title": "Delete Contacts & Associated Data in TalkTuit",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "3409be8a9a38",
+      "title": "Track Consent & Legal Basis for Personal Data in TalkTuit",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "59cff3b092b9",
+      "title": "TalkTuit Company Object: Group Contacts by Organization",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "e4918df4389e",
+      "title": "Allow Duplicate Contacts in TalkTuit: Zapier & Forms",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "f614b73b4eb2",
+      "title": "AND/OR Filters in TalkTuit: Smart List Filtering",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "db4f912ab3f1",
+      "title": "Bulk Actions for Contacts & SmartLists in TalkTuit",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "569ef001cef5",
+      "title": "Multiple Email Addresses for a Contact in TalkTuit",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "36196a9b6b48",
+      "title": "Merging Duplicate Contacts in TalkTuit CRM",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "a08810d432c8",
+      "title": "Google & Yahoo Email Sender Requirements in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "31d0ce0eedac",
+      "title": "Migrate Your Agency to TalkTuit Email in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "d47053d93c89",
+      "title": "Resubscribe to an Email List in TalkTuit: Full Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "0f778a4ee983",
+      "title": "TalkTuit TalkTuit Email Unsubscribe Link Setup Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "5b0170bdc8b3",
+      "title": "TalkTuit Email in TalkTuit: Built-in Email Service Explained",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "6de573848de5",
+      "title": "Email Deliverability in TalkTuit: Complete Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "b2fd5c02d1b1",
+      "title": "TalkTuit Bot Detection: Stop Bots Skewing Email Stats",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "498d2c7a9d6d",
+      "title": "TalkTuit Email Reply & Forward Settings Explained",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "5be8af1cc08f",
+      "title": "TalkTuit Email Verification for Campaigns: Full Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "4904c7260d6f",
+      "title": "Filter Contacts by Email Stats in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "4b29dcc68085",
+      "title": "List-Unsubscribe Header & Email Deliverability in TalkTuit",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "2b583efe8a86",
+      "title": "TalkTuit Sub-Account Email Provider Filtering Guide",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "34b9eed6b372",
+      "title": "Custom Unsubscribe Links in TalkTuit: Step-by-Step",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "079a217818f5",
+      "title": "TalkTuit Emails Going to Spam: Causes & Fixes",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "400adfd8f325",
+      "title": "Email Event Triggers in TalkTuit Workflows: Clicked & Opened",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "e5736855d51f",
+      "title": "Delete or Reset a Twilio Number in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "3d5b0e158d9d",
+      "title": "Restore a Deleted Twilio Number in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "ded1716911ab",
+      "title": "Transfer Twilio Numbers Between Accounts in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "4ef7cbf1e865",
+      "title": "Enable Landline Text Messaging in TalkTuit (Hosted SMS)",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "e48861200b4d",
+      "title": "Import Existing Twilio Numbers into TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "66eb761c3576",
+      "title": "Move TalkTuit Phone Numbers to Client Twilio Account in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "57a0f23ea6c9",
+      "title": "TalkTuit Phone Number Settings: Complete Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "a560b5cbae30",
+      "title": "Port a Non-Twilio Phone Number to TalkTuit Location",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "237b033a0bdd",
+      "title": "TalkTuit Caller Reputation: Best Practices Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "1d106edc6851",
+      "title": "Ring Incoming Calls to Multiple Users in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "363b11fc5843",
+      "title": "Fix Twilio Call Events Not Working in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "5ac5ad62847a",
+      "title": "Call Status Workflow Trigger Setup in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "c169560ae4f7",
+      "title": "Twilio Geo Permissions Fix in TalkTuit (TalkTuit Guide)",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "74b20d7d8859",
+      "title": "Check Twilio Call Logs for a Specific Call in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "51893ae82dec",
+      "title": "Fix 'Spam Likely' Labels: Free Caller Registry in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "b5fc37a8e91b",
+      "title": "TalkTuit Call Tracking Number Pool Setup Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "08f78132ede4",
+      "title": "TalkTuit Softphone & Outbound Calls: Complete Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "ff0aa951ac02",
+      "title": "Fix Phone Call Redirect Loops in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "bcf6d1f472de",
+      "title": "Fix 'Select Bundle/Address' Error When Buying Twilio Numbers",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "462a93835711",
+      "title": "TalkTuit Phone Calls Marked as Spam in TalkTuit: Fix It",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "cbf600f63b0b",
+      "title": "A2P 10DLC Brand Approval Best Practices in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "52a13e645523",
+      "title": "Fix TalkTuit SMS Error: Invalid From Phone Number",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "1256b4375a13",
+      "title": "TalkTuit A2P 10DLC Campaign Submission Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "bdd870ec4e39",
+      "title": "Fix Inbound SMS Not Showing or Showing as Calls in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "06694fd3bcf6",
+      "title": "Fix Incoming SMS Not Forwarding in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "ba804e749871",
+      "title": "A2P 10DLC Campaign Use Case Types in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "54d397edffff",
+      "title": "A2P 10DLC Trust Scores & MPS Throughput in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "28a4c34831bc",
+      "title": "TalkTuit SMS Not Sending? Causes & Fixes Explained",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "c91e5dcc7823",
+      "title": "Fix SMS Sending from Wrong Twilio Number in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "9e59a6fb8762",
+      "title": "TalkTuit Conversations Glitching: Fix Common Issues",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "75bd008a8a03",
+      "title": "A2P 10DLC Campaign Vetting & Fees Guide in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "481f2aef8a66",
+      "title": "Call Forwarding to Your TalkTuit Phone Number",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "6aedd22a84ee",
+      "title": "Buy a Phone Number in a TalkTuit Sub-Account: Step-by-Step",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "5d71b3ed692c",
+      "title": "Verified Caller ID Setup in TalkTuit: Use Your Number",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "74d3255fadbd",
+      "title": "Hide the Twilio Error Banner in TalkTuit with CSS",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "7f918fea2c17",
+      "title": "Connect a Client's Twilio Account to a TalkTuit Location",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "7a9c38631e4c",
+      "title": "TalkTuit Phone Trust Center Setup in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "5c6101ba8a40",
+      "title": "TalkTuit Number Intelligence: Validation, Spam & Caller ID",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "7a8720ad439c",
+      "title": "Twilio Webhooks for Calls & Messages in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "d9ae0e4bd19a",
+      "title": "TalkTuit Sub-Account Default Phone Settings Explained",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "14bbb07bbeef",
+      "title": "Add Product Weight, Dimensions & SKU in TalkTuit Ecom Store",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "e0306f94a382",
+      "title": "TalkTuit Ecommerce SEO: Add Product Descriptions & Keywords",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8167b037606b",
+      "title": "TalkTuit Ecommerce: Sort & Filter Products by List Page",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "181f1a3eca9c",
+      "title": "TalkTuit Related Products on Product Detail Pages",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "9c2f35d4ab54",
+      "title": "Manual Payment Methods in TalkTuit Stores & Order Forms",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "2f017a85e8db",
+      "title": "TalkTuit Product Collections: SEO & Page Display Setup",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "fca93486f363",
+      "title": "Abandoned Cart Email Notifications Setup in TalkTuit",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "7a467d155b82",
+      "title": "Shippo Integration in TalkTuit: Complete Setup Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "b0e6dc2d7309",
+      "title": "TalkTuit Abandoned Cart Emails: Setup & Customisation",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "e8e250db0e38",
+      "title": "TalkTuit Ecommerce Shipping & Delivery Rates Setup",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "7aa9112dd0e6",
+      "title": "Print Packing Slips for Ecommerce Orders in TalkTuit",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "c46ba612255a",
+      "title": "TalkTuit Shipping Labels & Packing Slips for Store Orders",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "d73f875058b5",
+      "title": "Sell Subscription Services in Your TalkTuit Ecom Store",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "5085af63f11c",
+      "title": "TalkTuit E-Commerce Store Setup Guide (Websites)",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "23ff77c82d29",
+      "title": "Printful Integration with TalkTuit Ecommerce Stores",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "107430d29559",
+      "title": "Printful Integration with TalkTuit: Setup Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "9647216580de",
+      "title": "TalkTuit Related Products: Boost Ecommerce Cross-Sells",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8cde9164d153",
+      "title": "TalkTuit Ecommerce Search Bar: Setup & Customisation",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "3cb74c499ab2",
+      "title": "TalkTuit Shipping & Delivery Rates for Ecommerce Stores",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "466729ba4deb",
+      "title": "TalkTuit Onboarding Tools: Boost Agency Efficiency",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "fe0c20e61461",
+      "title": "TalkTuit Onboarding Tools: Boost Agency Efficiency",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "b7ef6cf335bf",
+      "title": "TalkTuit Onboarding Process: Complete Agency Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "ee73161961a8",
+      "title": "branded Onboarding in TalkTuit: Complete Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "ff4811a2fc0b",
+      "title": "GDPR Consent Checkboxes in TalkTuit Forms: Full Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "25fe82275475",
+      "title": "Custom HTML & JavaScript Fields in TalkTuit Forms & Surveys",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "b6547a530199",
+      "title": "TalkTuit Form Email Notifications: Auto-Responder Setup",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "133f4f2879b4",
+      "title": "TalkTuit Form Builder Layouts: Columns, Lines & Field Width",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "dcd424e5613d",
+      "title": "Populate & Save Custom Fields with JavaScript in TalkTuit Forms",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "10838e479914",
+      "title": "Sticky Contact Forms in TalkTuit: Complete Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "f8461372a0f8",
+      "title": "Email Verification in TalkTuit Forms and Surveys: Full Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "558b29ccd7e7",
+      "title": "Conditional Logic in TalkTuit Forms: Complete Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "fed93bb5c59e",
+      "title": "TalkTuit Form & Survey Email Notifications Setup",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "1127a534fdf3",
+      "title": "TalkTuit Forms: Add Products to the Payment Element",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "bbaec25b3348",
+      "title": "TalkTuit Forms Payment & Donation Collection Setup",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "c69c0ebb8c6e",
+      "title": "TalkTuit Source Field in Forms & Surveys Explained",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "d8ac12087e75",
+      "title": "TalkTuit Form & Survey Themes: Full Customization Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "f97c33691e6a",
+      "title": "TalkTuit Forms: Timezone Feature Setup & Usage",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "b83f02aa738b",
+      "title": "TalkTuit Form Responses: Where to Find Submissions",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "3b728ac4c944",
+      "title": "TalkTuit Snapshots: Create, Share & Install Templates",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "3022d1af4a96",
+      "title": "Agency Model Evolution: Lessons from the Ursel Brothers",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "0114ebd6f4a9",
+      "title": "Funnel Statistics in TalkTuit: Metrics Explained",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6cc90220e9c6",
+      "title": "TalkTuit Heading Tags: Change H1, H2 & More in Funnels",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "ccd400b5ef62",
+      "title": "TalkTuit Funnel Version 1 to V2 Upgrade Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8bd63b30e0e4",
+      "title": "Import & Clone Funnels and Websites in TalkTuit",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "1ee01968f5ba",
+      "title": "TalkTuit Tracking Code Not Copied When Cloning Pages",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "23c8f0cee5b1",
+      "title": "XML Sitemaps in TalkTuit: Complete Setup Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "9531818b6d6e",
+      "title": "Custom Meta Tags in TalkTuit Funnels & Pages",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "e2584569328a",
+      "title": "Funnel Paths in TalkTuit: URLs Explained",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "480f96d3d07c",
+      "title": "TalkTuit: Show & Hide Elements on Button Click",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "67b1ef96ef4f",
+      "title": "TalkTuit Funnel Card Authorization: Complete Setup Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "2a5b5960f6b8",
+      "title": "Authorize Card Payments in TalkTuit Funnel Builder v1",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "3ab872190de0",
+      "title": "TalkTuit Entry Popup: Trigger on Page Load",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "aef57668783f",
+      "title": "TalkTuit Funnel Versions Explained: V1 vs V2 Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6b3a9a289c58",
+      "title": "Scroll to Elements & Sections in TalkTuit Funnels",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "42bfa67db6b3",
+      "title": "Import a ClickFunnels Funnel into TalkTuit (CF 1.0)",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "2cf74033759e",
+      "title": "TalkTuit Image Slider: Add Dynamic Sliders to Funnels",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "deb0e7c1591a",
+      "title": "TalkTuit Funnels: Save Drafts and Publish Versions",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "65398f68da61",
+      "title": "TalkTuit Sites Overview: Funnels vs Websites Explained",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "c112ee6c1d9b",
+      "title": "Editing Opportunities in TalkTuit: Complete Guide",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "a4423a368a01",
+      "title": "Decouple Contact & Opportunity Owners in TalkTuit",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "1727442357c3",
+      "title": "TalkTuit Custom Fields for Opportunities: Full Guide",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "25febdd51459",
+      "title": "TalkTuit Pipelines: Create & Configure in Minutes",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "07cb988a92c6",
+      "title": "TalkTuit Opportunities: Complete Guide for Agencies",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "370dd0b733a1",
+      "title": "TalkTuit Pipelines Explained: Stages & Best Practices",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "094a92b9c116",
+      "title": "Automating Opportunities in TalkTuit: Step-by-Step",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "e4210d7effc5",
+      "title": "Delete & Restore Opportunities in TalkTuit Pipelines",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "fcbe165514bb",
+      "title": "TalkTuit Opportunity Statuses: Open, Won, Lost & Abandoned",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "2b4aa22bc87c",
+      "title": "Filtering Opportunities in TalkTuit: Complete Guide",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "bd2689ba1301",
+      "title": "Creating Opportunities in TalkTuit: Step-by-Step",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "c2b4a1ae092a",
+      "title": "Assign To User Trigger in TalkTuit: Complete Guide",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "94f1321669b9",
+      "title": "TalkTuit Invoice Notifications: Email & SMS Setup",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "d9837208536e",
+      "title": "Tap to Pay in TalkTuit: Mobile POS Payments Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "b1b8b10cf060",
+      "title": "Duplicating Triggers in TalkTuit Across Locations",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5d5d06d9e5aa",
+      "title": "TalkTuit Loop Lockouts: Stop Trigger Loops Fast",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "442bfc7d6c87",
+      "title": "TalkTuit Automated Notifications: Email & SMS for New Leads",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "24363dd52d83",
+      "title": "TalkTuit Triggers Overview: Create & Activate Rules",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "a57bf79f8013",
+      "title": "TalkTuit Tax Settings: Configure & Apply Taxes in CRM",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "7a0b1cf7d3f0",
+      "title": "TalkTuit Sales Receipts: Enable Automated Payment Receipts",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "5fdab18426ee",
+      "title": "TalkTuit Refunds: Manage Full & Partial CRM Refunds",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "c815f4cd6900",
+      "title": "TalkTuit Payment Links: Create & Share in Minutes",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "5fe8c5928595",
+      "title": "Text-To-Pay Links in TalkTuit: Complete Setup Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "ba6d325ca5e8",
+      "title": "Apple Pay & Google Pay in TalkTuit Invoices and Text2Pay",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "37d2f2c5911d",
+      "title": "Authorize.net Integration in TalkTuit: Payment Setup Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "44ba24f1074d",
+      "title": "NMI in TalkTuit: Supported Countries & Bank Acquirers",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "a862efa2129c",
+      "title": "TalkTuit Payment Providers: Order Form FAQs",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "0f59e66e777c",
+      "title": "TalkTuit Subscriptions Page: What's Listed & How It Works",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "3ca85e5af4e0",
+      "title": "ACH Debit Payments on TalkTuit Invoices: Complete Setup Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "d3b464af9461",
+      "title": "TalkTuit Auto Payments in Recurring Invoice Templates",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "a17fd7e4e9c9",
+      "title": "TalkTuit Subscription & Refund Payment Triggers Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "41cbeca85569",
+      "title": "Facebook & Instagram Comment Triggers in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "e926372de8a4",
+      "title": "TalkTuit IVR Workflows: Triggers, Actions & Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "3777888c56c3",
+      "title": "TalkTuit Contact Tag Trigger: Set Up Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "7d7cf068ca00",
+      "title": "TalkTuit Drip Action: Control Workflow Execution Batches",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "9380d1508199",
+      "title": "TalkTuit Birthday Reminder Workflow: Complete Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "796a6146873c",
+      "title": "Facebook Group Comment Automation in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "14e9255f4e62",
+      "title": "Date/Time Formatter Workflow Action in TalkTuit: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "28627adc3067",
+      "title": "TalkTuit Workflow Slack Premium Action: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "d62a951e8b69",
+      "title": "TalkTuit Split Action: A/B Test Workflows With Ease",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "0fd56b24a682",
+      "title": "Copy a Workflow to Another Sub-Account in TalkTuit",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "eced931de2b4",
+      "title": "TalkTuit Google Sheets: Handle Multiple Rows in Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "ca6379820ab5",
+      "title": "TalkTuit Workflow Goal Events: Complete Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "ca250dc513b5",
+      "title": "Number Formatter Action in TalkTuit Workflows: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "41e03d0bc426",
+      "title": "If/Else Workflow Conditions in TalkTuit: New Features",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "1e97b7371583",
+      "title": "TalkTuit Array Functions: Workflow Automation Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "7c8659e3e8ab",
+      "title": "Custom Values for MMS in TalkTuit Workflows: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "a693e684f23e",
+      "title": "Custom Webhook LC Premium Workflow Action in TalkTuit",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "f0e26ac2bee4",
+      "title": "Google Sheets Premium Workflow Action in TalkTuit",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "ea070243973b",
+      "title": "TalkTuit Workflow Trigger: Task Completed",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "11923d0c2e0b",
+      "title": "Contact Changed Workflow Trigger in TalkTuit",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "961ffaea08e8",
+      "title": "Facebook Conversion API Workflow Trigger Fix in TalkTuit",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "77ed116412e6",
+      "title": "Auto-Assign Leads to Users in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5a87cc074b5c",
+      "title": "Inbound Webhook Workflow Trigger in TalkTuit: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "bdbcec2a5297",
+      "title": "TalkTuit Payment Received Workflow Trigger Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "7f5f6f62bb26",
+      "title": "Update Contact Field Action in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "d4ec177ea7e3",
+      "title": "Google Ads Conversion Tracking Setup in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "9dd826abb583",
+      "title": "Delete Contact Action in TalkTuit Workflows: Full Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "8436668624b8",
+      "title": "TalkTuit Workflow Folder Permissions: Agency Pro Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "efad2544e9bd",
+      "title": "TalkTuit Workflows vs Campaigns & Triggers Explained",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "d0d2d7456eb1",
+      "title": "10DLC Registration on TalkTuit: Avoid Higher Fees",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "1dd8de97f5f2",
+      "title": "A2P 10DLC Campaign Approval: TalkTuit Best Practices",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "a8177677dd65",
+      "title": "Forbidden SMS & MMS Message Categories in the US & Canada",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "4e3bcc121ac9",
+      "title": "TalkTuit Phone Trust Center Setup in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "5c8246bd99db",
+      "title": "A2P 10DLC Campaign Vetting Updates: January 2023 Changes",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "f43e6f92376c",
+      "title": "A2P 10DLC Campaign Use Cases in TalkTuit Explained",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "2add09566407",
+      "title": "A2P Sole Proprietor Brand Registration in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "0e33a1801615",
+      "title": "A2P 10DLC Registration & Compliance Guide for TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "82c0e9d837c6",
+      "title": "A2P 10DLC Pricing & Fees in TalkTuit Explained",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "9b5de0039f42",
+      "title": "Sole Proprietor Brand OTP Verification in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "8f2bc984c9f1",
+      "title": "TalkTuit One-Time Booking Links: Workflow Automation",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "b82faa781b2c",
+      "title": "Accept Deposit Payments on TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "f3e623949e3c",
+      "title": "TalkTuit Calendar Availability: Weekly & Date-Specific Hours",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "26d92fc89025",
+      "title": "A2P 10DLC Brand Approval in TalkTuit: Best Practices",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "217898643a0a",
+      "title": "A2P Terms & Conditions Requirements in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "709728f36421",
+      "title": "TalkTuit Calendar: View Appointments in User Timezone",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "9f69b39abbc1",
+      "title": "Google Booking Redirect Setup in TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "51f714f21966",
+      "title": "TalkTuit Service Menu: Complete Calendar Setup Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "8517db1c4e31",
+      "title": "TalkTuit Recurring Appointments: Calendar Setup Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "7b9a25d75522",
+      "title": "Disable Alternate Time Zones on TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "51fc1f650c6b",
+      "title": "Block Specific Days or Times in TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "1a7e31eceb7b",
+      "title": "TalkTuit Calendar Rooms: Setup & Configuration Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "aa89f4b741f4",
+      "title": "TalkTuit Outlook Calendar Sync: Complete Setup Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "2c8bfde66e34",
+      "title": "TalkTuit Service Calendars for Auto Detailing Setup",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "fae8f98849af",
+      "title": "TalkTuit Calendar Availability Settings Explained",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "aa9ef2bb4936",
+      "title": "TalkTuit Calendar User Consolidation: Setup Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "97bce4b8e036",
+      "title": "TalkTuit Calendar Widget Customization Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "f819ebb3cd3c",
+      "title": "TalkTuit Group Calendar ID: Find It in 3 Steps",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "1a76c3935af0",
+      "title": "TalkTuit Class Calendar Setup: Step-by-Step Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "846b7193683e",
+      "title": "TalkTuit Class Booking: Show Seats Per Slot Widget",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "290ce22cb6e4",
+      "title": "Google Calendar Reintegration in TalkTuit: Full Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "6d946eaaa5a8",
+      "title": "TalkTuit Calendar Equipment Setup: Step-by-Step Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "7cefa587e5c9",
+      "title": "TalkTuit One-Time Booking Links: Setup & Best Practices",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "77cf73ac29cf",
+      "title": "TalkTuit Neo Group View Template: Setup Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "75c6987ef0c0",
+      "title": "TalkTuit Service Calendar: Setup & Scheduling Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "7cb5c86d6a1d",
+      "title": "Instagram Story Post Composer in TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "d9e58652670a",
+      "title": "TalkTuit Social Planner Approval Workflow Setup",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "ffbf22486274",
+      "title": "Google My Business Publishing Issues: TalkTuit Fix",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "8e62b2c86d2b",
+      "title": "Add a Watermark to Social Media Images in TalkTuit",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "69f8d99991fc",
+      "title": "Customize Social Media Posts Per Platform in TalkTuit",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "93f6de203d63",
+      "title": "TikTok Direct Posting in TalkTuit: Skip Push Notifications",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "471919efb65f",
+      "title": "Create Instagram Reels with TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "b482ce084d0d",
+      "title": "TalkTuit Social Planner: Fix Failed Posts Fast",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "e9ca36f47838",
+      "title": "Facebook Publishing Issues in TalkTuit: Full Fix Guide",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "1d3dff7bb2b9",
+      "title": "Social Media Profile Grouping in TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "5113cd910c52",
+      "title": "Schedule Facebook Reels in TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "e6e2aff07ce5",
+      "title": "TalkTuit Social Planner: Create Group Hashtags",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "b86663ad0cbd",
+      "title": "TalkTuit Follow-Up Comments: Boost Social Engagement",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "1ff1bb419200",
+      "title": "Share Review Posts on Social Media with TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "3d772c92d531",
+      "title": "Connect Twitter to TalkTuit Social Planner (2024)",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "1d6c23324aea",
+      "title": "Connect Google My Business to TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "5543e8d32231",
+      "title": "Social Planner Snapshots: Share Content Across Sub-Accounts",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "26e8c1b798d6",
+      "title": "Connect Instagram Business Account to TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "0517a760c356",
+      "title": "Connect TikTok to TalkTuit Social Planner (Personal)",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "75777014f74d",
+      "title": "Connect LinkedIn Profiles & Pages in TalkTuit",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "14d6b9c874aa",
+      "title": "Inbound Marketing for TalkTuit SaaS: Full Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "db1fd4bbadcb",
+      "title": "A2P 10DLC TalkTuit Setup: Free Snapshot Included",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "5e1ab7977dce",
+      "title": "Hide the SMTP Help Doc Link in TalkTuit Agency Settings",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "c7c812872f04",
+      "title": "Hide TalkTuit Tooltips with Custom CSS in Your Agency",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "4d2e77aa21ca",
+      "title": "Manage Multiple Locations in TalkTuit Without Agency Access",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "ff3f9d34a0c1",
+      "title": "Yext for Clients in TalkTuit: Agency-Paid Setup Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "f2b54471a6e6",
+      "title": "Connect Stripe to Your TalkTuit Agency Dashboard",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "c58a627d38fe",
+      "title": "Resell WordPress Hosting in TalkTuit: Complete Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "5d3fdf825701",
+      "title": "TalkTuit Location ID: Find Your Client's Sub-Account ID",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "151e75d69cc0",
+      "title": "TalkTuit SaaS Mode Sub-Accounts Not Creating: Fix It",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "518fcc08415f",
+      "title": "Outlook Two-Way Email Sync in TalkTuit: Full Setup Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "c5232a508431",
+      "title": "TalkTuit API Key Update: Regenerate & Secure Your Keys",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "29f713d37c11",
+      "title": "Update a Client's Address in TalkTuit Sub-Accounts",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "c580b4e04cf7",
+      "title": "Disable Alternate Time Zones in TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "b86911d9ce50",
+      "title": "Batch Email Campaigns in TalkTuit: Drip Scheduling Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "fbac16af2314",
+      "title": "Send an Email Campaign in TalkTuit: Immediate or Scheduled",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "9e40cbed8af1",
+      "title": "Reschedule an Email Campaign in TalkTuit (TalkTuit)",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "edd53f631d77",
+      "title": "Mark Conversations as Read in TalkTuit: 4 Methods",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "64e1dad1c09f",
+      "title": "TalkTuit Email Deliverability: Key Factors Explained",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "19f339cbf4fc",
+      "title": "Fix Hidden or Broken Elements in TalkTuit Email Builder",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "b99484817b17",
+      "title": "SMS and Email Templates in TalkTuit: Full Overview",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "a0459c1b22e7",
+      "title": "TalkTuit Sender Email Masking: Customize Name & Address",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "e42b9cb249ae",
+      "title": "ActiveProspect Consent Tracking Setup in TalkTuit Forms",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "9d401b4f0f1b",
+      "title": "TalkTuit Form Submissions: Where Answers Are Displayed",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "32cd4cc120e2",
+      "title": "Add a Bump Offer to Your TalkTuit Order Form",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "938aae82e116",
+      "title": "TalkTuit Funnel Builder: Full Funnel Overview Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "e494b041fae4",
+      "title": "Importing Snapshots in TalkTuit: Step-by-Step Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "4ebe0847365c",
+      "title": "Banned WordPress Plugins in TalkTuit: Full List",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6d73c920b1e9",
+      "title": "Sales Velocity in TalkTuit Agent Reporting Explained",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "387f59a7cb36",
+      "title": "TalkTuit Snapshots: Import Into Existing Accounts",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "0cb1d31b2ac6",
+      "title": "TalkTuit Support: Tips to Get Faster Resolution Times",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "13cbc9f8de84",
+      "title": "TalkTuit Snapshots: Complete Guide to Account Cloning",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "bc437c94fccf",
+      "title": "TalkTuit Voicemail Drop File Conversion Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "082fee29729c",
+      "title": "SMS Campaign Media Display on Receiver Devices in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "290129954eec",
+      "title": "TalkTuit Voicemail Drop FAQs: What Agencies Must Know",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "1654f14ac4b1",
+      "title": "Fix Facebook Publishing Issues in TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "928a923a3ddd",
+      "title": "TalkTuit Survey Submissions: Where Answers Are Displayed",
+      "category": "Surveys",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "e19017db4a8a",
+      "title": "Stripe One-Time Charge Trigger Setup in TalkTuit",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "28f16e4bb0d6",
+      "title": "TalkTuit Tags Not Saving in Triggers: Fix It Fast",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "cb7646921739",
+      "title": "TalkTuit 9 Dots Issue: Fix Navigation Access Fast",
+      "category": "Troubleshooting",
+      "guideSlug": "quick-start-checklist"
+    },
+    {
+      "id": "c4c320283c2b",
+      "title": "Fix Slow CRM Data Loading in TalkTuit: 5 Steps",
+      "category": "Troubleshooting",
+      "guideSlug": "quick-start-checklist"
+    },
+    {
+      "id": "77fd7f6148f8",
+      "title": "TalkTuit Card Payment Authorization for Websites (v2)",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "212c5ad0fcaa",
+      "title": "TalkTuit Old Website Builder: Authorize Card Payments",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "08d61c9c077e",
+      "title": "TalkTuit Workflow Builder: Complete Overview & Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "e166f0532d57",
+      "title": "Shopify Elements in TalkTuit Workflows Explained",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "c4484eb09bcd",
+      "title": "Fix Facebook Conversion API Workflow Trigger in TalkTuit",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "a5714032750a",
+      "title": "TalkTuit Class Calendars: Setup and Management Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "afeb19b5fe9a",
+      "title": "Gmail Two-Way Email Sync with TalkTuit: Full Setup",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "89b15e41a9d8",
+      "title": "TalkTuit Free Trial: How to Start Yours Today",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "2150b335b40b",
+      "title": "TalkTuit Blogging: Set Up & Optimise Blog Posts",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "65a4bc6b6d52",
+      "title": "Cloudflare Setup for TalkTuit: DNS Configuration Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "699189a4f8f5",
+      "title": "Connect Instagram Business Account to TalkTuit Social Planner",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "3fb541c4f3f3",
+      "title": "Editing Pending & Processing Bulk Actions in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "d499184bc61f",
+      "title": "TalkTuit GDPR Compliance: What Agencies Need to Know",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "295a231d0c2f",
+      "title": "TalkTuit Custom Values: Complete Setup & Usage Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "0dbed34b1a28",
+      "title": "TalkTuit Membership Settings: Full Customization Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "3aa59c444882",
+      "title": "Point a Domain or Subdomain to WordPress in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "9ce5c43d0ea2",
+      "title": "TalkTuit Dashboard: Complete Overview & Key Metrics",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6ae210580386",
+      "title": "TalkTuit Universal Search: Find & Create Records Fast",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "e03ad863575d",
+      "title": "TalkTuit Custom Values: Complete List of Variables",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f04d3f2fddd0",
+      "title": "TalkTuit Time Zones: Set Up Locations Correctly",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "dc777d506304",
+      "title": "TalkTuit Domains Explained: Setup Tips & FAQs",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f2150679bcea",
+      "title": "TalkTuit Time Zones: Configure Users & Leads Correctly",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "0528b3e563ef",
+      "title": "TalkTuit File Management: Organize & Reuse Assets",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "fa9fc5ceb541",
+      "title": "GMB Call Tracking & Missed Call Text Back in TalkTuit",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "40a03ca8e98d",
+      "title": "TalkTuit URL Redirects: Create 301 Redirects Fast",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "5c9c0f408090",
+      "title": "Eliza AI Booking Bot: Automate Appointments in TalkTuit",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "edca879e5f7d",
+      "title": "TalkTuit Currency Settings: Change Your Currency Type",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "d1a750e6b21f",
+      "title": "TalkTuit Text 2 Pay: Send Payment Links via SMS",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "34ffabf31204",
+      "title": "Yext for TalkTuit: Boost Online Listings & SEO",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "5544b66e67a0",
+      "title": "Facebook Domain Verification in TalkTuit: Full Guide",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "318faa6bdb31",
+      "title": "TalkTuit Loop Lockouts: Stop Infinite Workflow Loops",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "6ffcc156dd2f",
+      "title": "TalkTuit Audit Logs: Track Changes & Team Actions",
+      "category": "General",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "2e429f9c2a04",
+      "title": "TalkTuit Account Settings: Complete Setup Overview",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f049e731b45f",
+      "title": "TalkTuit Event Start Date in Workflows: Full Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "537a70c8f288",
+      "title": "TalkTuit Appointment Confirmation & Reminder Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "80c31f5b4b1c",
+      "title": "TalkTuit Workflows: Complete Builder Guide & Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "d1821154f47a",
+      "title": "Duplicate a TalkTuit Workflow in 4 Simple Steps",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "20f6fd6ad946",
+      "title": "Import Campaigns into TalkTuit Workflows: Step-by-Step",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "f3562712548b",
+      "title": "Reorder Workflow Actions in TalkTuit: Step-by-Step",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "78a20dddd06d",
+      "title": "TalkTuit Workflow Folders: Organize Workflows Fast",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "93fae8622966",
+      "title": "Automated Calls & Voicemail Drops in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "b315c152b866",
+      "title": "TalkTuit Workflow Email & SMS Notifications: Complete Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "8bac51b98cfd",
+      "title": "TalkTuit Workflows: Using Multiple Trigger Events",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "1eaccdc8b4ae",
+      "title": "TalkTuit Course Completed Workflow Trigger Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "d5072a247c58",
+      "title": "TalkTuit Workflows: Master the Go To Action",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "3b8d98391efb",
+      "title": "TalkTuit Webhooks in Workflows: Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "62e40ca412d8",
+      "title": "TalkTuit Workflows: Assign Leads to Users with Round-Robin",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "85513e1dda85",
+      "title": "TalkTuit Workflow Actions: Complete List & Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "2411ec87385a",
+      "title": "TalkTuit Workflow Triggers: Complete List & Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "f37210437b51",
+      "title": "TalkTuit Membership Triggers: Workflow Builder Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5a5a5fcc0dad",
+      "title": "Track Failed SMS Contacts with Workflows & Smart Lists",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "7e786b50f30c",
+      "title": "TalkTuit Membership Login Notifications via Workflow",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5afd6caf238d",
+      "title": "TalkTuit Contact Changed Workflow Trigger Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "fc0949b8de25",
+      "title": "Google Ads Conversion Tracking in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "ffb4d28090d4",
+      "title": "Edit Conversation Action in TalkTuit Workflows Explained",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "68d483398209",
+      "title": "TalkTuit Workflow History Tab: Track Contact Actions",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "42109f8d2c63",
+      "title": "TalkTuit Wait Action: Workflow Builder Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "ce4e3e2c2bb1",
+      "title": "TalkTuit If/Else Condition: Split Workflow Paths",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "1d6fff81c695",
+      "title": "TalkTuit Abandoned Cart Workflow: Step-by-Step Setup",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "40eecc34f5c9",
+      "title": "TalkTuit Contact Attribution Variables in Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "85ac88d0a9d4",
+      "title": "TalkTuit Workflow Recipes: Pre-Built Templates Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "9a6dccffff37",
+      "title": "TalkTuit Social Planner: Create & Schedule Posts",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "2e3a4dd9a834",
+      "title": "Connect Facebook Groups to TalkTuit Social Planner: Full Guide",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "85f711d301d2",
+      "title": "Connect Facebook Pages to TalkTuit Social Planner (Step-by-Step)",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "487db24e9170",
+      "title": "Connect Google My Business to TalkTuit Social Planner",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "2df5124433ff",
+      "title": "TalkTuit Social Planner: Image & Video Size Guide",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "c4f47dcd6ac9",
+      "title": "TalkTuit Social Planner: Email Alerts for Expired Accounts",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "3b22c86575b1",
+      "title": "TalkTuit Social Planner: Schedule & Manage Social Media",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "5eae89f1500e",
+      "title": "TalkTuit Social Planner: Fix Failed Post Error Codes",
+      "category": "Social media",
+      "guideSlug": "social-planner"
+    },
+    {
+      "id": "3e1bc1168a90",
+      "title": "Email & Phone Mapping in TalkTuit Triggers: Step-by-Step",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "64dbb450d53a",
+      "title": "TalkTuit Duration in Days Filter: Remove Stale Opportunities",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "c24b8e4b233c",
+      "title": "TalkTuit Triggers: Build & Automate If/Then Rules",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "1fb69bbcb025",
+      "title": "TalkTuit Task Triggers: Build, Edit & Automate",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "07d274ef6b1f",
+      "title": "Check What Triggered a Contact Into a TalkTuit Campaign",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "9aa07f0b5b5c",
+      "title": "TalkTuit Custom Date Trigger: Setup & Activation",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "0b63ae3a3b1f",
+      "title": "TalkTuit Double Opt-In System: Complete Setup Guide",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "cd6b17a659eb",
+      "title": "TalkTuit Chat Widget: New Chat Notification Trigger",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "772f0eb02a0a",
+      "title": "TalkTuit Auto Responder Setup Using Triggers",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "d5eafeebab9d",
+      "title": "TalkTuit Trigger Folders: Organise & Manage Triggers",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "ec4db3ec02e0",
+      "title": "TalkTuit Push Notifications for Triggers: Full Setup",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "0101af2554b8",
+      "title": "Duplicate TalkTuit Triggers Fast: Step-by-Step Guide",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "9309685516d3",
+      "title": "Filter TalkTuit Triggers by Product Type: Step-by-Step",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "839c8bb670ee",
+      "title": "TalkTuit Abandoned Cart Campaign & Trigger Setup",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "39311ee6af34",
+      "title": "TalkTuit Triggers: Set Up Email & SMS Notifications for Actions",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5907ef3b42fd",
+      "title": "TalkTuit Form Submission Triggers: Complete Setup Guide",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "9416d7758958",
+      "title": "TalkTuit Lead Values in Pipelines: Trigger Setup Guide",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "dc94a4c92b33",
+      "title": "TalkTuit Send Email Action Not Firing: Fix It Fast",
+      "category": "Automation triggers",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5774d453789c",
+      "title": "TalkTuit Call Event Not Working: Campaign Troubleshooting",
+      "category": "Troubleshooting",
+      "guideSlug": "quick-start-checklist"
+    },
+    {
+      "id": "551c63558f64",
+      "title": "Zapier Not Working with TalkTuit: Fix It Fast",
+      "category": "Troubleshooting",
+      "guideSlug": "quick-start-checklist"
+    },
+    {
+      "id": "05a137f83c20",
+      "title": "TalkTuit Page Not Loading: Fix It Fast",
+      "category": "Troubleshooting",
+      "guideSlug": "quick-start-checklist"
+    },
+    {
+      "id": "20ff12865a1a",
+      "title": "TalkTuit Webhooks: Integrate TalkTuit With Zapier & Google Sheets",
+      "category": "Webhooks",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "337c5fa898b1",
+      "title": "Add a TalkTuit Chat Widget to WordPress: Step-by-Step",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "9071160b3045",
+      "title": "Google Search Console Domain Verification in TalkTuit",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "72be4523da9b",
+      "title": "TalkTuit Cookie & Privacy Policy Pop-Up Setup",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "5d8b507c5ee2",
+      "title": "Add Facebook Pixel to TalkTuit Funnels & Websites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "1acd271b2e3d",
+      "title": "Add Hyperlinks to TalkTuit Websites & Funnels (Step-by-Step)",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "bd021a671e5f",
+      "title": "TalkTuit Website Button Configuration Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "4d5322f2b260",
+      "title": "TalkTuit Custom Website Builder: Complete Setup Guide",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "a7d3d8f62e37",
+      "title": "TalkTuit Chat Widget: Add Live Chat to Funnels & Sites",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "4e99094c115a",
+      "title": "TalkTuit Global Sections: Create, Save & Update",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "c07929d2df3b",
+      "title": "Redirect www to Non-www Domains in TalkTuit",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "f6652eb0b452",
+      "title": "Cloudflare Domain Redirect for TalkTuit (www & non-www)",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6ec1224095f5",
+      "title": "TalkTuit XML Sitemap Setup for Your Domains",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "a306d613b564",
+      "title": "Transfer a Domain to Cloudflare for TalkTuit",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "b3e37b9f4648",
+      "title": "TalkTuit URL Paths: Manage Domains & Funnels",
+      "category": "Websites",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "9e1eba585ebe",
+      "title": "TalkTuit Bulk Actions: Campaigns & Workflows Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "5e5f635fe000",
+      "title": "TalkTuit Workflow Status: Track & Monitor Contacts",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "cbc134fdc52a",
+      "title": "TalkTuit Workflow Delivery Windows: Full Setup Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "b6837c13bd40",
+      "title": "TalkTuit Workflow Settings: Complete Customization Guide",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "0591635f6382",
+      "title": "Facebook Conversion API Trigger in TalkTuit Workflows",
+      "category": "Workflows",
+      "guideSlug": "workflow-builder"
+    },
+    {
+      "id": "4b7acae9b7a9",
+      "title": "TalkTuit Appointment Reporting: Filter & Analyse Data",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f799277e95f1",
+      "title": "TalkTuit Agent Reporting: Track Team Performance",
+      "category": "Reporting",
+      "guideSlug": "dashboard-basics"
+    },
+    {
+      "id": "03d4ed0936bd",
+      "title": "TalkTuit Attribution Report: Track Lead Sources",
+      "category": "Reporting",
+      "guideSlug": "dashboard-basics"
+    },
+    {
+      "id": "cef2447d9f00",
+      "title": "TalkTuit Call Reporting: Track & Analyse Call Data",
+      "category": "Reporting",
+      "guideSlug": "dashboard-basics"
+    },
+    {
+      "id": "686d41a53ff9",
+      "title": "Facebook Ads Reporting in TalkTuit: Full Guide",
+      "category": "Reporting",
+      "guideSlug": "dashboard-basics"
+    },
+    {
+      "id": "7b6197ca7a19",
+      "title": "Google Ads Reporting in TalkTuit: Full Guide",
+      "category": "Reporting",
+      "guideSlug": "dashboard-basics"
+    },
+    {
+      "id": "1748aad60abf",
+      "title": "TalkTuit Reporting Dashboard: A Complete Navigation Guide",
+      "category": "Reporting",
+      "guideSlug": "dashboard-basics"
+    },
+    {
+      "id": "f2cb5ce866a6",
+      "title": "Google My Business Messaging Setup in TalkTuit",
+      "category": "Reputation",
+      "guideSlug": "reputation-reviews"
+    },
+    {
+      "id": "b1c17b1554a2",
+      "title": "TalkTuit Review Capture Setup: Reputation Management Guide",
+      "category": "Reputation",
+      "guideSlug": "reputation-reviews"
+    },
+    {
+      "id": "fea74c5d5f1d",
+      "title": "5 Ways to Keep TalkTuit Emails Out of Spam",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "3dc36896947d",
+      "title": "TalkTuit Dialer Options: Mute, Hold & Call Transfers",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "6dea266a23bb",
+      "title": "Convert Voicemail Drop Audio to MP3 or WAV in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "b294327c2b79",
+      "title": "TalkTuit Call Tracking Setup: Number Pools & Attribution",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "ad9edcd513a2",
+      "title": "Twilio Setup for TalkTuit: Complete Configuration Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "90f4834a1ee2",
+      "title": "TalkTuit Inbound Call Routing: Complete Setup Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "ed77c94fe1a4",
+      "title": "Delete a Twilio Phone Number in TalkTuit: 3 Steps",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "1deeb84e0cbc",
+      "title": "Get a Twilio Outbound Phone Number in TalkTuit",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "68fc9d7cd13e",
+      "title": "TalkTuit Call Recording: Enable & Review Call Logs",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "d29a14f24741",
+      "title": "TalkTuit Automated Calls & Voicemail Drops in Campaigns",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "2a8374ba7dbb",
+      "title": "SMS & Phone Number Validation in TalkTuit: Full Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "437af3790b74",
+      "title": "TalkTuit Dialer: Making One-Time Outbound Calls",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "f4619a43fcbb",
+      "title": "TalkTuit Voicemail Drop Setup: Step-by-Step Guide",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "eb6d0c6081ee",
+      "title": "Twilio Caller ID Setup for TalkTuit Phone Calls",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "fa83e2ade920",
+      "title": "Twilio Error Codes in TalkTuit: How to Fix Them",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "a266d49695b8",
+      "title": "Twilio Numbers in TalkTuit: Outbound Selection Explained",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "3ea348e7b728",
+      "title": "TalkTuit Whisper Message: Setup & Custom Values",
+      "category": "Phone",
+      "guideSlug": "voice-assistant"
+    },
+    {
+      "id": "f609a929c3ae",
+      "title": "TalkTuit Opportunities Tab: Complete Overview Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "7212052296d1",
+      "title": "PayPal Integration for TalkTuit: Process Payments Fast",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "754c753dd0d2",
+      "title": "Facebook Integration in TalkTuit: Complete Setup Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "93e677334ebd",
+      "title": "Update Facebook Page Selection & Permissions in TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "8f3bf1813b7e",
+      "title": "Instagram DM Integration for TalkTuit: Full Setup Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "e653485e0963",
+      "title": "Google Integration for TalkTuit: Calendar & Ads Setup",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "2ce21ea42b48",
+      "title": "Reserve with Google & Local Services Ads Integration in TalkTuit",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "2989a53c0fb2",
+      "title": "Facebook Form Field Mapping in TalkTuit: Full Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "f00fda46ac07",
+      "title": "TalkTuit QuickBooks Integration: Sync Contacts & Invoices",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "cedd6cc75458",
+      "title": "Shopify Integration with TalkTuit: Step-by-Step",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "70320f30ec94",
+      "title": "TalkTuit Chat Widget WordPress Plugin Setup",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "dc70faf3011a",
+      "title": "Zoom Integration with TalkTuit: Complete Setup Guide",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "6bc15ae14066",
+      "title": "TalkTuit Mobile App: Complete Navigation Guide",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "7571ea11492e",
+      "title": "TalkTuit Mobile App: Manage Calendar & Appointments",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "b82ed562ee8a",
+      "title": "TalkTuit Mobile App: Managing Contacts on the Go",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "b8d40a4a3cbd",
+      "title": "TalkTuit Mobile App: Managing Conversations On the Go",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "3aa1966c54ab",
+      "title": "TalkTuit Mobile App: Manage Invoices On the Go",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "33e58a430d68",
+      "title": "TalkTuit Mobile App: Manage Reputation & Reviews",
+      "category": "Mobile",
+      "guideSlug": "mobile-app"
+    },
+    {
+      "id": "2e3ad554181d",
+      "title": "Add a Contact to Multiple Opportunities in TalkTuit",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "1b6571c448c2",
+      "title": "TalkTuit Pipelines: Create, Edit & Manage Stages",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "e451524868b6",
+      "title": "Close, Delete or Archive an Opportunity in TalkTuit",
+      "category": "Opportunities",
+      "guideSlug": "opportunities-pipelines"
+    },
+    {
+      "id": "2ef9abe37308",
+      "title": "TalkTuit Recurring Invoices: Setup & Management Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "1e5bc8e1900f",
+      "title": "TalkTuit Invoices: Create, Send & Track Payments",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "47d42386a09a",
+      "title": "TalkTuit Tax Settings: Configure Payments Taxes Fast",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "98e71dd5bcd9",
+      "title": "TalkTuit Orders Tab: Manage & Export Payment Orders",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "91cd5a255c8f",
+      "title": "TalkTuit Payments Tab: Complete Setup Guide",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "c3667cb80448",
+      "title": "TalkTuit Transactions Tab: Manage Payments in One Place",
+      "category": "Payments",
+      "guideSlug": "payments-invoices"
+    },
+    {
+      "id": "43b6cc1223e2",
+      "title": "Add a One-Time Product to Your TalkTuit Funnel Builder",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "837a86610e54",
+      "title": "Add a Subscription Product to Your TalkTuit Funnel",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "edcc3acabff9",
+      "title": "Change Your Logo in TalkTuit Funnel & Website Builder",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "47d82d20d1fa",
+      "title": "Clone and Share Funnels in TalkTuit: Step-by-Step",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "5a04fa73e995",
+      "title": "Connect a Domain to a TalkTuit Funnel or Website (2 Ways)",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "f2fd8e113052",
+      "title": "TalkTuit Coupon Codes: One Step Order Form Setup",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "64667fedbc2b",
+      "title": "TalkTuit Coupon Codes: Two-Step Order Form Setup",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "0cccd33a1eca",
+      "title": "Mobile Nav Bar Customization in TalkTuit Funnel Builder",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "caf870305b78",
+      "title": "Import ClickFunnels Funnels into TalkTuit in Minutes",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "5c621ac68ce3",
+      "title": "TalkTuit Membership Subdomain Setup Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6be3b781b026",
+      "title": "TalkTuit Payment Plans in Funnels: Full Setup Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "398e368f7dcb",
+      "title": "TalkTuit Domain & Subdomain Setup for Funnels",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6a0c1b6c1b29",
+      "title": "TalkTuit V1 to V2 Funnel Upgrade: Complete Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8ae77ab9bafa",
+      "title": "TalkTuit Favicon Setup: Add a Custom Tab Icon to Funnels",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "fcd6b9b131ec",
+      "title": "TalkTuit Media Library: Upload & Manage Images",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "8de82e6206ce",
+      "title": "TalkTuit Image Element: Funnel Builder Setup Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "fc8a7920c3eb",
+      "title": "Forms, Surveys & Calendars in TalkTuit Funnels: Full Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "5b3ab48fd6f3",
+      "title": "TalkTuit Time Delay in Funnel & Website Builder",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6a1681531e86",
+      "title": "TalkTuit Funnel Best Practices for Higher Conversions",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "6afd7d612f64",
+      "title": "TalkTuit Split Testing in Funnels: Full Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "1746ef919bb0",
+      "title": "TalkTuit Video Element in Funnel Builder: Full Setup Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "77ccff184b9b",
+      "title": "Import Stripe Products into TalkTuit in Minutes",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "7c37e395b160",
+      "title": "TalkTuit Stripe Integration: Connect & Configure Payments",
+      "category": "Integrations",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "f1faef3c5681",
+      "title": "Add a Chat Widget to Your TalkTuit Membership Section",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "ba518cd494c0",
+      "title": "Add Customers to TalkTuit Memberships, Courses & Offers",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "ec16b3c10dcd",
+      "title": "Build & Edit a Membership Offer in TalkTuit",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "37f0f8e823fd",
+      "title": "Connect Course & Funnel Checkout in TalkTuit",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "7ed747114e96",
+      "title": "TalkTuit Membership One-Click Upsell: Full Setup Guide",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "55e17502bf2b",
+      "title": "TalkTuit Membership Categories: Create & Edit Guide",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "178d3ce63bef",
+      "title": "TalkTuit Memberships: Create & Edit Posts Fast",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "4874751969e7",
+      "title": "Customize Membership Welcome Emails in TalkTuit",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "252a68dc15c5",
+      "title": "Manually Grant Membership Access in TalkTuit",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "d57e42567678",
+      "title": "Drip Content for Membership Subcategories in TalkTuit",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "e132c64fa915",
+      "title": "TalkTuit Membership Themes: Customize Product Pages",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "bffb6109c166",
+      "title": "TalkTuit Membership Comments: Complete Management Guide",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "a86a2050d436",
+      "title": "TalkTuit Membership Products vs Offers Explained",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "fb18ccf478d8",
+      "title": "TalkTuit Membership Triggers: Complete Overview",
+      "category": "Courses",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "e85a413904b2",
+      "title": "TalkTuit Mobile & Desktop Funnel Views: Full Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "cd04adece34b",
+      "title": "TalkTuit Funnel Builder: Complete Overview & Setup Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "f61bc70a0300",
+      "title": "TalkTuit One-Click Upsell: Activate OTOs in Funnels",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "f54a21cd44dc",
+      "title": "Add a Facebook Pixel to Your TalkTuit Funnel",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "91dce9937b1f",
+      "title": "TalkTuit Forms: Add or Remove Agency Branding Logos",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "bf5060677894",
+      "title": "TalkTuit Surveys: Build, Edit & Use Survey Logic",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "167d377e7e50",
+      "title": "TalkTuit Forms: Build, Edit & Use Forms Effectively",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "6d1dd3d41d33",
+      "title": "Customize a TalkTuit Form or Survey: Full Guide",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "a749ec34ad13",
+      "title": "TalkTuit Survey & Form Answers: Where to Find Them",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "9dbc40194f53",
+      "title": "TalkTuit Form Attribution: Track Submissions & Traffic Sources",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "a23fc454a8fc",
+      "title": "Submit Mock Data for TalkTuit Forms & Surveys (6 Steps)",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "244677a7669c",
+      "title": "File Upload Custom Field in TalkTuit Forms & Surveys",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "dbbf48975e91",
+      "title": "Signature Custom Field in TalkTuit Forms & Surveys",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "91d7d7eff30b",
+      "title": "TalkTuit Forms: Automatic Country Code Detection",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "85aa8b07d3ae",
+      "title": "TalkTuit Order Forms: Submitted vs Purchased Explained",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "d6f72b622645",
+      "title": "TalkTuit Chat Widget Submissions: View & Manage",
+      "category": "Forms",
+      "guideSlug": "forms-surveys"
+    },
+    {
+      "id": "8ae8d538b18e",
+      "title": "TalkTuit Card Authorization for Subscriptions & Plans",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "297bb5685558",
+      "title": "Import Funnel Steps & Website Pages in TalkTuit",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "f31718c2bf69",
+      "title": "TalkTuit Funnel & Website Color Customization Guide",
+      "category": "Funnels",
+      "guideSlug": "templates-snapshots"
+    },
+    {
+      "id": "0e442a38072c",
+      "title": "TalkTuit Email Deliverability: Stop Emails Going to Spam",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "edc8ae037fa6",
+      "title": "TalkTuit Campaigns: Enable or Disable Allow Multiple",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "1cfca670b937",
+      "title": "TalkTuit Campaign Testing: Verify Before You Send",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "fc82cb0b5f65",
+      "title": "TalkTuit Manual SMS Campaign Events: Setup Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "e941011d894e",
+      "title": "Push Campaign Steps in TalkTuit: Skip Time Delays",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "f9cc557473f5",
+      "title": "Pause and Resume a TalkTuit Campaign (Draft Mode)",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "4b40ffb85a95",
+      "title": "TalkTuit Campaign Deliverability: Track Message Stats",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "916056357828",
+      "title": "TalkTuit Round Robin Campaigns: Setup & Best Practices",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "420e4464fc8d",
+      "title": "TalkTuit Manual Call Event: Setup & Campaign Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "6e36cea8a694",
+      "title": "TalkTuit Email Statistics: Track Campaign Performance",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f3646e6ba4c3",
+      "title": "Bulk Add or Remove Tags in TalkTuit Contacts",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "68ed310ac374",
+      "title": "Bulk Delete Contacts in TalkTuit: Step-by-Step",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "443f92b069a2",
+      "title": "Bulk Email Contacts in TalkTuit Using Bulk Actions",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "183a2aa083f6",
+      "title": "TalkTuit Bulk Actions: Import & Export Contacts",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "d2129f0cae41",
+      "title": "Merge Duplicate Contacts in TalkTuit: Bulk Actions",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "d26d7818411e",
+      "title": "TalkTuit Bulk Pipeline Change for Contacts",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "9da92ef50a6d",
+      "title": "TalkTuit Bulk Review Requests: Send to All Contacts",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "fd3c53c2cbd9",
+      "title": "TalkTuit Bulk SMS: Send Mass Texts to Contacts",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "65094e1b4100",
+      "title": "TalkTuit Contacts Overview: Add, Search & Filter",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "d07dd9d26169",
+      "title": "TalkTuit Sticky Contact: Save & Sync Lead Data Across Forms",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "4cfdc7c5c5a0",
+      "title": "Tag Contacts on Import: TalkTuit List Import Guide",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "581d9e783232",
+      "title": "TalkTuit Duplicate Contacts: Allow or Prevent Them",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "f9747c2378b3",
+      "title": "TalkTuit Manual Actions in Campaigns: Complete Guide",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "08fb62d84e00",
+      "title": "TalkTuit Smart Lists: Create, Edit & Filter Contacts",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "a5e3c7d12479",
+      "title": "TalkTuit SMS & Email Templates: Create and Use Them",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "c8d9cb9186b7",
+      "title": "TalkTuit Contact Import: Upload & Map CSV Files",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "09d67a739702",
+      "title": "TalkTuit Contact Records: Complete Navigation Guide",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "fc17fbc5f482",
+      "title": "Restore Deleted Contacts in TalkTuit: Step-by-Step",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "5f8e05678296",
+      "title": "TalkTuit Tags: Organize & Segment Contacts Effectively",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "6374775c2e55",
+      "title": "TalkTuit Bulk Actions for Contacts: Complete Guide",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "a1f0f2b04802",
+      "title": "TalkTuit DND Feature: Manage Contact Communication Preferences",
+      "category": "Contacts",
+      "guideSlug": "contacts-records"
+    },
+    {
+      "id": "49d9a616b776",
+      "title": "TalkTuit Conversation Message Details Explained",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "963c8fd91719",
+      "title": "TalkTuit Conversations: Complete Inbox Overview",
+      "category": "Conversations",
+      "guideSlug": "handling-conversations"
+    },
+    {
+      "id": "0be1aa20fd90",
+      "title": "TalkTuit Email Deliverability: Boost Inbox Rates",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "35596994e1a8",
+      "title": "Add to Calendar Links in TalkTuit Appointment Reminders",
+      "category": "Email",
+      "guideSlug": "email-sending"
+    },
+    {
+      "id": "4b2ab50c446f",
+      "title": "TalkTuit Email Forwarding & BCC Setup Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "d7575826984c",
+      "title": "Add a 3rd Party SMTP Account in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "9db899068beb",
+      "title": "Mailgun Unsubscribe Settings for TalkTuit Explained",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "38b50f78cbe1",
+      "title": "Connect SendGrid as Your SMTP Service in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "092f2d1f227c",
+      "title": "TalkTuit Email Signature: Create, Edit & Deploy",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "30a48cbd9a3f",
+      "title": "RSS Headers & Items in TalkTuit Email Builder: Basic vs Custom",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "518d704c683d",
+      "title": "RSS Feeds in TalkTuit Email Builder: Full Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "c7bf4e486c94",
+      "title": "TalkTuit Email Builder: Templates & Campaigns Guide",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "7a8e5d59ddc8",
+      "title": "Gmail SMTP Integration for TalkTuit: Step-by-Step",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "57aaadca6759",
+      "title": "Mailgun Setup for TalkTuit: Complete Overview",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f4ee169b225e",
+      "title": "Mailgun Setup with GoDaddy DNS for TalkTuit Email",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "9d04420c4192",
+      "title": "TalkTuit Sender Name & Email Masking in System Emails",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "ad46c170fe4a",
+      "title": "Brevo (SendInBlue) SMTP Setup for TalkTuit Agencies",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "038aff97c32b",
+      "title": "Mailgun Cloudflare DNS Setup for TalkTuit Email",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "395586c4e62e",
+      "title": "Mailgun Reply Routing Setup for TalkTuit (TalkTuit)",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "47148de08320",
+      "title": "TalkTuit SMTP Setup: Connect Your Email Provider",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "f59af4cc0220",
+      "title": "TalkTuit Test Email Errors: Fix & Send Successfully",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "5b6d3a089c27",
+      "title": "Fix RSS Email HTML Tags Showing in TalkTuit",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "e789acde0c97",
+      "title": "TalkTuit User Permissions: Edit Staff Access & Roles",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "778fdb271351",
+      "title": "TalkTuit Email Signatures: Add to All Outgoing Messages",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "8abd49d9431b",
+      "title": "TalkTuit Team Management: Add & Manage Staff",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "690b0f54f5d6",
+      "title": "TalkTuit Password Reset: Change Your Login Credentials",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "c1332ceb55c3",
+      "title": "TalkTuit Company Settings: Complete Setup Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    },
+    {
+      "id": "fd4e22b76765",
+      "title": "TalkTuit Calendar Setup: Complete Configuration Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "39796c5082d1",
+      "title": "TalkTuit Calendar Sync Options: One-Way vs Two-Way",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "ebdccafe3171",
+      "title": "Add Facebook Pixel to TalkTuit Forms, Surveys & Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "eb3d2e246cfd",
+      "title": "Block Off Time in a TalkTuit Calendar (Step-by-Step)",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "7ce970b1db28",
+      "title": "Duplicate a TalkTuit Calendar in Minutes",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "007c82d3ede3",
+      "title": "TalkTuit Unassigned Calendar: Create & Edit Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "ce8d507c719f",
+      "title": "TalkTuit Calendar Groups: Setup, Users & Round Robin",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "f04d67a9d401",
+      "title": "Disable or Enable a Calendar Service in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "180219ac106c",
+      "title": "Calendar Bridge Integration with TalkTuit Calendars",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "b79bff23780b",
+      "title": "Google Meet & Zoom Calendar Integration in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "31850b92f38f",
+      "title": "Mark Appointment Status Invalid with TalkTuit Triggers",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "526a99189e0b",
+      "title": "Override TalkTuit Calendar Availability to Book Any Time",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "9411c204be04",
+      "title": "TalkTuit Calendar Booking Triggers: Complete Setup Guide",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "c6cf06f158f5",
+      "title": "TalkTuit Calendar Cancellation & Reschedule Links Setup",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "8bd845969e12",
+      "title": "Outlook Calendar Integration With TalkTuit: Full Setup",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "41da1ef0786e",
+      "title": "Fix Google Calendar Writer Access Error in TalkTuit",
+      "category": "Calendars",
+      "guideSlug": "appointment-calendars"
+    },
+    {
+      "id": "3525997cbc1e",
+      "title": "TalkTuit Event Start Date in Campaigns: Full Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "c948d528e8a9",
+      "title": "TalkTuit Stop On Response: How Campaigns Work",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "fcd125a5d7a5",
+      "title": "TalkTuit Unsubscribe Link: Build & Automate Opt-Outs",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "f99618079743",
+      "title": "TalkTuit Campaign Delivery Windows: Control Step Timing",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "9fc015bc750a",
+      "title": "Copy a TalkTuit Campaign to Duplicate & Reuse Fast",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "791cbf18e745",
+      "title": "TalkTuit Campaigns: Build Your First Automated Sequence",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "c57e6dcf7697",
+      "title": "TalkTuit Appointment Confirmation & Reminder Campaign Setup",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "19e87ad22ce9",
+      "title": "TalkTuit Google My Business Campaign: Setup Guide",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "fa3501e763e7",
+      "title": "TalkTuit Campaigns: Custom From Email Address Setup",
+      "category": "Campaigns",
+      "guideSlug": "lead-capture"
+    },
+    {
+      "id": "e97ea8d834e8",
+      "title": "TalkTuit Blog Authors: Add & Manage Contributors",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "2a4a8818e5d4",
+      "title": "TalkTuit Blog SEO: Update Meta Title & Description",
+      "category": "Getting started",
+      "guideSlug": "getting-started"
+    },
+    {
+      "id": "cf50d7e71511",
+      "title": "TalkTuit Custom Fields: Create, Edit & Delete Guide",
+      "category": "Account",
+      "guideSlug": "your-account-settings"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 /*
  * TalkTuit GHL Customizer
- * Version: 1.4.0
+ * Version: 1.4.1
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -14,7 +14,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.4.0";
+  var VERSION = "1.4.1";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||
@@ -34,11 +34,11 @@
     cssUrl: "",
     theme: "light",
     persistTheme: true,
-    showThemeControl: true,
+    showThemeControl: false,
     decorateOpportunityTags: true,
     colorfulSections: true,
     fullWorkspaceTheme: false,
-    brandShell: true,
+    brandShell: false,
     showLoadConfirmation: false,
     tagAliases: DEFAULT_TAG_ALIASES,
     debug: false
@@ -56,11 +56,9 @@
       globalConfig.persistTheme,
       DEFAULTS.persistTheme
     ),
-    showThemeControl: readBoolean(
-      scriptData.showThemeControl,
-      globalConfig.showThemeControl,
-      DEFAULTS.showThemeControl
-    ),
+    // Floating controls are intentionally disabled because they can cover
+    // native CRM actions on compact screens.
+    showThemeControl: false,
     decorateOpportunityTags: readBoolean(
       scriptData.decorateOpportunityTags,
       globalConfig.decorateOpportunityTags,
@@ -76,11 +74,7 @@
       globalConfig.fullWorkspaceTheme,
       DEFAULTS.fullWorkspaceTheme
     ),
-    brandShell: readBoolean(
-      scriptData.brandShell,
-      globalConfig.brandShell,
-      DEFAULTS.brandShell
-    ),
+    brandShell: false,
     showLoadConfirmation: readBoolean(
       scriptData.showLoadConfirmation,
       globalConfig.showLoadConfirmation,

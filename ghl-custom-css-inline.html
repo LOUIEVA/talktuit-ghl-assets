@@ -1,10 +1,10 @@
-﻿/* Paste this entire file directly into Agency View > Settings > Company > Whitelabel > Custom CSS.
+/* Paste this entire file directly into Agency View > Settings > Company > Whitelabel > Custom CSS.
  * Do not wrap it in a <style> tag; HighLevel adds that wrapper automatically.
  */
 /*
  * TalkTuit GHL Customizer
  * Brand system: TalkTuit Brand Guidelines v1.0 (July 2026)
- * Version: 1.4.0
+ * Version: 1.4.1
  *
  * This file intentionally favors stable HighLevel classes/data attributes.
  * HighLevel can change its interface, so test after major platform updates.
@@ -2578,6 +2578,21 @@ html[data-tt-theme="focus"][data-tt-section]
 }
 
 /* Responsive and motion ------------------------------------------------ */
+
+/* Keep native CRM actions unobstructed. These legacy floating widgets are
+ * disabled in JavaScript too; this rule also protects mixed/cached installs. */
+#tt-brand-shell,
+#tt-theme-control {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+body:is(.sidebar-v2-agency, .sidebar-v2-location):not(.tt-brand-ready)::after,
+body:not(.tt-brand-ready):has(.sidebar-v2-agency #sidebar-v2)::after,
+body:not(.tt-brand-ready):has(.sidebar-v2-location #sidebar-v2)::after {
+  content: none !important;
+  display: none !important;
+}
 
 @media (max-width: 720px) {
   #tt-brand-shell {

@@ -21,12 +21,12 @@ $jsBundle = @"
   window.TalkTuitGHLConfig = {
     theme: "light",
     persistTheme: true,
-    showThemeControl: true,
+    showThemeControl: false,
     decorateOpportunityTags: true,
     colorfulSections: true,
     fullWorkspaceTheme: false,
-    brandShell: true,
-    showLoadConfirmation: true,
+    brandShell: false,
+    showLoadConfirmation: false,
     tagAliases: {
       hot: ["hot", "hot lead"],
       urgent: ["urgent", "emergency", "priority"],
@@ -127,11 +127,11 @@ $cssSource
     <script data-user-role="agency-admin" data-user-type="account">
       window.TalkTuitGHLConfig = {
         persistTheme: false,
-        showThemeControl: true,
+        showThemeControl: false,
         colorfulSections: true,
         fullWorkspaceTheme: false,
-        brandShell: true,
-        showLoadConfirmation: true
+        brandShell: false,
+        showLoadConfirmation: false
       };
 $jsSource
     </script>

@@ -17,6 +17,8 @@ $jsBundle = @"
   data-user-id="{{user.id}}"
   data-user-role="{{user.role}}"
   data-user-type="{{user.type}}"
+  data-location-logo-url="{{location.logo_url}}"
+  data-location-name="{{location.name}}"
 >
   window.TalkTuitGHLConfig = {
     theme: "light",
@@ -26,6 +28,7 @@ $jsBundle = @"
     colorfulSections: true,
     fullWorkspaceTheme: false,
     brandShell: false,
+    useSubaccountLogo: true,
     showLoadConfirmation: false,
     tagAliases: {
       hot: ["hot", "hot lead"],

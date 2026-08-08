@@ -1,7 +1,7 @@
 /*
  * TalkTuit GHL Customizer
  * Brand system: TalkTuit Brand Guidelines v1.0 (July 2026)
- * Version: 1.4.1
+ * Version: 1.5.0
  *
  * This file intentionally favors stable HighLevel classes/data attributes.
  * HighLevel can change its interface, so test after major platform updates.
@@ -404,6 +404,28 @@ body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) svg {
 
 body.tt-brand-ready :is(.hl_sidebar, #sidebar-v2) hr {
   border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* In Sub-Account view, JavaScript swaps only the native sidebar brand image
+ * for that location's Business Profile logo. The white backing keeps dark or
+ * transparent client artwork readable against TalkTuit Navy. */
+body.tt-brand-ready.sidebar-v2-location
+  #sidebar-v2
+  img.tt-subaccount-logo,
+body.tt-brand-ready
+  .sidebar-v2-location
+  #sidebar-v2
+  img.tt-subaccount-logo {
+  background: var(--tt-white) !important;
+  border: 1px solid rgba(99, 198, 195, 0.38) !important;
+  border-radius: 10px !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  max-height: 52px !important;
+  max-width: 184px !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+  padding: 6px 8px !important;
 }
 
   :is(

@@ -1,6 +1,6 @@
 /*
  * TalkTuit GHL Customizer
- * Version: 1.4.1
+ * Version: 1.5.0
  *
  * Vanilla JavaScript only. No jQuery and no user data is transmitted.
  */
@@ -14,7 +14,7 @@
 
   window.__talkTuitGhlCustomizerLoaded = true;
 
-  var VERSION = "1.4.1";
+  var VERSION = "1.5.0";
   var STORAGE_KEY = "talktuit-ghl-theme";
   var script =
     document.currentScript ||
@@ -39,6 +39,9 @@
     colorfulSections: true,
     fullWorkspaceTheme: false,
     brandShell: false,
+    useSubaccountLogo: true,
+    locationLogoUrl: "",
+    locationName: "",
     showLoadConfirmation: false,
     tagAliases: DEFAULT_TAG_ALIASES,
     debug: false
@@ -75,6 +78,19 @@
       DEFAULTS.fullWorkspaceTheme
     ),
     brandShell: false,
+    useSubaccountLogo: readBoolean(
+      scriptData.useSubaccountLogo,
+      globalConfig.useSubaccountLogo,
+      DEFAULTS.useSubaccountLogo
+    ),
+    locationLogoUrl:
+      scriptData.locationLogoUrl ||
+      globalConfig.locationLogoUrl ||
+      DEFAULTS.locationLogoUrl,
+    locationName:
+      scriptData.locationName ||
+      globalConfig.locationName ||
+      DEFAULTS.locationName,
     showLoadConfirmation: readBoolean(
       scriptData.showLoadConfirmation,
       globalConfig.showLoadConfirmation,
@@ -96,6 +112,7 @@
   var refreshTimer = null;
   var routeTimer = null;
   var lastLocationHref = "";
+  var failedLocationLogos = {};
   var tagLookup = buildTagLookup(config.tagAliases);
 
   function isPlainObject(value) {
@@ -191,6 +208,217 @@
     if (isResolvedTemplateValue(userType)) {
       root.dataset.ttUserType = toSlug(userType);
     }
+  }
+
+  function isSubaccountContext() {
+    if (!document.body) {
+      return false;
+    }
+
+    return Boolean(
+      document.body.classList.contains("sidebar-v2-location") ||
+        document.querySelector(".sidebar-v2-location #sidebar-v2")
+    );
+  }
+
+  function getLocationLogoUrl() {
+    var value = String(config.locationLogoUrl || "").trim();
+
+    if (
+      !isResolvedTemplateValue(value) ||
+      value === "null" ||
+      value === "undefined"
+    ) {
+      return "";
+    }
+
+    try {
+      var parsed = new URL(value, window.location.origin);
+
+      if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+        return "";
+      }
+
+      return parsed.href;
+    } catch (error) {
+      log("The sub-account logo URL is invalid.", error);
+      return "";
+    }
+  }
+
+  function getLocationName() {
+    var value = String(config.locationName || "").trim();
+    return isResolvedTemplateValue(value) ? value : "";
+  }
+
+  function findSidebarLogoImage(sidebar) {
+    var selectors = [
+      '[data-testid*="logo" i] img',
+      '[class*="logo" i] img',
+      'img[class*="logo" i]',
+      'img[id*="logo" i]',
+      'img[alt*="logo" i]',
+      '.hl_nav-header img',
+      '.hl_nav-header-without-footer img'
+    ];
+
+    for (var selectorIndex = 0; selectorIndex < selectors.length; selectorIndex += 1) {
+      var directMatch = sidebar.querySelector(selectors[selectorIndex]);
+
+      if (directMatch && !directMatch.closest("#tt-theme-control, #tt-brand-shell")) {
+        return directMatch;
+      }
+    }
+
+    var images = sidebar.querySelectorAll("img");
+    var bestMatch = null;
+    var bestScore = 0;
+
+    Array.prototype.forEach.call(images, function scoreSidebarImage(image, index) {
+      if (image.closest("#tt-theme-control, #tt-brand-shell")) {
+        return;
+      }
+
+      var signature = [
+        image.id,
+        image.className,
+        image.getAttribute("alt"),
+        image.parentElement ? image.parentElement.className : ""
+      ]
+        .join(" ")
+        .toLowerCase();
+
+      if (/avatar|profile|user|notification|icon/.test(signature)) {
+        return;
+      }
+
+      var score = index < 2 ? 30 : 0;
+
+      if (/logo|brand/.test(signature)) {
+        score += 100;
+      }
+
+      if (image.closest(".hl_nav-header, .hl_nav-header-without-footer")) {
+        score += 60;
+      }
+
+      var sidebarBounds = sidebar.getBoundingClientRect();
+      var imageBounds = image.getBoundingClientRect();
+
+      if (imageBounds.top >= sidebarBounds.top && imageBounds.top - sidebarBounds.top < 180) {
+        score += 25;
+      }
+
+      if (score > bestScore) {
+        bestMatch = image;
+        bestScore = score;
+      }
+    });
+
+    return bestScore >= 30 ? bestMatch : null;
+  }
+
+  function restoreSubaccountLogoImage(image) {
+    if (!image || !image.hasAttribute("data-tt-location-logo-url")) {
+      return;
+    }
+
+    image.setAttribute("src", image.dataset.ttOriginalLogoSrc || "");
+
+    if (image.dataset.ttOriginalLogoHadSrcset === "true") {
+      image.setAttribute("srcset", image.dataset.ttOriginalLogoSrcset || "");
+    } else {
+      image.removeAttribute("srcset");
+    }
+
+    if (image.dataset.ttOriginalLogoHadAlt === "true") {
+      image.setAttribute("alt", image.dataset.ttOriginalLogoAlt || "");
+    } else {
+      image.removeAttribute("alt");
+    }
+
+    image.classList.remove("tt-subaccount-logo");
+    delete image.dataset.ttLocationLogoUrl;
+    delete image.dataset.ttOriginalLogoSrc;
+    delete image.dataset.ttOriginalLogoSrcset;
+    delete image.dataset.ttOriginalLogoHadSrcset;
+    delete image.dataset.ttOriginalLogoAlt;
+    delete image.dataset.ttOriginalLogoHadAlt;
+  }
+
+  function restoreSubaccountLogos() {
+    Array.prototype.forEach.call(
+      document.querySelectorAll("img[data-tt-location-logo-url]"),
+      restoreSubaccountLogoImage
+    );
+  }
+
+  function applySubaccountLogo(image, logoUrl, locationName) {
+    if (image.dataset.ttLocationLogoUrl === logoUrl) {
+      return;
+    }
+
+    if (!image.hasAttribute("data-tt-location-logo-url")) {
+      image.dataset.ttOriginalLogoSrc = image.getAttribute("src") || "";
+      image.dataset.ttOriginalLogoSrcset = image.getAttribute("srcset") || "";
+      image.dataset.ttOriginalLogoHadSrcset = String(image.hasAttribute("srcset"));
+      image.dataset.ttOriginalLogoAlt = image.getAttribute("alt") || "";
+      image.dataset.ttOriginalLogoHadAlt = String(image.hasAttribute("alt"));
+    }
+
+    image.dataset.ttLocationLogoUrl = logoUrl;
+    image.classList.add("tt-subaccount-logo");
+    image.removeAttribute("srcset");
+    image.setAttribute("alt", locationName ? locationName + " logo" : "Sub-account logo");
+
+    image.addEventListener(
+      "error",
+      function restoreUnavailableLocationLogo() {
+        if (image.dataset.ttLocationLogoUrl !== logoUrl) {
+          return;
+        }
+
+        failedLocationLogos[logoUrl] = true;
+        restoreSubaccountLogoImage(image);
+        document.documentElement.dataset.ttLocationLogo = "fallback";
+        log("The sub-account logo could not be loaded; using the native logo.");
+      },
+      { once: true }
+    );
+
+    image.setAttribute("src", logoUrl);
+  }
+
+  function syncSubaccountLogo() {
+    var root = document.documentElement;
+    var isLocation = isSubaccountContext();
+
+    root.dataset.ttAccountScope = isLocation ? "location" : "agency";
+
+    if (!isLocation || !config.useSubaccountLogo) {
+      restoreSubaccountLogos();
+      root.removeAttribute("data-tt-location-logo");
+      return;
+    }
+
+    var logoUrl = getLocationLogoUrl();
+
+    if (!logoUrl || failedLocationLogos[logoUrl]) {
+      restoreSubaccountLogos();
+      root.dataset.ttLocationLogo = "fallback";
+      return;
+    }
+
+    var sidebar = document.querySelector("#sidebar-v2, .hl_sidebar");
+    var logoImage = sidebar ? findSidebarLogoImage(sidebar) : null;
+
+    if (!logoImage) {
+      root.dataset.ttLocationLogo = "waiting";
+      return;
+    }
+
+    applySubaccountLogo(logoImage, logoUrl, getLocationName());
+    root.dataset.ttLocationLogo = "custom";
   }
 
   function getSavedTheme() {
@@ -787,6 +1015,7 @@
       "tt-full-workspace",
       config.fullWorkspaceTheme
     );
+    syncSubaccountLogo();
     createBrandShell();
     markRoute();
     decorateOpportunityTags(root || document);
@@ -901,6 +1130,10 @@
       document.documentElement.removeAttribute("data-tt-theme");
       document.documentElement.removeAttribute("data-tt-route");
       document.documentElement.removeAttribute("data-tt-section");
+      document.documentElement.removeAttribute("data-tt-account-scope");
+      document.documentElement.removeAttribute("data-tt-location-logo");
+
+      restoreSubaccountLogos();
 
       if (document.body) {
         document.body.classList.remove(

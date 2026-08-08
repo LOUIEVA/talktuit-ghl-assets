@@ -13,6 +13,7 @@ The package uses:
 - Route-aware color treatments for Contacts, Opportunities, and Conversations
 - Light and Navy Focus themes without floating controls covering CRM actions
 - Branded live-surface detection for current GHL cards, panels, tables, lists, and panes
+- Per-sub-account sidebar logos sourced from each location's Business Profile, with a safe agency-logo fallback
 - A responsive CSS-only TalkTuit login design for the white-label web portal
 
 ## Files
@@ -33,14 +34,15 @@ The production assets are hosted from the public
 [`LOUIEVA/talktuit-ghl-assets`](https://github.com/LOUIEVA/talktuit-ghl-assets)
 repository through jsDelivr:
 
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.1/talktuit-ghl.css`
-- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.1/talktuit-ghl.js`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.5.0/talktuit-ghl.css`
+- `https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.5.0/talktuit-ghl.js`
 
 1. In HighLevel, switch to Agency View and open `Settings > Company > Whitelabel`.
 2. Paste the contents of `ghl-custom-css.html` into Custom CSS.
 3. Paste the contents of `ghl-custom-javascript.html` into Custom JavaScript.
 4. Save, reload the CRM, and test Agency View plus at least one Sub-Account.
 5. Upload the official transparent TalkTuit horizontal logo in HighLevel's Whitelabel branding area. Do not recreate or recolor the logo.
+6. In each Sub-Account, open `Settings > Business Profile` and upload that client's **Business Logo**. The customizer uses `{{location.logo_url}}` in Sub-Account view and keeps the agency logo as the fallback when no client logo is available.
 
 HighLevel recommends a logo up to 350 x 180 px and no larger than 2.5 MB.
 
@@ -112,6 +114,7 @@ Set options before the external script:
     colorfulSections: true,
     fullWorkspaceTheme: false,
     brandShell: false,
+    useSubaccountLogo: true,
     showLoadConfirmation: false
   };
 </script>
@@ -126,6 +129,7 @@ Options:
 - `colorfulSections`: adds route-scoped color to Contacts, Opportunities, and Conversations; set to `false` for the neutral white workspace
 - `fullWorkspaceTheme`: opt-in repainting of global GHL surfaces; keep `false` for the safer route-scoped theme
 - `brandShell`: legacy option; the floating top-right badge is disabled to avoid covering native actions
+- `useSubaccountLogo`: replaces the native sidebar brand image with the active Sub-Account's Business Profile logo; Agency View is never changed
 - `showLoadConfirmation`: briefly confirms that the JavaScript executed; turn it off after installation is verified
 - `tagAliases`: adds or replaces the text recognized for `hot`, `urgent`, `new`, `won`, `follow-up`, and `cold`
 - `debug`: prints diagnostic messages to the browser console
@@ -146,7 +150,7 @@ Example custom tag mapping:
 ## Privacy and dependencies
 
 - No user information is transmitted by this code.
-- The loader only exposes sanitized role/type values on the page for optional role-based styling.
+- The loader only uses template-provided role/type values and the active location's public Business Profile logo/name inside the page; it sends none of them elsewhere.
 - The theme uses vanilla JavaScript and has no jQuery dependency.
 - Google Fonts loads Manrope and JetBrains Mono. Self-host the fonts if your privacy policy requires it.
 
@@ -156,8 +160,8 @@ When updating the hosted files, create a new GitHub release tag and update both
 loader URLs. For example:
 
 ```text
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.1/talktuit-ghl.css
-https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.4.1/talktuit-ghl.js
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.5.0/talktuit-ghl.css
+https://cdn.jsdelivr.net/gh/LOUIEVA/talktuit-ghl-assets@v1.5.0/talktuit-ghl.js
 ```
 
 ## Roll back

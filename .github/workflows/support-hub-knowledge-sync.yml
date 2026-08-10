@@ -1,0 +1,61 @@
+name: Support Hub knowledge sync
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: support-hub-knowledge-sync
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: support-hub
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: support-hub/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh the knowledge catalog
+        run: npm run sync:knowledge
+
+      - name: Validate grey-label content
+        run: npm run check:brand
+
+      - name: Lint the application
+        run: npm run lint
+
+      - name: Test rendered routes
+        run: node --test tests/rendered-html.test.mjs
+
+      - name: Commit verified catalog changes
+        working-directory: .
+        shell: bash
+        run: |
+          if git diff --quiet -- support-hub/data/tutorial-index.json; then
+            echo "No catalog changes detected."
+            exit 0
+          fi
+
+          git config user.name "talktuit-support-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add support-hub/data/tutorial-index.json
+          git commit -m "Update Support Hub knowledge catalog"
+          git push

@@ -1,0 +1,64 @@
+name: Fetch Sammy's email images
+on:
+  push:
+    branches: [sammys-email-images]
+    paths: [.github/workflows/fetch-sammys-images.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: sammys-email-images
+      - name: Download images from sammys.net.au
+        run: |
+          set -u
+          mkdir -p sammys
+          U=https://sammys.net.au/wp-content/uploads
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
+          fetch () {
+            curl -fsSL --retry 3 -A "$UA" -e "https://sammys.net.au/" -o "sammys/$1" "$U/$2" \
+              && file "sammys/$1" | grep -qiE 'image|JPEG|PNG' && echo "OK   $1" || { echo "FAIL $1 <- $2"; rm -f "sammys/$1"; }
+          }
+          fetch logo.jpg            2024/03/Sammys-Logo-1.jpg
+          fetch view.jpg            2025/12/WhatsApp-Image-2025-12-08-at-12.39.48-PM-1024x768.jpeg
+          fetch inside.jpg          2025/12/WhatsApp-Image-2025-12-08-at-12.39.51-PM-768x576.jpeg
+          fetch party.jpg           2025/12/WhatsApp-Image-2025-12-05-at-4.51.18-PM-300x225.jpeg
+          fetch engagement.jpg      2025/12/WhatsApp-Image-2025-12-05-at-4.51.10-PM-1-300x225.jpeg
+          fetch birthday.jpg        2025/12/WhatsApp-Image-2025-12-05-at-4.51.15-PM-300x225.jpeg
+          fetch party-lg.jpg        2025/12/WhatsApp-Image-2025-12-05-at-4.51.18-PM.jpeg
+          fetch engagement-lg.jpg   2025/12/WhatsApp-Image-2025-12-05-at-4.51.10-PM-1.jpeg
+          fetch birthday-lg.jpg     2025/12/WhatsApp-Image-2025-12-05-at-4.51.15-PM.jpeg
+          fetch venue-wide.jpg      2025/12/PHOTO-2025-12-06-08-02-22-1024x768.jpg
+          fetch p1.jpg 2025/12/PHOTO-2025-12-08-11-23-51-1-768x1024.jpg
+          fetch p2.jpg 2025/12/PHOTO-2025-12-08-11-23-50-768x1024.jpg
+          fetch p3.jpg 2025/12/PHOTO-2025-12-08-11-23-49-768x1024.jpg
+          fetch p4.jpg 2025/12/PHOTO-2025-12-06-08-02-24-768x1024.jpg
+          fetch p5.jpg 2025/12/PHOTO-2025-12-04-08-18-24-768x1024.jpg
+          fetch p6.jpg 2025/12/PHOTO-2025-12-04-08-18-23-768x1024.jpg
+          fetch p7.jpg 2025/12/PHOTO-2025-12-02-08-50-08-768x1024.jpg
+          ls -la sammys
+          file sammys/* || true
+          python3 -c "
+          import struct,glob
+          for f in sorted(glob.glob('sammys/*.jpg')):
+              d=open(f,'rb').read()
+              i=2
+              while i<len(d):
+                  if d[i]!=0xFF: break
+                  m=d[i+1]; L=struct.unpack('>H',d[i+2:i+4])[0]
+                  if m in (0xC0,0xC1,0xC2):
+                      h,w=struct.unpack('>HH',d[i+5:i+9]); print(f,w,'x',h); break
+                  i+=2+L
+          " > sammys/sizes.txt || true
+          cat sammys/sizes.txt
+      - name: Commit images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sammys
+          git diff --cached --quiet && echo "nothing new" || git commit -m "Add Sammy's on the Marina email images"
+          git push origin HEAD:sammys-email-images
